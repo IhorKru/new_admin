@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="traffic_type">
+                <source>Traffic Type</source>
+                <target>Тип Трафика</target>
+            </trans-unit>
+            <trans-unit id="partner_name">
+                <source>Select Partner</source>
+                <target>Select Partner</target>
+            </trans-unit>
+            <trans-unit id="user_geo">
+                <source>Select User Geo</source>
+                <target>Select User Geo</target>
+            </trans-unit>
+            <trans-unit id="resource">
+                <source>Select Resource</source>
+                <target>Select Resource</target>
+            </trans-unit>
+            <trans-unit id="template">
+                <source>Select Template</source>
+                <target>Select Template</target>
+            </trans-unit>
+            <trans-unit id="num_campaigns">
+                <source>Number of Campaigns</source>
+                <target>Number of Campaigns</target>
+            </trans-unit>
+            <trans-unit id="timezone">
+                <source>Select Timezone</source>
+                <target>Select Timezone</target>
+            </trans-unit>
+            <trans-unit id="dep_date">
+                <source>Deployment Date</source>
+                <target>Deployment Date</target>
+            </trans-unit>
+            <trans-unit id="link1">
+                <source>Paid Click Link 1</source>
+                <target>Paid Click Link 1</target>
+            </trans-unit>
+            <trans-unit id="link2">
+                <source>Paid Click Link 2</source>
+                <target>Paid Click Link 2</target>
+            </trans-unit>
+            <trans-unit id="generate_campaigns">
+                <source>Generate Campaigns</source>
+                <target>Generate Campaigns</target>
+            </trans-unit>
+            <trans-unit id="Reset">
+                <source>Clear Fields</source>
+                <target>Clear Fields</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -2,9 +2,125 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
     <file source-language="en" datatype="plaintext" original="file.ext">
         <body>
-            <trans-unit id="symfony_is_great">
-                <source>Symfony is great</source>
-                <target>Symfony is great</target>
+            <trans-unit id="traffic_type">
+                <source>Traffic Type</source>
+                <target>Traffic Type</target>
+            </trans-unit>
+            <trans-unit id="partner_name">
+                <source>Select Partner</source>
+                <target>Select Partner</target>
+            </trans-unit>
+            <trans-unit id="user_geo">
+                <source>Select User Geo</source>
+                <target>Select User Geo</target>
+            </trans-unit>
+            <trans-unit id="resource">
+                <source>Select Resource</source>
+                <target>Select Resource</target>
+            </trans-unit>
+            <trans-unit id="template">
+                <source>Select Template</source>
+                <target>Select Template</target>
+            </trans-unit>
+            <trans-unit id="num_campaigns">
+                <source>Number of Campaigns</source>
+                <target>Number of Campaigns</target>
+            </trans-unit>
+            <trans-unit id="timezone">
+                <source>Select Timezone</source>
+                <target>Select Timezone</target>
+            </trans-unit>
+            <trans-unit id="dep_date">
+                <source>Deployment Date</source>
+                <target>Deployment Date</target>
+            </trans-unit>
+            <trans-unit id="link1">
+                <source>Paid Click Link 1</source>
+                <target>Paid Click Link 1</target>
+            </trans-unit>
+            <trans-unit id="link2">
+                <source>Paid Click Link 2</source>
+                <target>Paid Click Link 2</target>
+            </trans-unit>
+            <trans-unit id="generate_campaigns">
+                <source>Generate Campaigns</source>
+                <target>Generate Campaigns</target>
+            </trans-unit>
+            <trans-unit id="Reset">
+                <source>Clear Fields</source>
+                <target>Clear Fields</target>
+            </trans-unit>
+            <trans-unit id="login_name">
+                <source>User Name</source>
+                <target>User Name</target>
+            </trans-unit>
+            <trans-unit id="password">
+                <source>Password</source>
+                <target>Password</target>
+            </trans-unit>
+            <trans-unit id="login">
+                <source>Login</source>
+                <target>Login</target>
+            </trans-unit>
+            <trans-unit id="email_resource">
+                <source>Select Resource</source>
+                <target>Select Resource</target>
+            </trans-unit>
+            <trans-unit id="email_template">
+                <source>Template Name</source>
+                <target>Template Name</target>
+            </trans-unit>
+            <trans-unit id="create_template">
+                <source>Create Template</source>
+                <target>Create Template</target>
+            </trans-unit>
+            <trans-unit id="new_partner_name">
+                <source>Partner Name</source>
+                <target>Partner Name</target>
+            </trans-unit>
+            <trans-unit id="partner_traffic_type">
+                <source>Traffic Type</source>
+                <target>Traffic Type</target>
+            </trans-unit>
+            <trans-unit id="partner_location">
+                <source>Partner Location</source>
+                <target>Partner Location</target>
+            </trans-unit>
+            <trans-unit id="partner_size">
+                <source>Partner Size</source>
+                <target>Partner Size</target>
+            </trans-unit>
+            <trans-unit id="partner_tire">
+                <source>Tire</source>
+                <target>Tire</target>
+            </trans-unit>
+            <trans-unit id="partner_type">
+                <source>Partner Type</source>
+                <target>Partner Type</target>
+            </trans-unit>
+            <trans-unit id="create_partner">
+                <source>Create Partner</source>
+                <target>Create Partner</target>
+            </trans-unit>
+            <trans-unit id="offer_name">
+                <source>Offer Name</source>
+                <target>Offer Name</target>
+            </trans-unit>
+            <trans-unit id="offer_url">
+                <source>Offer URL</source>
+                <target>Offer URL</target>
+            </trans-unit>
+            <trans-unit id="traffic_geo">
+                <source>Traffic Geo</source>
+                <target>Traffic Geo</target>
+            </trans-unit>
+            <trans-unit id="offer_status">
+                <source>Offer Status</source>
+                <target>Offer Status</target>
+            </trans-unit>
+            <trans-unit id="offer_description">
+                <source>Offer Description</source>
+                <target>Offer Description</target>
             </trans-unit>
         </body>
     </file>
