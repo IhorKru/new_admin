@@ -43,5 +43,5 @@ security:
             # form_login: ~
             # https://symfony.com/doc/current/cookbook/security/form_login_setup.html
     access_control:
-                - { path: ^idex.php/login, role: IS_AUTHENTICATED_ANONYMOUSLY }
+                - { path: ^/login, role: IS_AUTHENTICATED_ANONYMOUSLY }
                 - { path: ^/, roles: ROLE_USER }
