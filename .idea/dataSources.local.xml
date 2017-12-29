@@ -11,5 +11,15 @@
       <user-name>mediazmj</user-name>
       <introspection-schemas>*:mediazmj_mediabayprod</introspection-schemas>
     </data-source>
+    <data-source name="Mediaff_Prod" uuid="2f09ce7a-c4bb-45ea-b4c5-1dad5789de64">
+      <database-info product="MySQL" version="5.6.27-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.44 ( Revision: b3cda4f864902ffdde495b9df93937c3e20009be )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>mediazmj</user-name>
+      <introspection-schemas>*:mediaff_mysql</introspection-schemas>
+    </data-source>
   </component>
 </project>
