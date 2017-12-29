@@ -1,0 +1,282 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <div class="x_panel" style="text-align: center; margin-bottom: 15px;">
+        <div class="btn-group" role="group" aria-label="First group">
+            <a href="{{ path('pubmaster', {'slug': 1}) }}" class="btn btn-info btn-md">Day</a>
+            <a href="{{ path('pubmaster', {'slug': 2}) }}" class="btn btn-info btn-md">Week</a>
+            <a href="{{ path('pubmaster', {'slug': 3}) }}" class="btn btn-info btn-md">Month</a>
+            <a href="{{ path('pubmaster', {'slug': 4}) }}" class="btn btn-info btn-md">Year</a>
+        </div>
+    </div>
+    <!-- top tiles -->
+    <div class="row tile_count" style="text-align: center">
+        <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+            <span class="count_top"><i class="fa fa-user"></i> Total Subscribers</span>
+            <div class="count">{{ statsdata.countsubscr|number_format(0, '.', ',') }}</div>
+            <span class="count_bottom">
+                <i class="green">
+                    <i class="fa fa-sort-asc"></i>
+                    {{ statsdata.ratiototalsubsc|number_format(1, '.', ',') }}
+                </i> From
+                    {% if period == 'daily' %}
+                        Yesterday
+                    {% elseif period == 'weekly' %}
+                        Last Week
+                    {% elseif period == 'monthly' %}
+                        Last Month
+                    {% elseif period == 'annually' %}
+                        Last Year
+                    {% endif %}
+            </span>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+            <span class="count_top"><i class="fa fa-clock-o">
+                </i> Subscribed
+                    {% if period == 'daily' %}
+                        Today
+                    {% elseif period == 'weekly' %}
+                        WTD
+                    {% elseif period == 'monthly' %}
+                        MTD
+                    {% elseif period == 'annually' %}
+                        YTD
+                    {% endif %}
+            </span>
+            <div class="count">{{ statsdata.cntsubscrperiod|number_format(0, '.', ',') }}</div>
+            <span class="count_bottom">
+                <i class="green">
+                    <i class="fa fa-sort-asc"></i>
+                    {{ statsdata.ratiosubscrperiod|number_format(1, '.', ',') }}%
+                </i> From
+                    {% if period == 'daily' %}
+                        Yesterday
+                    {% elseif period == 'weekly' %}
+                        Last Week
+                    {% elseif period == 'monthly' %}
+                        Last Month
+                    {% elseif period == 'annually' %}
+                        Last Year
+                    {% endif %}
+            </span>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+            <span class="count_top"><i class="fa fa-user">
+                </i> Unsubscribed
+                    {% if period == 'daily' %}
+                        Today
+                    {% elseif period == 'weekly' %}
+                        WTD
+                    {% elseif period == 'monthly' %}
+                        MTD
+                    {% elseif period == 'annually' %}
+                        YTD
+                    {% endif %}
+            </span>
+            <div class="count green">{{ statsdata.cntunsubscribers|number_format(0, '.', ',') }}</div>
+            <span class="count_bottom">
+                <i class="green">
+                    <i class="fa fa-sort-asc">
+                        </i>{{ statsdata.ratiousubscrperiod|number_format(1, '.', ',') }}%
+                </i> From
+                    {% if period == 'daily' %}
+                        Yesterday
+                    {% elseif period == 'weekly' %}
+                        Last Week
+                    {% elseif period == 'monthly' %}
+                        Last Month
+                    {% elseif period == 'annually' %}
+                        Last Year
+                    {% endif %}
+                </span>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+            <span class="count_top"><i class="fa fa-user">
+                </i> Emails sent
+                    {% if period == 'daily' %}
+                        Today
+                    {% elseif period == 'weekly' %}
+                        WTD
+                    {% elseif period == 'monthly' %}
+                        MTD
+                    {% elseif period == 'annually' %}
+                        YTD
+                    {% endif %}
+                </span>
+            <div class="count">{{ statsdata.cntemailssentperiod|number_format(0, '.', ',') }}</div>
+            <span class="count_bottom">
+                <i class="green">
+                    <i class="fa fa-sort-desc">
+                    </i> {{ statsdata.ratioemailssent|number_format(1, '.', ',') }}%
+                </i> From
+                    {% if period == 'daily' %}
+                        Yesterday
+                    {% elseif period == 'weekly' %}
+                        Last Week
+                    {% elseif period == 'monthly' %}
+                        Last Month
+                    {% elseif period == 'annually' %}
+                        Last Year
+                    {% endif %}
+            </span>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+            <span class="count_top"><i class="fa fa-user">
+                </i> Paid Clicks
+                    {% if period == 'daily' %}
+                        Today
+                    {% elseif period == 'weekly' %}
+                        WTD
+                    {% elseif period == 'monthly' %}
+                        MTD
+                    {% elseif period == 'annually' %}
+                        YTD
+                    {% endif %}
+            </span>
+            <div class="count">{{ statsdata.cntclicksperiod|number_format(0, '.', ',') }}</div>
+            <span class="count_bottom">
+                <i class="green">
+                    <i class="fa fa-sort-asc"></i>
+                    {{ statsdata.ratioclicksperiod|number_format(1, '.', ',')  }}%
+                </i> From
+                    {% if period == 'daily' %}
+                        Yesterday
+                    {% elseif period == 'weekly' %}
+                        Last Week
+                    {% elseif period == 'monthly' %}
+                        Last Month
+                    {% elseif period == 'annually' %}
+                        Last Year
+                    {% endif %}
+            </span>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+            <span class="count_top"><i class="fa fa-user">
+                </i> USD
+                    {% if period == 'daily' %}
+                        Today
+                    {% elseif period == 'weekly' %}
+                        WTD
+                    {% elseif period == 'monthly' %}
+                        MTD
+                    {% elseif period == 'annually' %}
+                        YTD
+                    {% endif %}
+            </span>
+            <div class="count">{{ statsdata.revenueperiod|number_format(2, '.', ',') }}</div>
+            <span class="count_bottom">
+                <i class="green">
+                    <i class="fa fa-sort-asc"></i>
+                    {{ statsdata.ratiorevenue|number_format(1, '.', ',') }}%
+                </i> From
+                    {% if period == 'daily' %}
+                        Yesterday
+                    {% elseif period == 'weekly' %}
+                        Last Week
+                    {% elseif period == 'monthly' %}
+                        Last Month
+                    {% elseif period == 'annually' %}
+                        Last Year
+                    {% endif %}
+            </span>
+        </div>
+    </div>
+    <!-- /top tiles -->
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>KPI's</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <div id="main" style="height:350px; width:100%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /first set done -->
+    {% block custjs %}
+        <script src="{{ asset('resources/vendors/echartsn/echarts.min.js')}}"></script>
+        <script>
+            var myChart = echarts.init(document.getElementById('main'));
+            var option = {
+                tooltip : {
+                    trigger: 'axis',
+                    axisPointer: {
+                        type: 'cross',
+                        label: {
+                            backgroundColor: '#6a7985'
+                        }
+                    }
+                },
+                legend: {
+                    data:['Emails','Clicks','Revenue']
+                },
+                grid: {
+                    left: '1%',
+                    right: '2%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                xAxis : [
+                    {
+                        type : 'category',
+                        boundaryGap : false,
+                        data : [
+                            {% for rsc in emaildata %}
+                                {% if loop.last == false %}
+                                    '{{ rsc.period }}',
+                                {% else %}
+                                    '{{ rsc.period }}'
+                                {% endif %}
+                            {% endfor %}
+                        ]
+                    }
+                ],
+                yAxis : [
+                    {
+                        type : 'value'
+                    }
+                ],
+                series : [
+                    {
+                        name:'Emails',
+                        type:'line',
+                        stack: '总量',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'top'
+                            }
+                        },
+                        areaStyle: {normal: {}},
+                        data:[
+                            {% for rsc in emaildata %}
+                                '{{ rsc.emailssent }}',
+                            {% endfor %}
+                        ]
+                    },
+                    {
+                        name:'Clicks',
+                        type:'line',
+                        stack: '总量',
+                        areaStyle: {normal: {}},
+                        data:[120, 132, 101, 134, 90, 230, 210]
+                    },
+                    {
+                        name:'Revenue',
+                        type:'line',
+                        stack: '总量',
+                        areaStyle: {normal: {}},
+                        data:[220, 182, 191, 234, 290, 330, 310]
+                    }
+                ]
+            };
+            myChart.setOption(option);
+        </script>
+    {% endblock %}
+{% endblock %}

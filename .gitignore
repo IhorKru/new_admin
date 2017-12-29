@@ -1,0 +1,29 @@
+
+###> symfony/framework-bundle ###
+.env
+/public/bundles/
+/var/*
+!/var/cache
+/var/cache/*
+!var/cache/.gitkeep
+!/var/logs
+/var/logs/*
+!/var/sessions
+/var/sessions/*
+!var/sessions/.gitkeep
+/vendor/
+###< symfony/framework-bundle ###
+
+
+# Elastic Beanstalk Files
+
+.elasticbeanstalk/*
+
+!.elasticbeanstalk/*.cfg.yml
+
+!.elasticbeanstalk/*.global.yml
+
+
+###> symfony/web-server-bundle ###
+.web-server-pid
+###< symfony/web-server-bundle ###

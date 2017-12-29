@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}Mediaff | Admin Panel{% endblock %}</title>
+        {% block stylesheets %}
+            <!-- Bootstrap -->
+            <link href="{{ asset('resources/vendors/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+            <!-- Font Awesome -->
+            <link href="{{ asset('resources/vendors/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+            {% block custcss %} {% endblock %}
+            <!-- Custom Theme Style -->
+            <link href="{{ asset('resources/build/css/custom.css') }}" rel="stylesheet">
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <!-- /Yandex.Metrika counter -->
+        <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44763925 = new Ya.Metrika({ id:44763925, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true, ut:"noindex" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44763925?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+    </head>
+    <body class="nav-sm">
+        <div class="container body">
+            <div class="main_container">
+                <div class="col-md-3 left_col menu_fixed">
+                    <div class="left_col scroll-view">
+                        <div class="navbar nav_title" style="border: 0;">
+                            <a href="{{ path('pubmaster') }}" class="site_title"><i class="fa fa-user-circle"></i> <span>Mediaff Admin</span></a>
+                        </div>
+                        <div class="clearfix"></div>
+                        <!-- /menu profile quick info -->
+                        <br/>
+                        <!-- sidebar menu -->
+                        <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                            <div class="menu_section">
+                                <h3>Publisher</h3>
+                                <ul class="nav side-menu">
+                                    <li><a><i class="fa fa-home"></i> Dashboards <span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="{{ path('pubmaster') }}">General Overview</a></li>
+                                            <li><a href="{{ path('campaignsdash') }}">Campaign Stats</a></li>
+                                            <li><a href="{{ path('subscriberdash') }}">Subscriber Stats</a></li>
+                                            <li><a href="{{ path('partnerdash') }}">Ad Networks Stats</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="{{ path('newpubcampaign') }}"><i class="fa fa-edit"></i> Campaing Manager</a></li>
+                                    <li><a><i class="fa fa-users"></i>Traffic Sources<span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="{{ 'http://publisher.adknowledge.com' }}" target="_blank">AdKnowledge</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a><i class="fa fa-desktop"></i>Resources<span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="{{ 'http://sendy.mediaff.com' }}" target="_blank">Sendy SES</a></li>
+                                        </ul>
+                                        <ul class="nav child_menu">
+                                            <li><a href="{{ 'https://html-online.com/editor/' }}" target="_blank">Online HTML</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a><i class="fa fa-bar-chart-o"></i> Tools <span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="{{ path('newemailtempl') }}">New Email Temaplate</a></li>
+                                            <li><a href="{{ path('newpubnetwork') }}">New Publisher</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu_section">
+                                <h3>Advertiser</h3>
+                                <ul class="nav side-menu">
+                                    <li><a><i class="fa fa-home"></i> KPIs <span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="{{ path('adsdashboard') }}">Master Dashboard</a></li>
+                                            <li><a href="{{ path('adsoffersdashboard') }}">Offer Stats</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="{{ path('adoffers') }}"><i class="fa fa fa-handshake-o"></i> Running Offers</a>
+                                    </li>
+                                    <li><a><i class="fa fa-cubes"></i> Tools <span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="{{ path('newoffer') }}">New Offer</a></li>
+                                            <li><a href="{{ path('newadnetwork') }}">New Advertiser</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- top navigation -->
+                <div class="top_nav">
+                    <div class="nav_menu">
+                        <nav>
+                            <div class="nav toggle">
+                                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                            </div>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="">
+                                    <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <img src="{{ asset('resources/images/img.jpg') }}" alt="">Mediaff Admin
+                                        <span class=" fa fa-angle-down"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                        <li><a href="{{ path('login') }}"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                                    </ul>
+                                </li>
+
+                                <li role="presentation" class="dropdown">
+                                    <!--<a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-envelope-o"></i>
+                                        <span class="badge bg-green">6</span>
+                                    </a>-->
+                                    <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                                        <li>
+                                            <a>
+                                                <span class="image"><img src="{{ asset('resources/images/img.jpg') }}" alt="Profile Image" /></span>
+                                                <span>
+                                                    <span>John Smith</span>
+                                                    <span class="time">3 mins ago</span>
+                                                </span>
+                                                <span class="message">
+                                                    Film festivals used to be do-or-die moments for movie makers. They were where...
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <span class="image"><img src="{{ asset('resources/images/img.jpg') }}" alt="Profile Image" /></span>
+                                                <span>
+                                                    <span>John Smith</span>
+                                                    <span class="time">3 mins ago</span>
+                                                </span>
+                                                <span class="message">
+                                                    Film festivals used to be do-or-die moments for movie makers. They were where...
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <span class="image"><img src="{{ asset('resources/images/img.jpg') }}" alt="Profile Image" /></span>
+                                                <span>
+                                                    <span>John Smith</span>
+                                                    <span class="time">3 mins ago</span>
+                                                </span>
+                                                <span class="message">
+                                                    Film festivals used to be do-or-die moments for movie makers. They were where...
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <span class="image"><img src="{{ asset('resources/images/img.jpg') }}" alt="Profile Image" /></span>
+                                                <span>
+                                                    <span>John Smith</span>
+                                                    <span class="time">3 mins ago</span>
+                                                </span>
+                                                <span class="message">
+                                                    Film festivals used to be do-or-die moments for movie makers. They were where...
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="text-center">
+                                                <a>
+                                                    <strong>See All Alerts</strong>
+                                                    <i class="fa fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- /top navigation -->
+                <!-- page content -->
+                <div class="right_col" role="main">
+                    {% block body %}{% endblock %}
+                </div>
+                <!-- /page content -->
+            </div>
+        </div>
+        {% block javascripts %}
+            <!-- JQuery file -->
+            <script src="{{ asset('resources/jquery-3.2.1.min.js') }}"></script>
+            <!-- Bootstrap JS -->
+            <script src="{{ asset('resources/vendors/bootstrap/js/bootstrap.min.js') }}"></script>
+            <!-- Custom Theme Scripts -->
+            <script src="{{ asset('resources/build/js/custom.min.js')}}"></script>
+            <!-- Yandex.Metrika counter -->
+            {% block custjs %} {% endblock %}
+        {% endblock %}
+    </body>
+</html>

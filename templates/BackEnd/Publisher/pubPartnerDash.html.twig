@@ -1,0 +1,25 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Mediaff | Partner Dash{% endblock %}
+
+{% block custcss %}
+
+{% endblock %}
+
+{% block body %}
+    <div class="x_panel" style="text-align: center; margin-bottom: 15px;">
+        <div class="btn-group" role="group" aria-label="First group">
+            <a href="{{ path('campaignsdash', {'slug': "daily"}) }}" class="btn btn-warning btn-md">Day</a>
+            <a href="{{ path('campaignsdash', {'slug': "weekly"}) }}" class="btn btn-warning btn-md">Week</a>
+            <a href="{{ path('campaignsdash', {'slug': "monthly"}) }}" class="btn btn-warning btn-md">Month</a>
+            <a href="{{ path('campaignsdash', {'slug': "yearly"}) }}" class="btn btn-warning btn-md">Year</a>
+        </div>
+    </div>
+{% endblock %}
+
+{% block custjs %}
+    <!-- jQuery Sparklines -->
+    <script src="{{ asset('resources/vendors/jquery-sparkline/dist/jquery.sparkline.min.js')}}"></script>
+    <!-- ECharts -->
+    <script src="{{ asset('resources/vendors/echarts/build/dist/echarts-all.js')}}"></script>
+{% endblock %}

@@ -1,0 +1,448 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Mediaff | Campaigns Dash{% endblock %}
+
+{% block custcss %}
+    <!--page specific table css -->
+    <link href="{{ asset('resources/vendors/DataTables/media/css/dataTables.bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('resources/vendors/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('resources/vendors/DataTables/extensions/Buttons/css/buttons.bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('resources/vendors/DataTables/extensions/FixedHeader/css/fixedHeader.bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('resources/vendors/DataTables/extensions/Scroller/css/scroller.bootstrap.min.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    <div class="x_panel" style="text-align: center; margin-bottom: 15px;">
+        <div class="btn-group" role="group" aria-label="First group">
+            <a href="{{ path('campaignsdash', {'slug': "daily"}) }}" class="btn btn-danger btn-md">Day</a>
+            <a href="{{ path('campaignsdash', {'slug': "weekly"}) }}" class="btn btn-danger btn-md">Week</a>
+            <a href="{{ path('campaignsdash', {'slug': "monthly"}) }}" class="btn btn-danger btn-md">Month</a>
+            <a href="{{ path('campaignsdash', {'slug': "yearly"}) }}" class="btn btn-danger btn-md">Year</a>
+        </div>
+    </div>
+
+    <!-- top tiles -->
+    <div class="row tile_count" style="text-align: center">
+        <div class="">
+            <div class="row top_tiles" style="margin: 0 0;">
+                <div class="col-md-3 col-sm-3 col-xs-6 tile">
+                    <span>Batches Sent</span>
+                    <h2>{{ batchesperiod|number_format(0, '.', ',') }}</h2>
+                    <span class="sparkline_one" style="height: 160px;">
+                        <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
+                    </span>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 tile">
+                    <span>Campaigns Sent</span>
+                    <h2>{{ campaignsperiod|number_format(0, '.', ',') }}</h2>
+                    <span class="sparkline_two" style="height: 160px;">
+                        <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
+                    </span>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-6 tile">
+                    <span>Emails Sent</span>
+                    <h2>{{ emailsperiod|number_format(0, '.', ',') }}</h2>
+                    <span class="sparkline_three" style="height: 160px;">
+                        <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
+                    </span>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 tile">
+                    <span>Bounces</span>
+                    <h2>{{ bouncesperiod|number_format(0, '.', ',')}}</h2>
+                    <span class="sparkline_six" style="height: 160px;">
+                        <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
+                    </span>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 tile">
+                    <span>Complaints</span>
+                    <h2>{{ complaintsperiod|number_format(0, '.', ',') }}</h2>
+                    <span class="sparkline_nine" style="height: 160px;">
+                        <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
+                    </span>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 tile">
+                    <span>Opens</span>
+                    <h2>{{ opensperiod|number_format(0, '.', ',') }}</h2>
+                    <span class="sparkline_four" style="height: 160px;">
+                        <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
+                    </span>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 tile">
+                    <span>Clicks</span>
+                    <h2>{{ clicksperiod|number_format(0, '.', ',') }}</h2>
+                    <span class="sparkline_five" style="height: 160px;">
+                        <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
+                    </span>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 tile">
+                    <span>Spent</span>
+                    <h2>$ {{ spendperiod|number_format(1, '.', ',') }}</h2>
+                    <span class="sparkline_seven" style="height: 160px;">
+                        <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
+                    </span>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 tile">
+                    <span>Revenue</span>
+                    <h2>$ {{ revenueperiod|number_format(1, '.', ',') }}</h2>
+                    <span class="sparkline_eight" style="height: 160px;">
+                        <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
+                    </span>
+                </div>
+            </div>
+            <br />
+        </div>
+    </div>
+    <!-- table with expandable batch details -->
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>Batch Details</h2>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>Date Created</th>
+                                <th>Campaigns</th>
+                                <th>Emails</th>
+                                <th>Bounces</th>
+                                <th>Soft Bounces</th>
+                                <th>Complaints</th>
+                                <th>Opens</th>
+                                <th>Clicks</th>
+                                <th>Spend</th>
+                                <th>Revenue</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for tablerow in tabledata %}
+                                <tr>
+                                    <td>{{ tablerow.DateCreated|date('Y-m-d H:i:s') }}</td>
+                                    <td>{{ tablerow.CountCampaigns }}</td>
+                                    <td>{{ tablerow.CountEmails }}</td>
+                                    <td>{{ tablerow.CountBounces }}</td>
+                                    <td>{{ tablerow.CountBouncesS }}</td>
+                                    <td>{{ tablerow.CountComplaints }}</td>
+                                    <td>{{ tablerow.CountOpens }}</td>
+                                    <td>{{ tablerow.CountClicks }}</td>
+                                    <td>{{ tablerow.CountEmails * '0.0001'}}</td>
+                                    <td>{{ tablerow.Revenue }}</td>
+                                </tr>
+                            {%  endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- table with expandable batch details -->
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>CPC Campaign Details</h2>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block custjs %}
+    <!-- Datatables -->
+    <script src="{{ asset('resources/vendors/DataTables/media/js/jquery.dataTables.min.js')}}"></script>
+    <script src="{{ asset('resources/vendors/DataTables/media/js/dataTables.bootstrap.min.js')}}"></script>
+    <script src="{{ asset('resources/vendors/DataTables/extensions/Buttons/js/dataTables.buttons.min.js')}}"></script>
+    <script src="{{ asset('resources/vendors/DataTables/extensions/Buttons/js/buttons.bootstrap.min.js')}}"></script>
+    <script src="{{ asset('resources/vendors/DataTables/extensions/Buttons/js/buttons.flash.min.js')}}"></script>
+    <script src="{{ asset('resources/vendors/DataTables/extensions/Buttons/js/buttons.html5.min.js')}}"></script>
+    <script src="{{ asset('resources/vendors/DataTables/extensions/Buttons/js/buttons.print.min.js')}}"></script>
+    <script src="{{ asset('resources/vendors/DataTables/extensions/FixedHeader/js/dataTables.fixedHeader.min.js')}}"></script>
+    <script src="{{ asset('resources/vendors/DataTables/extensions/KeyTable/js/dataTables.keyTable.min.js')}}"></script>
+    <script src="{{ asset('resources/vendors/DataTables/extensions/Responsive/js/dataTables.responsive.min.js')}}"></script>
+    <script src="{{ asset('resources/vendors/DataTables/extensions/Responsive/js/responsive.bootstrap.min.js')}}"></script>
+    <script src="{{ asset('resources/vendors/DataTables/extensions/Scroller/js/dataTables.scroller.min.js')}}"></script>
+    <!-- jQuery Sparklines -->
+    <script src="{{ asset('resources/vendors/jquery-sparkline/dist/jquery.sparkline.min.js')}}"></script>
+    <!-- ECharts -->
+    <script src="{{ asset('resources/vendors/echartsn/echarts.min.js')}}"></script>
+    <!-- Datatables -->
+    <script>
+        $(document).ready(function() {
+            var handleDataTableButtons = function() {
+                if ($("#datatable-buttons").length) {
+                    $("#datatable-buttons").DataTable({
+                        dom: "Bfrtip",
+                        buttons: [
+                            {
+                                extend: "copy",
+                                className: "btn-sm"
+                            },
+                            {
+                                extend: "csv",
+                                className: "btn-sm"
+                            },
+                            {
+                                extend: "excel",
+                                className: "btn-sm"
+                            },
+                            {
+                                extend: "pdfHtml5",
+                                className: "btn-sm"
+                            },
+                            {
+                                extend: "print",
+                                className: "btn-sm"
+                            }
+                        ],
+                        responsive: true
+                    });
+                }
+            };
+
+            TableManageButtons = function() {
+                "use strict";
+                return {
+                    init: function() {
+                        handleDataTableButtons();
+                    }
+                };
+            }();
+
+            $('#datatable').dataTable();
+
+            $('#datatable-keytable').DataTable({
+                keys: true
+            });
+
+            $('#datatable-responsive').DataTable();
+
+            $('#datatable-scroller').DataTable({
+                ajax: "js/datatables/json/scroller-demo.json",
+                deferRender: true,
+                scrollY: 380,
+                scrollCollapse: true,
+                scroller: true
+            });
+
+            $('#datatable-fixed-header').DataTable({
+                fixedHeader: true
+            });
+
+            var $datatable = $('#datatable-checkbox');
+
+            $datatable.dataTable({
+                'order': [[ 1, 'acs' ]],
+                'columnDefs': [
+                    { orderable: false, targets: [0] }
+                ]
+            });
+            $datatable.on('draw.dt', function() {
+                $('input').iCheck({
+                    checkboxClass: 'icheckbox_flat-green'
+                });
+            });
+
+            TableManageButtons.init();
+        });
+    </script>
+    <!-- jQuery Sparklines -->
+    <script>
+        $(document).ready(function() {
+            $(".sparkline_one").sparkline(
+                [
+                    {% for btc in prevbatches|reverse %}
+                        {% if loop.last == false %}
+                            {{ btc.batchesperiod ~ ',' }}
+                        {% else %}
+                            {{ btc.batchesperiod }}
+                        {% endif %}
+                    {%  endfor %}
+                ], {
+                type: 'bar',
+                height: '40',
+                barWidth: 9,
+                colorMap: {
+                    '7': '#a1a1a1'
+                },
+                barSpacing: 2,
+                barColor: '#26B99A'
+            });
+
+            $(".sparkline_two").sparkline(
+                [
+                    {% for btc in prevcampaigns|reverse %}
+                        {% if loop.last == false %}
+                            {{ btc.campaignsperiod ~ ',' }}
+                        {% else %}
+                            {{ btc.campaignsperiod }}
+                        {% endif %}
+                    {%  endfor %}
+                ], {
+                type: 'bar',
+                height: '40',
+                barWidth: 9,
+                colorMap: {
+                    '7': '#a1a1a1'
+                },
+                barSpacing: 2,
+                barColor: '#9a26b9'
+            });
+
+            $(".sparkline_three").sparkline(
+                [
+                    {% for btc in prevemailssent|reverse %}
+                        {% if loop.last == false %}
+                            {{ btc.emailssentperiod ~ ',' }}
+                        {% else %}
+                            {{ btc.emailssentperiod }}
+                        {% endif %}
+                    {%  endfor %}
+                ], {
+                type: 'bar',
+                height: '40',
+                barWidth: 9,
+                colorMap: {
+                    '7': '#a1a1a1'
+                },
+                barSpacing: 2,
+                barColor: '#FFA500'
+            });
+
+            $(".sparkline_four").sparkline(
+                [
+                    {% for btc in prevopens|reverse %}
+                        {% if loop.last == false %}
+                            {{ btc.opensperiod ~ ',' }}
+                        {% else %}
+                            {{ btc.opensperiod }}
+                        {% endif %}
+                    {%  endfor %}
+                ], {
+                type: 'line',
+                width: '200',
+                height: '40',
+                lineColor: '#b92645',
+                fillColor: 'rgba(223, 223, 223, 0.57)',
+                lineWidth: 2,
+                spotColor: '#26B99A',
+                minSpotColor: '#26B99A'
+            });
+
+            $(".sparkline_five").sparkline(
+                [
+                    {% for btc in prevclicks|reverse %}
+                        {% if loop.last == false %}
+                            {{ btc.clicksperiod ~ ',' }}
+                        {% else %}
+                            {{ btc.clicksperiod }}
+                        {% endif %}
+                    {%  endfor %}
+                ], {
+                type: 'line',
+                width: '200',
+                height: '40',
+                lineColor: '#26B99A',
+                fillColor: 'rgba(223, 223, 223, 0.57)',
+                lineWidth: 2,
+                spotColor: '#26B99A',
+                minSpotColor: '#26B99A'
+            });
+
+            $(".sparkline_six").sparkline(
+                [
+                    {% for btc in prevbounces|reverse %}
+                        {% if loop.last == false %}
+                            {{ btc.bouncesperiod ~ ',' }}
+                        {% else %}
+                            {{ btc.bouncesperiod }}
+                        {% endif %}
+                    {%  endfor %}
+                ], {
+                type: 'line',
+                width: '200',
+                height: '40',
+                lineColor: '#FFA500',
+                fillColor: 'rgba(223, 223, 223, 0.57)',
+                lineWidth: 2,
+                spotColor: '#26B99A',
+                minSpotColor: '#26B99A'
+            });
+
+            $(".sparkline_seven").sparkline(
+                [
+                    {% for btc in prevspend|reverse %}
+                        {% if loop.last == false %}
+                            {{ btc.spendperiod ~ ',' }}
+                        {% else %}
+                            {{ btc.spendperiod }}
+                        {% endif %}
+                    {%  endfor %}
+                ], {
+                type: 'line',
+                width: '200',
+                height: '40',
+                lineColor: '#26B99A',
+                fillColor: 'rgba(223, 223, 223, 0.57)',
+                lineWidth: 2,
+                spotColor: '#26B99A',
+                minSpotColor: '#26B99A'
+            });
+
+            $(".sparkline_eight").sparkline([2, 4, 3, 4, 5, 4, 5, 4, 3, 4, 5, 6, 7, 5, 4, 3, 5, 6], {
+                type: 'line',
+                width: '200',
+                height: '40',
+                lineColor: '#FFA500',
+                fillColor: 'rgba(223, 223, 223, 0.57)',
+                lineWidth: 2,
+                spotColor: '#26B99A',
+                minSpotColor: '#26B99A'
+            });
+            $(".sparkline_nine").sparkline(
+                [
+                    {% for btc in prevcomplaints|reverse %}
+                        {% if loop.last == false %}
+                            {{ btc.complaintsperiod ~ ',' }}
+                        {% else %}
+                            {{ btc.complaintsperiod }}
+                        {% endif %}
+                    {%  endfor %}
+                ], {
+                type: 'line',
+                width: '200',
+                height: '40',
+                lineColor: '#b92645',
+                fillColor: 'rgba(223, 223, 223, 0.57)',
+                lineWidth: 2,
+                spotColor: '#26B99A',
+                minSpotColor: '#26B99A'
+            });
+        });
+    </script>
+    <!-- /jQuery Sparklines -->
+    <script>
+        //this will be actioned during document loading
+        if ($(window).width() >= 992){
+            $(".col-sm-3").css("width", "16.5%");
+        }
+        $(".col-sm-3").css("padding-bottom", "15px");
+        //these will only be action after document has loaded
+        $( document ).ready(function() {
+            $("#datatable-responsive").closest(".col-sm-12").css("width", "100%");
+            if ($(window).width() <= 410){
+                $("#datatable-responsive_paginate").closest(".col-sm-7").css("width", "100%");
+                $("#datatable-responsive_paginate").css("float", "none");
+            }
+        });
+
+    </script>
+{% endblock %}

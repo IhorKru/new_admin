@@ -1,0 +1,15 @@
+.fieldsep {
+    margin-bottom: 0px;
+}
+.col-xs-9-ex {
+    width: 100%;
+}
+
+@media (min-width: 1025px) {
+    .col-md-6 {
+        width: 30%;
+    }
+    .tabledt {
+        width: 70%;
+    }
+}

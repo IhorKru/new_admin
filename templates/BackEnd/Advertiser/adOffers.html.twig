@@ -1,0 +1,92 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Mediaff | Advertiser Offers{% endblock %}
+
+{% block custcss %}
+    <!--page specific css -->
+    <link href="{{ asset('resources/build/css/emailcampcustome.css') }}" rel="stylesheet">
+    <!--page specific table css -->
+    <link href="{{ asset('resources/vendors/DataTables/media/css/dataTables.bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('resources/vendors/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('resources/vendors/DataTables/extensions/Buttons/css/buttons.bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('resources/vendors/DataTables/extensions/FixedHeader/css/fixedHeader.bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('resources/vendors/DataTables/extensions/Scroller/css/scroller.bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('resources/vendors/DataTables/extensions/Editor/css/editor.dataTables.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    <div class="">
+        <div class="row">
+            <div class="col-md-8 col-sm-12 col-xs-12" style="width:100%">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Existing Advertisers</h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <table id="myTable" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+                            <thead>
+                            <tr>
+                                <th>Offer Website</th>
+                                <th>Offer Name</th>
+                                <th>Offer URL</th>
+                                <th>Geo</th>
+                                <th>Partner</th>
+                                <th>Status</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for tablerow in tabledata %}
+                                <tr>
+                                    <td class="siteloader" style="width:15%">{{ tablerow.OfferURL }}</td>
+                                    <td style="">{{ tablerow.OfferName }}</td>
+                                    <td>{{ tablerow.OfferURL }}</td>
+                                    <td>{{ tablerow.OfferGeo }}</td>
+                                    <td>{{ tablerow.OfferPartner }}</td>
+                                    <td>{{ tablerow.OfferStatus }}</td>
+                                </tr>
+                            {%  endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--<div id="siteloader"></div>​-->
+
+{% endblock %}
+
+{% block custjs %}
+
+    <!-- Datatables -->
+    <script src="{{ asset('resources/vendors/DataTables/media/js/jquery.dataTables.min.js')}}"></script>
+    <script src="{{ asset('resources/vendors/DataTables/media/js/dataTables.bootstrap.min.js')}}"></script>
+    <script src="{{ asset('resources/vendors/DataTables/extensions/Buttons/js/dataTables.buttons.min.js')}}"></script>
+    <script src="{{ asset('resources/vendors/DataTables/extensions/Buttons/js/buttons.bootstrap.min.js')}}"></script>
+    <script src="{{ asset('resources/vendors/DataTables/extensions/Buttons/js/buttons.flash.min.js')}}"></script>
+    <script src="{{ asset('resources/vendors/DataTables/extensions/Buttons/js/buttons.html5.min.js')}}"></script>
+    <script src="{{ asset('resources/vendors/DataTables/extensions/Buttons/js/buttons.print.min.js')}}"></script>
+    <script src="{{ asset('resources/vendors/DataTables/extensions/FixedHeader/js/dataTables.fixedHeader.min.js')}}"></script>
+    <script src="{{ asset('resources/vendors/DataTables/extensions/KeyTable/js/dataTables.keyTable.min.js')}}"></script>
+    <script src="{{ asset('resources/vendors/DataTables/extensions/Responsive/js/dataTables.responsive.min.js')}}"></script>
+    <script src="{{ asset('resources/vendors/DataTables/extensions/Responsive/js/responsive.bootstrap.min.js')}}"></script>
+    <script src="{{ asset('resources/vendors/DataTables/extensions/Scroller/js/dataTables.scroller.min.js')}}"></script>
+    <script src="{{ asset('resources/vendors/DataTables/extensions/Editor/js/dataTables.editor.js')}}"></script>
+    <script>
+        $(document).ready(function() {
+            //loading website in the frame
+            $(".siteloader").each(function(index, element){
+                var url = $(element).html();
+                $(element).html("<object data= '" + url + "'>");
+            });
+
+            var myTable = $('#myTable').DataTable({
+                pagingType: "full_numbers"
+            })
+        });
+    </script>
+{% endblock %}

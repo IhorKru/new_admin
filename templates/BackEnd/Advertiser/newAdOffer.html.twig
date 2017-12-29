@@ -1,0 +1,109 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Mediaff | Advertiser Offer Registration{% endblock %}
+
+{% block custcss %}
+    <!--page specific css -->
+    <link href="{{ asset('resources/build/css/emailcampcustome.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    <div class="">
+        <div class="row">
+            <!-- form input mask -->
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Create New Offer</h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <br/>
+                        {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+                        <div class="form-horizontal form-label-left">
+                            <div class="form-group">
+                                <div class="col-md-9 col-sm-9 col-xs-9 col-xs-9-ex">
+                                    <div class='input-group fieldsep'>
+                                             <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-picture"></span>
+                                             </span>
+                                        {{ form_widget(form.offer_name) }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-9 col-sm-9 col-xs-9 col-xs-9-ex">
+                                    <div class='input-group fieldsep'>
+                                             <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-list-alt"></span>
+                                             </span>
+                                        {{ form_widget(form.partner) }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-9 col-sm-9 col-xs-9 col-xs-9-ex">
+                                    <div class='input-group fieldsep'>
+                                             <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-link"></span>
+                                             </span>
+                                        {{ form_widget(form.url) }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-9 col-sm-9 col-xs-9 col-xs-9-ex">
+                                    <div class='input-group fieldsep'>
+                                             <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-globe"></span>
+                                             </span>
+                                        {{ form_widget(form.geo) }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-9 col-sm-9 col-xs-9 col-xs-9-ex">
+                                    <div class='input-group fieldsep'>
+                                             <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-pause"></span>
+                                             </span>
+                                        {{ form_widget(form.offer_status) }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-9 col-sm-9 col-xs-9 col-xs-9-ex">
+                                    <div class='input-group fieldsep'>
+                                             <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-comment"></span>
+                                             </span>
+                                        {{ form_widget(form.offer_desc) }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ln_solid"></div>
+                            <div class="form-group">
+                                <div class="col-md-9 col-sm-9 col-xs-9 col-xs-9-ex">
+                                    {{ form_widget(form.submit) }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-9 col-sm-9 col-xs-9 col-xs-9-ex">
+                                    {{ form_widget(form.clear) }}
+                                </div>
+                            </div>
+                        </div>
+                        {{ form_end(form) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block custjs %}
+
+{% endblock %}

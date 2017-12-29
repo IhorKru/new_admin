@@ -1,0 +1,1908 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a177ce9a-9987-4c52-86fd-079b7209ce58" name="Default" comment="added translations">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.ebextensions/environmentsetup.config" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.ebextensions/setup.config" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.env.dist" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/admin.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/a1080c6d-9816-4ce8-9f77-64881f30abfc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/my_project.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bin/console" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/composer.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/bundles.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/packages/dev/monolog.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/packages/dev/routing.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/packages/dev/swiftmailer.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/packages/prod/doctrine.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/packages/prod/monolog.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/packages/routing.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/packages/security.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/packages/swiftmailer.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/packages/test/framework.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/packages/test/swiftmailer.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/packages/test/web_profiler.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/packages/translation.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/routes.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/routes/annotations.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/routes/dev/twig.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/routes/dev/web_profiler.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/services.yaml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/favicon.ico" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/index.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/build/css/custom.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/build/css/custom.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/build/css/emailcampcustome.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/build/js/custom.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/build/js/custom.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/build/js/publisher.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/images/img.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/images/user.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/jquery-3.2.1.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/js/datepicker/daterangepicker.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/js/moment/moment.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/.codeclimate.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/.editorconfig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/.eslintignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/.eslintrc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/.github/ISSUE_TEMPLATE.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/.github/PULL_REQUEST_TEMPLATE.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/.npmignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/.travis.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/CONTRIBUTING.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/LICENSE.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/MAINTAINING.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/composer.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/config.jshintrc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/docs/00-Getting-Started.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/docs/01-Chart-Configuration.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/docs/02-Scales.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/docs/03-Line-Chart.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/docs/04-Bar-Chart.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/docs/05-Radar-Chart.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/docs/06-Polar-Area-Chart.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/docs/07-Pie-Doughnut-Chart.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/docs/08-Bubble-Chart.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/docs/09-Advanced.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/docs/10-Notes.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/gulpfile.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/karma.conf.ci.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/karma.conf.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/karma.coverage.conf.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/package-lock.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/animation/progress-bar.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/bar/bar-horizontal.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/bar/bar-multi-axis.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/bar/bar-stacked-group.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/bar/bar-stacked.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/bar/bar.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/bubble.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/combo-bar-line.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/data_labelling.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/doughnut.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/legend/pointstyle.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/legend/positions.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/line/different-point-sizes.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/line/interpolation-modes.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/line/line-multi-axis.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/line/line-skip-points.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/line/line-stacked-area.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/line/line-stepped.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/line/line-styles.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/line/line.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/line/point-styles.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/pie.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/polar-area.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/radar/radar-skip-points.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/radar/radar.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/scales/display-settings.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/scales/filtering-labels.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/scales/gridlines.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/scales/line-non-numeric-y.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/scales/linear/min-max-settings.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/scales/linear/step-size.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/scales/linear/suggested-min-max-settings.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/scales/logarithmic/line-logarithmic.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/scales/logarithmic/scatter-logX.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/scales/multiline-labels.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/scales/time/combo-time-scale.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/scales/time/line-time-point-data.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/scales/time/line-time-scale.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/scatter/scatter-multi-axis.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/scatter/scatter.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/tooltips/dataPoints-customTooltips.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/tooltips/interaction-modes.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/tooltips/line-customTooltips.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/tooltips/pie-customTooltips.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/tooltips/position-modes.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/tooltips/tooltip-callbacks.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/samples/utils.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/scripts/release.sh" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/chart.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/charts/Chart.Bar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/charts/Chart.Bubble.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/charts/Chart.Doughnut.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/charts/Chart.Line.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/charts/Chart.PolarArea.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/charts/Chart.Radar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/charts/Chart.Scatter.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/controllers/controller.bar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/controllers/controller.bubble.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/controllers/controller.doughnut.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/controllers/controller.line.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/controllers/controller.polarArea.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/controllers/controller.radar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/core/core.animation.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/core/core.canvasHelpers.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/core/core.controller.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/core/core.datasetController.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/core/core.element.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/core/core.helpers.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/core/core.interaction.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/core/core.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/core/core.layoutService.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/core/core.legend.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/core/core.plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/core/core.scale.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/core/core.scaleService.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/core/core.ticks.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/core/core.title.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/core/core.tooltip.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/elements/element.arc.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/elements/element.line.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/elements/element.point.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/elements/element.rectangle.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/platforms/platform.dom.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/scales/scale.category.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/scales/scale.linear.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/scales/scale.linearbase.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/scales/scale.logarithmic.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/scales/scale.radialLinear.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/src/scales/scale.time.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/controller.bar.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/controller.bubble.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/controller.doughnut.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/controller.line.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/controller.polarArea.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/controller.radar.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/core.controller.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/core.datasetController.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/core.element.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/core.helpers.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/core.interaction.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/core.layoutService.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/core.legend.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/core.plugin.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/core.scaleService.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/core.title.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/core.tooltip.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/defaultConfig.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/element.arc.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/element.line.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/element.point.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/element.rectangle.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/mockContext.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/platform.dom.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/scale.category.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/scale.linear.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/scale.logarithmic.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/scale.radialLinear.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/test/scale.time.tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/Chart.js-master/thankyou.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/Contributing.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/ISSUE_TEMPLATE.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/Readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/License.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/Readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/css/autoFill.bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/css/autoFill.bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/css/autoFill.bootstrap4.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/css/autoFill.bootstrap4.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/css/autoFill.dataTables.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/css/autoFill.dataTables.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/css/autoFill.foundation.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/css/autoFill.foundation.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/css/autoFill.jqueryui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/css/autoFill.jqueryui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/css/autoFill.semanticui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/css/autoFill.semanticui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/examples/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/examples/initialisation/alwaysAsk.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/examples/initialisation/columns.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/examples/initialisation/events.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/examples/initialisation/fills.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/examples/initialisation/focus.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/examples/initialisation/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/examples/initialisation/keyTable.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/examples/initialisation/plugins.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/examples/initialisation/scrolling.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/examples/initialisation/simple.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/examples/styling/bootstrap.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/examples/styling/bootstrap4.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/examples/styling/foundation.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/examples/styling/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/examples/styling/jqueryui.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/examples/styling/semanticui.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/js/autoFill.bootstrap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/js/autoFill.bootstrap.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/js/autoFill.bootstrap4.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/js/autoFill.bootstrap4.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/js/autoFill.foundation.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/js/autoFill.foundation.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/js/autoFill.jqueryui.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/js/autoFill.jqueryui.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/js/autoFill.semanticui.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/js/autoFill.semanticui.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/js/dataTables.autoFill.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/AutoFill/js/dataTables.autoFill.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/License.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/Readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/css/buttons.bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/css/buttons.bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/css/buttons.bootstrap4.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/css/buttons.bootstrap4.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/css/buttons.dataTables.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/css/buttons.dataTables.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/css/buttons.foundation.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/css/buttons.foundation.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/css/buttons.jqueryui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/css/buttons.jqueryui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/css/buttons.semanticui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/css/buttons.semanticui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/css/common.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/css/mixins.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/api/addRemove.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/api/enable.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/api/group.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/api/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/api/text.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/column_visibility/columnGroups.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/column_visibility/columns.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/column_visibility/columnsToggle.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/column_visibility/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/column_visibility/layout.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/column_visibility/restore.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/column_visibility/simple.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/column_visibility/stateSave.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/column_visibility/text.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/flash/copyi18n.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/flash/filename.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/flash/hidden.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/flash/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/flash/pdfMessage.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/flash/pdfPage.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/flash/simple.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/flash/swfPath.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/flash/tsv.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/html5/columns.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/html5/copyi18n.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/html5/customFile.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/html5/excelBorder.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/html5/excelCellShading.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/html5/excelTextBold.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/html5/filename.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/html5/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/html5/outputFormat-function.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/html5/outputFormat-orthogonal.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/html5/pdfImage.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/html5/pdfMessage.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/html5/pdfOpen.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/html5/pdfPage.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/html5/simple.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/html5/tsv.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/initialisation/className.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/initialisation/collections-autoClose.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/initialisation/collections-sub.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/initialisation/collections.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/initialisation/custom.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/initialisation/export.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/initialisation/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/initialisation/keys.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/initialisation/multiple.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/initialisation/new.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/initialisation/pageLength.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/initialisation/plugins.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/initialisation/simple.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/print/autoPrint.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/print/columns.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/print/customisation.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/print/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/print/message.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/print/select.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/print/simple.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/styling/bootstrap.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/styling/bootstrap4.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/styling/foundation.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/styling/icons.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/styling/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/styling/jqueryui.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/examples/styling/semanticui.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/js/buttons.bootstrap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/js/buttons.bootstrap.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/js/buttons.bootstrap4.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/js/buttons.bootstrap4.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/js/buttons.colVis.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/js/buttons.colVis.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/js/buttons.flash.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/js/buttons.flash.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/js/buttons.foundation.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/js/buttons.foundation.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/js/buttons.html5.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/js/buttons.html5.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/js/buttons.jqueryui.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/js/buttons.jqueryui.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/js/buttons.print.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/js/buttons.print.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/js/buttons.semanticui.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/js/buttons.semanticui.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/js/dataTables.buttons.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/js/dataTables.buttons.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Buttons/swf/flashExport.swf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/License.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/Readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/css/colReorder.bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/css/colReorder.bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/css/colReorder.bootstrap4.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/css/colReorder.bootstrap4.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/css/colReorder.dataTables.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/css/colReorder.dataTables.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/css/colReorder.foundation.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/css/colReorder.foundation.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/css/colReorder.jqueryui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/css/colReorder.jqueryui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/css/colReorder.semanticui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/css/colReorder.semanticui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/examples/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/examples/initialisation/col_filter.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/examples/initialisation/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/examples/initialisation/new_init.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/examples/initialisation/predefined.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/examples/initialisation/realtime.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/examples/initialisation/reset.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/examples/initialisation/scrolling.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/examples/initialisation/simple.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/examples/integration/colvis.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/examples/integration/fixedcolumns.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/examples/integration/fixedheader.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/examples/integration/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/examples/integration/responsive.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/examples/integration/server_side.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/examples/integration/state_save.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/examples/styling/alt_insert.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/examples/styling/bootstrap.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/examples/styling/bootstrap4.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/examples/styling/foundation.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/examples/styling/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/examples/styling/jqueryui.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/examples/styling/semanticui.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/js/dataTables.colReorder.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/ColReorder/js/dataTables.colReorder.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/dataTables.editor.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/editor.bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/editor.bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/editor.bootstrap4.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/editor.bootstrap4.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/editor.dataTables.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/editor.dataTables.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/editor.foundation.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/editor.foundation.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/editor.jqueryui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/editor.jqueryui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/editor.semanticui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/editor.semanticui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/scss/bubble.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/scss/datatable.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/scss/datetime.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/scss/envelope.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/scss/fields.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/scss/inline.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/scss/lightbox.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/scss/main.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/scss/mixins.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/scss/processing.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/css/scss/upload.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/js/dataTables.editor.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/js/dataTables.editor.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/js/editor.bootstrap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/js/editor.bootstrap.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/js/editor.bootstrap4.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/js/editor.bootstrap4.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/js/editor.foundation.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/js/editor.foundation.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/js/editor.jqueryui.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/js/editor.jqueryui.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/js/editor.semanticui.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Editor/js/editor.semanticui.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/License.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/Readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/css/fixedColumns.bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/css/fixedColumns.bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/css/fixedColumns.bootstrap4.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/css/fixedColumns.bootstrap4.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/css/fixedColumns.dataTables.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/css/fixedColumns.dataTables.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/css/fixedColumns.foundation.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/css/fixedColumns.foundation.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/css/fixedColumns.jqueryui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/css/fixedColumns.jqueryui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/css/fixedColumns.semanticui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/css/fixedColumns.semanticui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/initialisation/colvis.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/initialisation/css_size.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/initialisation/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/initialisation/index_column.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/initialisation/left_right_columns.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/initialisation/right_column.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/initialisation/server-side-processing.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/initialisation/simple.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/initialisation/size_fixed.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/initialisation/size_fluid.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/initialisation/two_columns.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/integration/api.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/integration/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/integration/select-checkbox.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/integration/select.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/styling/bootstrap.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/styling/bootstrap4.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/styling/col_filter.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/styling/colvis.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/styling/foundation.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/styling/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/styling/jqueryui.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/styling/rowspan.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/styling/rtl.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/styling/semanticui.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/examples/styling/server-side-processing.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/js/dataTables.fixedColumns.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedColumns/js/dataTables.fixedColumns.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/License.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/Readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/css/fixedHeader.bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/css/fixedHeader.bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/css/fixedHeader.bootstrap4.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/css/fixedHeader.bootstrap4.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/css/fixedHeader.dataTables.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/css/fixedHeader.dataTables.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/css/fixedHeader.foundation.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/css/fixedHeader.foundation.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/css/fixedHeader.jqueryui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/css/fixedHeader.jqueryui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/css/fixedHeader.semanticui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/css/fixedHeader.semanticui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/examples/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/examples/integration/buttons.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/examples/integration/colreorder.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/examples/integration/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/examples/integration/responsive-bootstrap.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/examples/integration/responsive.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/examples/options/enable-disable.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/examples/options/header_footer.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/examples/options/horizontal-scroll.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/examples/options/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/examples/options/new.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/examples/options/offset-automatic.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/examples/options/offset.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/examples/options/show-hide.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/examples/options/simple.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/examples/options/two_tables.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/examples/styling/bootstrap.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/examples/styling/bootstrap4.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/examples/styling/foundation.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/examples/styling/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/examples/styling/jqueryui.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/examples/styling/semanticui.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/js/dataTables.fixedHeader.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/FixedHeader/js/dataTables.fixedHeader.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/License.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/Readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/css/keyTable.bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/css/keyTable.bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/css/keyTable.bootstrap4.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/css/keyTable.bootstrap4.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/css/keyTable.dataTables.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/css/keyTable.dataTables.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/css/keyTable.foundation.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/css/keyTable.foundation.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/css/keyTable.jqueryui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/css/keyTable.jqueryui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/css/keyTable.semanticui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/css/keyTable.semanticui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/examples/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/examples/initialisation/blurable.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/examples/initialisation/events.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/examples/initialisation/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/examples/initialisation/scroller.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/examples/initialisation/scrolling.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/examples/initialisation/server-side.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/examples/initialisation/simple.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/examples/initialisation/stateSave.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/examples/styling/bootstrap.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/examples/styling/bootstrap4.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/examples/styling/focusStyle.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/examples/styling/foundation.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/examples/styling/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/examples/styling/jqueryui.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/examples/styling/semanticui.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/js/dataTables.keyTable.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/KeyTable/js/dataTables.keyTable.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/License.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/Readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/css/responsive.bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/css/responsive.bootstrap4.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/css/responsive.bootstrap4.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/css/responsive.dataTables.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/css/responsive.dataTables.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/css/responsive.foundation.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/css/responsive.foundation.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/css/responsive.jqueryui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/css/responsive.jqueryui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/css/responsive.semanticui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/css/responsive.semanticui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/child-rows/column-control.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/child-rows/custom-renderer.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/child-rows/disable-child-rows.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/child-rows/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/child-rows/right-column.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/child-rows/whole-row-control.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/column-control/auto.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/column-control/classes.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/column-control/colreorder.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/column-control/column-visibility.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/column-control/columnPriority.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/column-control/fixedHeader.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/column-control/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/column-control/init-classes.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/display-types/bootstrap-modal.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/display-types/bootstrap4-modal.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/display-types/foundation-modal.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/display-types/immediateShow.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/display-types/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/display-types/jqueryui-modal.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/display-types/modal.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/display-types/semanticui-modal.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/initialisation/ajax.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/initialisation/className.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/initialisation/default.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/initialisation/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/initialisation/new.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/initialisation/option.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/styling/bootstrap.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/styling/bootstrap4.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/styling/compact.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/styling/foundation.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/styling/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/styling/jqueryui.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/styling/scrolling.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/examples/styling/semanticui.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/js/dataTables.responsive.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/js/dataTables.responsive.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/js/responsive.bootstrap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/js/responsive.bootstrap.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/js/responsive.bootstrap4.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/js/responsive.bootstrap4.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/js/responsive.foundation.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/js/responsive.foundation.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/js/responsive.jqueryui.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/js/responsive.jqueryui.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/js/responsive.semanticui.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Responsive/js/responsive.semanticui.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/License.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/Readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/css/rowReorder.bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/css/rowReorder.bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/css/rowReorder.bootstrap4.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/css/rowReorder.bootstrap4.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/css/rowReorder.dataTables.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/css/rowReorder.dataTables.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/css/rowReorder.foundation.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/css/rowReorder.foundation.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/css/rowReorder.jqueryui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/css/rowReorder.jqueryui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/css/rowReorder.semanticui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/css/rowReorder.semanticui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/css/semanticui.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/examples/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/examples/initialisation/defaults.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/examples/initialisation/events.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/examples/initialisation/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/examples/initialisation/responsive.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/examples/initialisation/restrictedOrdering.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/examples/initialisation/scroll.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/examples/initialisation/selector.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/examples/initialisation/simple.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/examples/styling/bootstrap.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/examples/styling/bootstrap4.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/examples/styling/foundation.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/examples/styling/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/examples/styling/jqueryui.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/examples/styling/reorderClass.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/examples/styling/semanticui.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/examples/styling/snapX.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/js/dataTables.rowReorder.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/RowReorder/js/dataTables.rowReorder.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/License.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/Readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/css/scroller.bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/css/scroller.bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/css/scroller.bootstrap4.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/css/scroller.bootstrap4.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/css/scroller.dataTables.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/css/scroller.dataTables.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/css/scroller.foundation.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/css/scroller.foundation.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/css/scroller.jqueryui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/css/scroller.jqueryui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/css/scroller.semanticui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/css/scroller.semanticui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/examples/data/2500.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/examples/data/ssp.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/examples/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/examples/initialisation/api_scrolling.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/examples/initialisation/fixedColumns.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/examples/initialisation/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/examples/initialisation/large_js_source.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/examples/initialisation/select.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/examples/initialisation/server-side_processing.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/examples/initialisation/simple.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/examples/initialisation/state_saving.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/examples/styling/bootstrap.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/examples/styling/bootstrap4.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/examples/styling/foundation.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/examples/styling/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/examples/styling/jqueryui.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/examples/styling/semanticui.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/js/dataTables.scroller.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Scroller/js/dataTables.scroller.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/License.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/Readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/css/select.bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/css/select.bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/css/select.bootstrap4.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/css/select.bootstrap4.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/css/select.dataTables.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/css/select.dataTables.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/css/select.foundation.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/css/select.foundation.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/css/select.jqueryui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/css/select.jqueryui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/css/select.semanticui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/css/select.semanticui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/examples/api/cancellableEvents.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/examples/api/events.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/examples/api/get.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/examples/api/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/examples/api/select.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/examples/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/examples/initialisation/blurable.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/examples/initialisation/buttons.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/examples/initialisation/cells.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/examples/initialisation/checkbox.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/examples/initialisation/deferRender.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/examples/initialisation/i18n.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/examples/initialisation/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/examples/initialisation/multi.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/examples/initialisation/reload.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/examples/initialisation/simple.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/examples/initialisation/single.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/examples/styling/bootstrap.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/examples/styling/bootstrap4.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/examples/styling/foundation.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/examples/styling/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/examples/styling/jqueryui.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/examples/styling/semanticui.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/js/dataTables.select.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/extensions/Select/js/dataTables.select.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/license.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/css/dataTables.bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/css/dataTables.bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/css/dataTables.bootstrap4.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/css/dataTables.bootstrap4.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/css/dataTables.foundation.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/css/dataTables.foundation.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/css/dataTables.jqueryui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/css/dataTables.jqueryui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/css/dataTables.material.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/css/dataTables.material.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/css/dataTables.semanticui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/css/dataTables.semanticui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/css/dataTables.uikit.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/css/dataTables.uikit.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/css/jquery.dataTables.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/css/jquery.dataTables.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/css/jquery.dataTables_themeroller.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/images/Sorting icons.psd" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/images/favicon.ico" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/images/sort_asc.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/images/sort_asc_disabled.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/images/sort_both.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/images/sort_desc.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/images/sort_desc_disabled.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/js/dataTables.bootstrap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/js/dataTables.bootstrap.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/js/dataTables.bootstrap4.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/js/dataTables.bootstrap4.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/js/dataTables.foundation.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/js/dataTables.foundation.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/js/dataTables.jqueryui.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/js/dataTables.jqueryui.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/js/dataTables.material.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/js/dataTables.material.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/js/dataTables.semanticui.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/js/dataTables.semanticui.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/js/dataTables.uikit.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/js/dataTables.uikit.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/js/jquery.dataTables.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/js/jquery.dataTables.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/DataTables/media/js/jquery.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/.editorconfig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/.travis.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/animate-config.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/animate.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/animate.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/bower.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/gulpfile.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/package-lock.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/_base.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/attention_seekers/bounce.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/attention_seekers/flash.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/attention_seekers/headShake.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/attention_seekers/jello.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/attention_seekers/pulse.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/attention_seekers/rubberBand.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/attention_seekers/shake.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/attention_seekers/swing.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/attention_seekers/tada.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/attention_seekers/wobble.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/bouncing_entrances/bounceIn.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/bouncing_entrances/bounceInDown.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/bouncing_entrances/bounceInLeft.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/bouncing_entrances/bounceInRight.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/bouncing_entrances/bounceInUp.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/bouncing_exits/bounceOut.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/bouncing_exits/bounceOutDown.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/bouncing_exits/bounceOutLeft.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/bouncing_exits/bounceOutRight.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/bouncing_exits/bounceOutUp.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/fading_entrances/fadeIn.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/fading_entrances/fadeInDown.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/fading_entrances/fadeInDownBig.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/fading_entrances/fadeInLeft.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/fading_entrances/fadeInLeftBig.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/fading_entrances/fadeInRight.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/fading_entrances/fadeInRightBig.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/fading_entrances/fadeInUp.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/fading_entrances/fadeInUpBig.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/fading_exits/fadeOut.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/fading_exits/fadeOutDown.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/fading_exits/fadeOutDownBig.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/fading_exits/fadeOutLeft.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/fading_exits/fadeOutLeftBig.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/fading_exits/fadeOutRight.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/fading_exits/fadeOutRightBig.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/fading_exits/fadeOutUp.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/fading_exits/fadeOutUpBig.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/flippers/flip.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/flippers/flipInX.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/flippers/flipInY.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/flippers/flipOutX.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/flippers/flipOutY.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/lightspeed/lightSpeedIn.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/lightspeed/lightSpeedOut.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/rotating_entrances/rotateIn.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/rotating_entrances/rotateInDownLeft.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/rotating_entrances/rotateInDownRight.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/rotating_entrances/rotateInUpLeft.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/rotating_entrances/rotateInUpRight.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/rotating_exits/rotateOut.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/rotating_exits/rotateOutDownLeft.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/rotating_exits/rotateOutDownRight.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/rotating_exits/rotateOutUpLeft.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/rotating_exits/rotateOutUpRight.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/sliding_entrances/slideInDown.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/sliding_entrances/slideInLeft.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/sliding_entrances/slideInRight.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/sliding_entrances/slideInUp.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/sliding_exits/slideOutDown.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/sliding_exits/slideOutLeft.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/sliding_exits/slideOutRight.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/sliding_exits/slideOutUp.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/specials/hinge.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/specials/rollIn.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/specials/rollOut.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/zooming_entrances/zoomIn.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/zooming_entrances/zoomInDown.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/zooming_entrances/zoomInLeft.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/zooming_entrances/zoomInRight.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/zooming_entrances/zoomInUp.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/zooming_exits/zoomOut.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/zooming_exits/zoomOutDown.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/zooming_exits/zoomOutLeft.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/zooming_exits/zoomOutRight.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/animate.css/source/zooming_exits/zoomOutUp.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/.gitattributes" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/.jshintrc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/.npmignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/.travis.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/Gruntfile.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/bower.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/build/build.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/build/build_standalone.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.az.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.bn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ee.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.el.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.hy.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.id.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.is.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ja.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ka.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.lt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.lv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ms.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.no.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.pt-BR.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ro.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.rs-latin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.rs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.sl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.sw.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.th.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ua.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.uk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-TW.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/less/datetimepicker.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/minify.sh" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/package-lock.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/samp_bs_v3/bootstrap/css/bootstrap-theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/samp_bs_v3/bootstrap/css/bootstrap-theme.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/samp_bs_v3/bootstrap/css/bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/samp_bs_v3/bootstrap/css/bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/samp_bs_v3/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/samp_bs_v3/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/samp_bs_v3/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/samp_bs_v3/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/samp_bs_v3/bootstrap/js/bootstrap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/samp_bs_v3/bootstrap/js/bootstrap.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/samp_bs_v3/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/samp_bs_v3/jquery/jquery-1.8.3.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/tests/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/tests/_coverage.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/tests/assets/coverage.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/tests/assets/jquery-1.7.1.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/tests/assets/mock.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/tests/assets/qunit-logging.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/tests/assets/qunit.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/tests/assets/qunit.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/tests/assets/utils.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/tests/run-qunit.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/tests/suites/component.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/tests/suites/events.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/tests/suites/formats.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/tests/suites/inline.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/tests/suites/keyboard_navigation/2011.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/tests/suites/keyboard_navigation/2012.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/tests/suites/keyboard_navigation/all.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/tests/suites/mouse_navigation/2011.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/tests/suites/mouse_navigation/2012.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/tests/suites/mouse_navigation/all.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/tests/suites/options.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/tests/tests.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap-datetimepicker/tests/tests.min.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap/css/bootstrap-theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap/css/bootstrap-theme.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap/css/bootstrap-theme.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap/css/bootstrap-theme.min.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap/css/bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap/css/bootstrap.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap/css/bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap/css/bootstrap.min.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap/js/bootstrap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap/js/bootstrap.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap/js/npm.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/bootstrap/version_3.3.7.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/.tagconfig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/.travis.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/AMD_footer" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/AMD_header" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/CONTRIBUTING.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/Gruntfile.coffee" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/bower.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/component.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/composer.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/dist/basic.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/dist/dropzone-amd-module.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/dist/dropzone.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/dist/dropzone.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/dist/min/basic.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/dist/min/dropzone-amd-module.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/dist/min/dropzone.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/dist/min/dropzone.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/dist/readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/package-lock.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/src/basic.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/src/dropzone.coffee" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/src/dropzone.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/test.sh" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/test/test.coffee" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/test/test.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/dropzone-4.3.0/test/test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/echartsn/echarts.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/HELP-US-OUT.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/css/font-awesome.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/css/font-awesome.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/fonts/FontAwesome.otf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/less/animated.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/less/bordered-pulled.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/less/core.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/less/fixed-width.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/less/font-awesome.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/less/icons.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/less/larger.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/less/list.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/less/mixins.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/less/path.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/less/rotated-flipped.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/less/screen-reader.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/less/stacked.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/less/variables.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/scss/_animated.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/scss/_bordered-pulled.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/scss/_core.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/scss/_fixed-width.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/scss/_icons.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/scss/_larger.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/scss/_list.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/scss/_mixins.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/scss/_path.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/scss/_rotated-flipped.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/scss/_screen-reader.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/scss/_stacked.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/scss/_variables.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/font-awesome/scss/font-awesome.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/.bower.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/Changelog.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/Makefile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/bower.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/dist/jquery.sparkline.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/dist/jquery.sparkline.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/minheader.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/sparkline.jquery.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/src/base.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/src/chart-bar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/src/chart-box.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/src/chart-bullet.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/src/chart-discrete.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/src/chart-line.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/src/chart-pie.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/src/chart-tristate.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/src/defaults.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/src/footer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/src/header.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/src/interact.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/src/rangemap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/src/simpledraw.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/src/utils.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/src/vcanvas-base.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/src/vcanvas-canvas.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/src/vcanvas-vml.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/resources/vendors/jquery-sparkline/version.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/robots.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/working/adk/.gitkeep" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/working/adk/adkresult.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Command/adkCommand.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Command/statsCommand.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Controller/AdvertiserController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Controller/ApiController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Controller/DevController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Controller/FrontEndController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Controller/PublisherController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/CampaignInputDetails.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/Campaigns.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/Contact.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/Links.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/Lists.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/PartnerDetails.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/RefADKCategoryDetails.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/RefOfferStatusDetails.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/RefPartnerTypeDetails.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/RefTireDetails.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/RefWebTrafficTypeDetails.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/SendyApps.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/StatsDaily.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/StatsMonthly.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/StatsWeekly.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/StatsYearly.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/SubscriberADKCampErrors.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/SubscriberAddress.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/SubscriberDetails.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/SubscriberOptInDetails.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/SubscriberOptOutDetails.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/Subscribers.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/Template.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/User.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/newAdOfferDetails.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Form/CampaignInputType.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Form/ContactType.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Form/LoginType.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Form/NewEmailType.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Form/newAdOfferType.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Form/newPartnerType.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Kernel.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/CampaignInputDetailsRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/CampaignsRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/ContactRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/EmailTemplateDetailsRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/LinksRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/ListsRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/LoginRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/OfferDetailsRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/PartnerDetailsRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/PartnerTypeDetailsRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/RefADKCategoryDetailsRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/RefOfferStatusDetailsRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/RefTireDetailsRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/RefWebTrafficTypeDetailsRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/SendyAppsRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/StatsDailyRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/StatsMonthlyRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/StatsWeeklyRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/StatsYearlyRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/SubscriberADKCampErrorsRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/SubscriberAddressRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/SubscriberDetailsRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/SubscriberOptInDetailsRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/SubscriberOptOutDetailsRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/SubscribersRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/TemplateRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/newAdOfferDetailsRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Services/adkService.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Services/bd/.keep" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Services/ecampService.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Services/statsService.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/symfony.lock" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/BackEnd/Advertiser/adMasterDash.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/BackEnd/Advertiser/adOfferDash.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/BackEnd/Advertiser/adOffers.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/BackEnd/Advertiser/newAdNetwork.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/BackEnd/Advertiser/newAdOffer.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/BackEnd/Publisher/newEmailTempl.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/BackEnd/Publisher/newPubCampaign.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/BackEnd/Publisher/newPubNetwork.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/BackEnd/Publisher/pubCampDash.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/BackEnd/Publisher/pubCampDetails.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/BackEnd/Publisher/pubCpcCamp.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/BackEnd/Publisher/pubMasterDash.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/BackEnd/Publisher/pubPartnerDash.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/BackEnd/Publisher/pubSubscrDash.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/BackEnd/login.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/FrontEnd/index.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/Testing/testing.html.twig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/base.html.twig" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>C:\MAMP\htdocs\admin\composer.json</pharConfigPath>
+    <executablePath>composer</executablePath>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Mediaff_Dev" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Mediaff_Dev" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Mediaff_Dev" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="mediazmj_mediabayprod: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>adk</find>
+      <find>adkaction</find>
+      <find>newpubcampaign</find>
+      <find>image</find>
+      <find>AppBu</find>
+      <find>AppBundle</find>
+      <find>\public</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>App</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Entity/StatsYearly.php" />
+        <option value="$PROJECT_DIR$/config/packages/doctrine.yaml" />
+        <option value="$PROJECT_DIR$/src/Repository/SubscriberDetailsRepository.php" />
+        <option value="$PROJECT_DIR$/src/Repository/SubscribersRepository.php" />
+        <option value="$PROJECT_DIR$/src/Repository/CampaignsRepository.php" />
+        <option value="$PROJECT_DIR$/src/Repository/ListsRepository.php" />
+        <option value="$PROJECT_DIR$/src/Repository/newAdOfferDetailsRepository.php" />
+        <option value="$PROJECT_DIR$/src/Repository/PartnerDetailsRepository.php" />
+        <option value="$PROJECT_DIR$/src/Repository/StatsDailyRepository.php" />
+        <option value="$PROJECT_DIR$/src/Repository/SubscriberADKCampErrorsRepository.php" />
+        <option value="$PROJECT_DIR$/src/Repository/TemplateRepository.php" />
+        <option value="$PROJECT_DIR$/src/Form/newPartnerType.php" />
+        <option value="$PROJECT_DIR$/src/Form/LoginType.php" />
+        <option value="$PROJECT_DIR$/src/Controller/AdvertiserController.php" />
+        <option value="$PROJECT_DIR$/src/Entity/newAdOfferDetails.php" />
+        <option value="$PROJECT_DIR$/src/Entity/RefADKCategoryDetails.php" />
+        <option value="$PROJECT_DIR$/src/Entity/CampaignInputDetails.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Campaigns.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Contact.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Links.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Lists.php" />
+        <option value="$PROJECT_DIR$/src/Entity/PartnerDetails.php" />
+        <option value="$PROJECT_DIR$/src/Entity/RefOfferStatusDetails.php" />
+        <option value="$PROJECT_DIR$/src/Entity/RefWebTrafficTypeDetails.php" />
+        <option value="$PROJECT_DIR$/src/Entity/SendyApps.php" />
+        <option value="$PROJECT_DIR$/src/Entity/SubscriberAddress.php" />
+        <option value="$PROJECT_DIR$/src/Entity/SubscriberADKCampErrors.php" />
+        <option value="$PROJECT_DIR$/src/Entity/SubscriberDetails.php" />
+        <option value="$PROJECT_DIR$/src/Entity/SubscriberOptInDetails.php" />
+        <option value="$PROJECT_DIR$/src/Entity/SubscriberOptOutDetails.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Subscribers.php" />
+        <option value="$PROJECT_DIR$/src/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/Controller/SecurityController.php" />
+        <option value="$PROJECT_DIR$/config/packages/framework.yaml" />
+        <option value="$PROJECT_DIR$/src/Services/statsService.php" />
+        <option value="$PROJECT_DIR$/symfony.lock" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/config/services.yaml" />
+        <option value="$PROJECT_DIR$/src/Services/adkService.php" />
+        <option value="$PROJECT_DIR$/config/routes.yaml" />
+        <option value="$PROJECT_DIR$/config/packages/translation.yaml" />
+        <option value="$PROJECT_DIR$/src/Controller/PublisherController.php" />
+        <option value="$PROJECT_DIR$/templates/BackEnd/Publisher/newPubCampaign.html.twig" />
+        <option value="$PROJECT_DIR$/src/Form/CampaignInputType.php" />
+        <option value="$PROJECT_DIR$/translations/messages.ru.xlf" />
+        <option value="$PROJECT_DIR$/config/packages/security.yaml" />
+        <option value="$PROJECT_DIR$/src/Form/NewEmailType.php" />
+        <option value="$PROJECT_DIR$/src/Form/newAdOfferType.php" />
+        <option value="$PROJECT_DIR$/translations/messages.en.xlf" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/vendor/ringcentral/psr7" />
+      <path value="$PROJECT_DIR$/vendor/evenement/evenement" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/beberlei/DoctrineExtensions" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/vendor/symfony/asset" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/inflector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/react/event-loop" />
+      <path value="$PROJECT_DIR$/vendor/react/socket" />
+      <path value="$PROJECT_DIR$/vendor/react/promise-stream" />
+      <path value="$PROJECT_DIR$/vendor/react/promise-timer" />
+      <path value="$PROJECT_DIR$/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/vendor/react/http" />
+      <path value="$PROJECT_DIR$/vendor/react/dns" />
+      <path value="$PROJECT_DIR$/vendor/react/stream" />
+      <path value="$PROJECT_DIR$/vendor/react/cache" />
+      <path value="$PROJECT_DIR$/vendor/prewk/xml-string-streamer" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/orm-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security" />
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-server-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/vendor/symfony/profiler-pack" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1374" />
+    <option name="y" value="298" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mediaff_admin" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="Erlang External Tools" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;PostgreSQL" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MAMP\htdocs\admin\translations" />
+      <recent name="C:\MAMP\htdocs\admin\public" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a177ce9a-9987-4c52-86fd-079b7209ce58" name="Default" comment="" />
+      <created>1513701106463</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1513701106463</updated>
+      <workItem from="1513701108205" duration="871000" />
+      <workItem from="1513739828846" duration="8925000" />
+      <workItem from="1513751627500" duration="8381000" />
+      <workItem from="1513764553239" duration="6892000" />
+      <workItem from="1513779579329" duration="8182000" />
+      <workItem from="1513838474786" duration="3741000" />
+      <workItem from="1513846446515" duration="31000" />
+      <workItem from="1513851589981" duration="14228000" />
+      <workItem from="1513929250332" duration="879000" />
+      <workItem from="1513936535765" duration="767000" />
+      <workItem from="1513955067908" duration="3681000" />
+      <workItem from="1514111496960" duration="6000" />
+      <workItem from="1514118456434" duration="1607000" />
+      <workItem from="1514188061695" duration="8548000" />
+      <workItem from="1514218689300" duration="452000" />
+      <workItem from="1514219283567" duration="485000" />
+      <workItem from="1514259043720" duration="3149000" />
+      <workItem from="1514263809902" duration="10685000" />
+      <workItem from="1514305951362" duration="1218000" />
+      <workItem from="1514346680997" duration="2525000" />
+      <workItem from="1514350467357" duration="7640000" />
+      <workItem from="1514434826677" duration="8564000" />
+      <workItem from="1514452926046" duration="6515000" />
+      <workItem from="1514460461566" duration="1653000" />
+      <workItem from="1514518700195" duration="4194000" />
+    </task>
+    <task id="LOCAL-00001" summary="Easy commit">
+      <created>1514453314028</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1514453314028</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Easy commit">
+      <created>1514455710444</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1514455710444</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added translations">
+      <created>1514525456774</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1514525456774</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="113819000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1374" y="298" width="1382" height="754" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18910742" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3441755" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28739497" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Easy commit" />
+    <MESSAGE value="added translations" />
+    <option name="LAST_COMMIT_MESSAGE" value="added translations" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Entity/StatsYearly.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/SubscriberAddress.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="129" column="19" lean-forward="false" selection-start-line="129" selection-start-column="19" selection-end-line="129" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/SubscriberADKCampErrors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/SubscriberOptInDetails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="260" column="19" lean-forward="false" selection-start-line="260" selection-start-column="19" selection-end-line="260" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/SubscriberOptOutDetails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="202" column="19" lean-forward="false" selection-start-line="202" selection-start-column="19" selection-end-line="202" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Subscribers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2411">
+          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Command/statsCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/SubscriberDetails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="54" lean-forward="false" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/SecurityController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Services/statsService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="403" column="44" lean-forward="false" selection-start-line="403" selection-start-column="41" selection-end-line="403" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Command/adkCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ApiController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="32" column="40" lean-forward="true" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Testing/testing.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <caret line="15" column="63" lean-forward="true" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/DevController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/991541ba/a1080c6d-9816-4ce8-9f77-64881f30abfc/mediazmj_mediabayprod.stats_daily">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a1080c6d-9816-4ce8-9f77-64881f30abfc/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/composer/installed.json" />
+    <entry file="file://$PROJECT_DIR$/symfony.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7813" lean-forward="true" selection-start-line="0" selection-start-column="7813" selection-end-line="0" selection-end-column="7813" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/dev/web_profiler.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/routing.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/991541ba/a1080c6d-9816-4ce8-9f77-64881f30abfc/mediazmj_mediabayprod.subscribers">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/log/dev.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="570">
+          <caret line="10729" column="93" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="10732" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/991541ba/a1080c6d-9816-4ce8-9f77-64881f30abfc/mediazmj_mediabayprod.06_subscriberadkcamperrors">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/991541ba/a1080c6d-9816-4ce8-9f77-64881f30abfc/mediazmj_mediabayprod.campaigns">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.ebextensions/environmentsetup.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.ebextensions/setup.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/framework.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-850">
+          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/doctrine.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Services/adkService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1027">
+          <caret line="354" column="13" lean-forward="false" selection-start-line="354" selection-start-column="13" selection-end-line="354" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/FrontEndController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="39" column="75" lean-forward="true" selection-start-line="39" selection-start-column="75" selection-end-line="39" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/services.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/translation.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="30" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/newPubCampaign.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="37" column="73" lean-forward="false" selection-start-line="37" selection-start-column="73" selection-end-line="37" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/PublisherController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="60" lean-forward="false" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="45" column="28" lean-forward="false" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/translations/messages.ru.xlf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/LoginType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="37" column="33" lean-forward="false" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/CampaignInputType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="129" column="40" lean-forward="false" selection-start-line="129" selection-start-column="28" selection-end-line="129" selection-end-column="40" />
+          <folding>
+            <element signature="e#28#68#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/NewEmailType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding>
+            <element signature="e#28#68#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/newPartnerType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="82" column="42" lean-forward="false" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/newAdOfferType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="33" column="50" lean-forward="false" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/translations/messages.en.xlf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="103" column="25" lean-forward="false" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

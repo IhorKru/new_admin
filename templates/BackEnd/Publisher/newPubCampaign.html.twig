@@ -1,0 +1,339 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Mediaff | Create Campaign{% endblock %}
+
+{% block custcss %}
+    <!-- page specific date picker -->
+    <link href="{{ asset('resources/vendors/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css') }}" rel="stylesheet">
+    <!--page specific css -->
+    <link href="{{ asset('resources/build/css/emailcampcustome.css') }}" rel="stylesheet">
+
+    <script src="{{ asset('https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js') }}"></script>
+    <script src="{{ asset('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="">
+        <div class="row">
+            <!-- form input mask -->
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Campaing Details</h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <br/>
+                        {{ form_start(form, {'attr': {'novalidate': 'novalidate', 'id': 'emailcampform'}}) }}
+                        <div class="form-horizontal form-label-left">
+                            <div class="form-group">
+                                <div class="col-md-9 col-sm-9 col-xs-9 col-xs-9-ex">
+                                    <div class='input-group fieldsep'>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-thumbs-up"></span>
+                                        </span>
+                                        {{ form_widget(form.traffic_type) }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" id="partnername" style="display: none">
+                                <div class="col-md-9 col-sm-9 col-xs-9 col-xs-9-ex">
+                                    <div class='input-group fieldsep'>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-thumbs-up"></span>
+                                        </span>
+                                        {{ form_widget(form.partnername) }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" id="usergeo" style="display: none">
+                                <div class="col-md-9 col-sm-9 col-xs-9 col-xs-9-ex">
+                                    <div class='input-group fieldsep'>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-globe"></span>
+                                        </span>
+                                        {{ form_widget(form.geo) }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" id="resourcename" style="display: none">
+                                <div class="col-md-9 col-sm-9 col-xs-9 col-xs-9-ex">
+                                    <div class='input-group fieldsep'>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-picture"></span>
+                                        </span>
+                                        {{ form_widget(form.resourcename) }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" id="templatename" style="display: none">
+                                <div class="col-md-9 col-sm-9 col-xs-9 col-xs-9-ex">
+                                    <div class='input-group fieldsep'>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-list-alt"></span>
+                                        </span>
+                                        {{ form_widget(form.templatename) }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" id='numemailspicker' style="display: none">
+                                <div class="col-md-9 col-sm-9 col-xs-9 col-xs-9-ex">
+                                    <div class='input-group fieldsep'>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-send"></span>
+                                        </span>
+                                        {{ form_widget(form.numemails) }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div id='paidlink' style="display: none">
+                                <div class="form-group">
+                                    <div class="col-md-9 col-sm-9 col-xs-9 col-xs-9-ex">
+                                        <div class='input-group fieldsep'>
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-link"></span>
+                                            </span>
+                                            {{ form_widget(form.link1) }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group" style="display: none">
+                                    <div class="col-md-9 col-sm-9 col-xs-9 col-xs-9-ex">
+                                        <div class='input-group fieldsep'>
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-link"></span>
+                                            </span>
+                                            {{ form_widget(form.link2) }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group" id="timezonepicker" style="display: none">
+                                <div class="col-md-9 col-sm-9 col-xs-9 col-xs-9-ex">
+                                    <div class='input-group fieldsep date'>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-map-marker"></span>
+                                        </span>
+                                        {{ form_widget(form.timezone) }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" id="datetimepcr" style="display: none">
+                                <div class="col-md-9 col-sm-9 col-xs-9 col-xs-9-ex">
+                                    <div class='input-group date form_datetime fieldsep' id='datetimepicker'>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                        {{ form_widget(form.datetosend) }}
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-remove"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ln_solid"></div>
+                            <div class="form-group" id="fbuttons" style="display: none">
+                                <div class="col-md-9 col-sm-9 col-xs-9 col-xs-9-ex">
+                                    {{ form_widget(form.submit) }}
+                                    {{ form_widget(form.clear) }}
+                                </div>
+                            </div>
+                        </div>
+                        {{ form_end(form) }}
+                    </div>
+                </div>
+            </div>
+            <!-- /form input mask -->
+            <!-- progress bar -->
+            <div class="col-md-8 col-sm-12 col-xs-12" style="display: none" id="progress_show">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <div class="progress">
+                            <div id="progress_bar" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width:0">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- campaign stats -->
+            <div id="campstats">
+
+            </div>
+        </div>
+        <!-- ajax call for sending things -->
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Campaing Details</h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <br/>
+                        <div class="form-horizontal form-label-left">
+                            <form id="sendfreq">
+                                <div class="form-group">
+                                    <div class="col-md-9 col-sm-9 col-xs-9 col-xs-9-ex">
+                                        <div class='input-group fieldsep'>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-thumbs-up"></span>
+                                        </span>
+                                            <input type="text" name="frequency" value="10000" class="form-control" id="frq"><br>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 col-sm-9 col-xs-9 col-xs-9-ex">
+                                        <div class='input-group fieldsep'>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-thumbs-up"></span>
+                                        </span>
+                                            <input type="text" name="link" value="http://sendy.mediaff.com/scheduled" class="form-control" id="lnk"><br>
+                                        </div>
+                                    </div>
+                                    <div class="ln_solid"></div>
+                                    <div class="form-group" id="fbuttons">
+                                        <div class="col-md-9 col-sm-9 col-xs-9 col-xs-9-ex">
+                                            <input type="submit" class="btn btn-success btn-block">
+                                            <input type="reset" class="btn btn-danger btn-block">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block custjs %}
+<!-- date time picker -->
+    <script src="{{ asset('resources/vendors/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js')}}"></script>
+<!-- Email form fields -->
+    <script src="{{ asset('resources/build/js/publisher.js')}}"></script>
+    <script>
+        //submitting the form
+        $("#emailcampform").submit(function(e) {
+            e.preventDefault();
+            if ( $("#progress_show").css('display') == 'none' ){
+                $("#progress_show").show(); //showing progress bar
+                $("#progress_bar").attr("aria-valuemin", "0%"); //assigning initial value to progress bar
+            } else {
+                $("#progress_bar").attr("style", "width: 0%");
+                $("#progress_bar").attr("aria-valuenow", "0%");
+            }
+            var $form = $(e.currentTarget);
+            var formSub = function () {
+                $.ajax({
+                    url: $form.attr('action'),
+                    method: 'POST',
+                    data: $form.serialize(),
+                    timeout: 1000
+                });
+            };
+            formSub();
+            var emailstosend = document.getElementById("campaign_input_numemails").value; //getting count of emails to be sent out
+            var timeOutId = 0;
+            //getting current max campaigns
+            var initCamp = function () {
+                $.ajax({
+                    type: "GET",
+                    url: "{{ path('progbar') }}",
+                    dataType: "json",
+                    cache: false,
+                    success: function(response) {
+                        initusers = response[0];
+                        initerrors = response[1];
+                        //console.log(response);
+                        var ajaxFn = function() {
+                            var currcount = "0%";
+                            $.ajax({
+                                type: "GET",
+                                url: "{{ path('progbar') }}",
+                                dataType: "json",
+                                success: function(response) {
+                                    curusers = response[0];
+                                    curerrors = response[1];
+                                    userprog = Math.floor(Number(curusers) - Number(initusers));
+                                    errorprog = Math.floor(Number(curerrors) - Number(initerrors));
+                                    progress = Math.floor((Number(userprog) + Number(errorprog)) / Number(emailstosend) * Number(100)) + "%";
+                                    $("#progress_bar").attr("style", "width: " + progress);
+                                    $("#progress_bar").attr("aria-valuenow", progress);
+                                    document.getElementById("progress_bar").innerHTML = "Running - " + progress + " processed";
+                                    if(progress.replace("%", "") >= 97){
+                                        $("#progress_bar").attr("style", "width: 100%");
+                                        $("#progress_bar").attr("aria-valuenow", "100%");
+                                        document.getElementById("progress_bar").innerHTML = "Completed - 100% - " + (Number(curusers) - Number(initusers)) + " emails created /" + (Number(curerrors) - Number(initerrors)) + " errors created";
+                                        var cdAjax = function () {
+                                            $.ajax({
+                                                type: "GET",
+                                                url: "{{ path('campstats') }}",
+                                                dataType: "html",
+                                                success: function(response) {
+                                                    if(response.length != 0) {
+                                                        $('#campstats').html(response);
+                                                    } else {
+                                                        timeOutId = setTimeout(cdAjax, 2000);
+                                                    }
+                                                },
+                                                error: function(result) {
+                                                    console.log('error');
+                                                }
+                                            });
+                                        }
+                                        cdAjax();
+                                    } else {
+                                        timeOutId = setTimeout(ajaxFn, 2000);
+                                    }
+                                    prevprogress = progress;
+                                },
+                                error: function(result) {
+                                    console.log('error');
+                                }
+                            });
+                        }
+                        ajaxFn();
+                    },
+                    error: function(response) {
+                        console.log(response);
+                    }
+                });
+            };
+            initCamp();
+        });
+        //js for progress bar to be shown
+    </script>
+    <script>
+        //sending campaigns with certain frequency
+        var sendfr = document.getElementById("frq").value;
+        var link = document.getElementById("lnk").value;
+        $("#sendfreq").submit(function(f) {
+            f.preventDefault();
+            var initSend = function () {
+                $.ajax({
+                    type: "POST",
+                    url: link,
+                    dataType: "html",
+                    success: function(response) {
+                        console.log('success');
+                    },
+                    error: function(result) {
+                        console.log('error');
+                    },
+                    complete: function(xhr, textStatus) {
+                        timeOutId = setTimeout(initSend, sendfr);
+                    }
+                })
+            }
+            initSend();
+        });
+    </script>
+{% endblock %}

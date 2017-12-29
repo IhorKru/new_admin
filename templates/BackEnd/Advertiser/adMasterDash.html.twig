@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Mediaff | Advertiser Dashboard{% endblock %}
+
+{% block custcss %}
+
+{% endblock %}
+
+{% block body %}
+    <div class="x_panel" style="text-align: center; margin-bottom: 15px;">
+        <div class="btn-group" role="group" aria-label="First group">
+            <a href="{{ path('adsdashboard', {'slug': "1"}) }}" class="btn btn-danger btn-md" style="border-radius: 0">Day</a>
+            <a href="{{ path('adsdashboard', {'slug': "2"}) }}" class="btn btn-danger btn-md">Week</a>
+            <a href="{{ path('adsdashboard', {'slug': "3"}) }}" class="btn btn-danger btn-md">Month</a>
+            <a href="{{ path('adsdashboard', {'slug': "4"}) }}" class="btn btn-danger btn-md" style="border-radius: 0">Year</a>
+        </div>
+    </div>
+{% endblock %}
+
+{% block custjs %}
+
+{% endblock %}
