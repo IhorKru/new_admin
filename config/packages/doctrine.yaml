@@ -9,11 +9,11 @@ doctrine:
     dbal:
         # configure these for your database server
         driver: 'pdo_mysql'
-        host:     '%env(DATABASE_HOST)%'
-        port:     '%env(DATABASE_PORT)%'
-        dbname:   '%env(DATABASE_NAME)%'
-        user:     '%env(DATABASE_USER)%'
-        password: '%env(DATABASE_PASS)%'
+        db_host:     '%env(DATABASE_HOST)%'
+        db_port:     '%env(DATABASE_PORT)%'
+        db_name:     '%env(DATABASE_NAME)%'
+        db_user:     '%env(DATABASE_USER)%'
+        db_password: '%env(DATABASE_PASS)%'
         server_version: '5.7'
         charset: utf8mb4
 

@@ -82,11 +82,9 @@
         "incenteev-parameters": {
             "file": "config/packages/doctrine.yaml",
             "env-map": {
-                "host": "RDS_HOSTNAME",
-                "port": "RDS_PORT",
-                "dbname": "RDS_DB_NAME",
-                "user": "RDS_USERNAME",
-                "password": "RDS_PASSWORD"
+                "db_name": "RDS_DB_NAME",
+                "db_user": "RDS_USERNAME",
+                "db_password": "RDS_PASSWORD"
             }
         }
     }
