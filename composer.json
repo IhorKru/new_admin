@@ -78,6 +78,16 @@
         "symfony": {
             "id": "01C1QQNBJJR798Z70VS1JAP7V9",
             "allow-contrib": false
+        },
+        "incenteev-parameters": {
+            "file": "config/packages/doctrine.yml",
+            "env-map": {
+                "host": "RDS_HOSTNAME",
+                "port": "RDS_PORT",
+                "name": "RDS_DB_NAME",
+                "user": "RDS_USERNAME",
+                "pass": "RDS_PASSWORD"
+            }
         }
     }
 }
