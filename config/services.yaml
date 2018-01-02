@@ -1,11 +1,6 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
-    env(DATABASE_HOST): RDS_HOSTNAME,
-    env(DATABASE_PORT): RDS_PORT,
-    env(DATABASE_NAME): RDS_DB_NAME,
-    env(DATABASE_USER): RDS_USERNAME,
-    env(DATABASE_PASS): RDS_PASSWORD,
     locale: 'en'
 
 services:

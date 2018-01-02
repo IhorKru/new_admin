@@ -7,7 +7,7 @@
     <schema id="2" parent="1" name="information_schema">
       <Collation>utf8_general_ci</Collation>
     </schema>
-    <schema id="3" parent="1" name="mediazmj_mediabayprod">
+    <schema id="3" parent="1" name="mediaff_mysql">
       <Current>1</Current>
       <Visible>1</Visible>
       <Collation>latin1_swedish_ci</Collation>
@@ -1162,7 +1162,7 @@
     </key>
     <foreign-key id="282" parent="227" name="FK_D50B0DBAA76ED395">
       <ColNames>user_id</ColNames>
-      <RefSchemaName>mediazmj_mediabayprod</RefSchemaName>
+      <RefSchemaName>mediaff_mysql</RefSchemaName>
       <RefTableName>01_subscriberdetails</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
@@ -1229,7 +1229,7 @@
     </key>
     <foreign-key id="295" parent="228" name="FK_333C081A76ED395">
       <ColNames>user_id</ColNames>
-      <RefSchemaName>mediazmj_mediabayprod</RefSchemaName>
+      <RefSchemaName>mediaff_mysql</RefSchemaName>
       <RefTableName>01_subscriberdetails</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
@@ -1286,7 +1286,7 @@
     </key>
     <foreign-key id="306" parent="229" name="FK_D80A08F7A76ED395">
       <ColNames>user_id</ColNames>
-      <RefSchemaName>mediazmj_mediabayprod</RefSchemaName>
+      <RefSchemaName>mediaff_mysql</RefSchemaName>
       <RefTableName>01_subscriberdetails</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
@@ -1582,13 +1582,13 @@
     </key>
     <foreign-key id="360" parent="233" name="FK_2F11C8B19393F8FE">
       <ColNames>partner_id</ColNames>
-      <RefSchemaName>mediazmj_mediabayprod</RefSchemaName>
+      <RefSchemaName>mediaff_mysql</RefSchemaName>
       <RefTableName>p_01_partner_details</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
     <foreign-key id="361" parent="233" name="FK_2F11C8B1C8327D79">
       <ColNames>offer_status_id</ColNames>
-      <RefSchemaName>mediazmj_mediabayprod</RefSchemaName>
+      <RefSchemaName>mediaff_mysql</RefSchemaName>
       <RefTableName>ref_offer_status_details</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
@@ -1979,7 +1979,7 @@
     </key>
     <foreign-key id="434" parent="236" name="FK_E3737470C96E70CF">
       <ColNames>app</ColNames>
-      <RefSchemaName>mediazmj_mediabayprod</RefSchemaName>
+      <RefSchemaName>mediaff_mysql</RefSchemaName>
       <RefTableName>apps</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
@@ -2151,7 +2151,7 @@
     </key>
     <foreign-key id="468" parent="238" name="FK_8269FA5C96E70CF">
       <ColNames>app</ColNames>
-      <RefSchemaName>mediazmj_mediabayprod</RefSchemaName>
+      <RefSchemaName>mediaff_mysql</RefSchemaName>
       <RefTableName>apps</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
@@ -2225,19 +2225,19 @@
     </key>
     <foreign-key id="483" parent="239" name="FK_34DFC19B60A37DD4">
       <ColNames>traffic_type_id</ColNames>
-      <RefSchemaName>mediazmj_mediabayprod</RefSchemaName>
+      <RefSchemaName>mediaff_mysql</RefSchemaName>
       <RefTableName>ref_web_traffic_type_details</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
     <foreign-key id="484" parent="239" name="FK_34DFC19B2A6EF8E">
       <ColNames>partner_type_id</ColNames>
-      <RefSchemaName>mediazmj_mediabayprod</RefSchemaName>
+      <RefSchemaName>mediaff_mysql</RefSchemaName>
       <RefTableName>ref_partner_type_details</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
     <foreign-key id="485" parent="239" name="FK_34DFC19BBC5ADD68">
       <ColNames>tire_id</ColNames>
-      <RefSchemaName>mediazmj_mediabayprod</RefSchemaName>
+      <RefSchemaName>mediaff_mysql</RefSchemaName>
       <RefTableName>ref_tire_details</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
@@ -2285,7 +2285,7 @@
     </key>
     <foreign-key id="495" parent="240" name="FK_85E030C37987212D">
       <ColNames>app_id</ColNames>
-      <RefSchemaName>mediazmj_mediabayprod</RefSchemaName>
+      <RefSchemaName>mediaff_mysql</RefSchemaName>
       <RefTableName>apps</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
@@ -3256,7 +3256,7 @@
     </key>
     <foreign-key id="663" parent="249" name="FK_2FCD16AC44C8F818">
       <ColNames>list</ColNames>
-      <RefSchemaName>mediazmj_mediabayprod</RefSchemaName>
+      <RefSchemaName>mediaff_mysql</RefSchemaName>
       <RefTableName>lists</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>

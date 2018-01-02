@@ -80,11 +80,13 @@
             "allow-contrib": false
         },
         "incenteev-parameters": {
-            "file": "config/packages/doctrine.yaml",
+            "file": ".env",
             "env-map": {
-                "db_name": "RDS_DB_NAME",
-                "db_user": "RDS_USERNAME",
-                "db_password": "RDS_PASSWORD"
+                "DATABASE_USER": "RDS_USERNAME",
+                "DATABASE_PWD": "RDS_PASSWORD",
+                "DATABASE_NAME": "RDS_DB_NAME",
+                "DATABASE_HOST": "RDS_HOSTNAME",
+                "DATABASE_PORT": "RDS_PORT"
             }
         }
     }
