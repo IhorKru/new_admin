@@ -8,11 +8,11 @@
             </trans-unit>
             <trans-unit id="partner_name">
                 <source>Select Partner</source>
-                <target>Select Partner</target>
+                <target>Партнет</target>
             </trans-unit>
             <trans-unit id="user_geo">
                 <source>Select User Geo</source>
-                <target>Select User Geo</target>
+                <target>Страна подписчика</target>
             </trans-unit>
             <trans-unit id="resource">
                 <source>Select Resource</source>
