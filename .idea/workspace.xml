@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a177ce9a-9987-4c52-86fd-079b7209ce58" name="Default" comment="email validation functionality - commit 1">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/a1080c6d-9816-4ce8-9f77-64881f30abfc/storage_v2/_src_/schema/mediazmj_mediabayprod.mTGYmw.meta" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Entity/EmailStatus.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Migrations/Version20180109102948.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Repository/EmailStatusRepository.php" />
+    <list default="true" id="a177ce9a-9987-4c52-86fd-079b7209ce58" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Services/emailCheck.php" afterPath="$PROJECT_DIR$/src/Services/emailCheck.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -425,7 +419,7 @@
       <workItem from="1515303492691" duration="9239000" />
       <workItem from="1515337130248" duration="554000" />
       <workItem from="1515482396651" duration="3718000" />
-      <workItem from="1515492334477" duration="3180000" />
+      <workItem from="1515492334477" duration="3201000" />
     </task>
     <task id="LOCAL-00001" summary="Easy commit">
       <created>1514453314028</created>
@@ -595,11 +589,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515494379852</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="email validation functionality - commit 1">
+      <created>1515495581194</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1515495581194</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211407000" />
+    <option name="totallyTimeSpent" value="211428000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-19" width="1874" height="1096" extended-state="6" />
