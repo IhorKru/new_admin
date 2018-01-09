@@ -21,6 +21,10 @@ use Symfony\Component\Process\Process;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use DateTime;
+use Egulias\EmailValidator\EmailValidator;
+use Egulias\EmailValidator\Validation\DNSCheckValidation;
+use Egulias\EmailValidator\Validation\MultipleValidationWithAnd;
+use Egulias\EmailValidator\Validation\RFCValidation;
 
 class PublisherController extends Controller
 {
@@ -350,6 +354,17 @@ class PublisherController extends Controller
         ]);
     }
 
+    # Validate email addresses in bulk
+    public function emailValidation(Request $request) {
+        //selecting email addresses for validation
+
+        $validator = new EmailValidator();
+        $multipleValidations = new MultipleValidationWithAnd([
+            new RFCValidation(),
+            new DNSCheckValidation()
+        ]);
+        $validator->isValid("example@example.com", $multipleValidations); //true
+    }
     private function setTablePropsTwo($slug) {
         $currmonth = date("m");
         $currweek = date("W");

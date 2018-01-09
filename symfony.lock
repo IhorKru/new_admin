@@ -338,6 +338,9 @@
     "symfony/yaml": {
         "version": "v4.0.2"
     },
+    "twbs/bootstrap": {
+        "version": "v4.0.0-beta.3"
+    },
     "twig/twig": {
         "version": "v2.4.4"
     },

@@ -9,3 +9,5 @@ newpubcampaign:
     controller: App\Controller\PublisherController::emailcampaignsAction
     requirements:
         _locale: en|ru|de
+logout:
+    path: /logout
