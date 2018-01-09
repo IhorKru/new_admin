@@ -9,7 +9,7 @@
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
       <secret-storage>master_key</secret-storage>
       <user-name>mediazmj</user-name>
-      <introspection-schemas>*:mediaff_mysql,mediazmj_mediabayprod</introspection-schemas>
+      <introspection-schemas>*:mediaff_mysql,mysql,test</introspection-schemas>
     </data-source>
     <data-source name="Mediaff_Prod" uuid="2f09ce7a-c4bb-45ea-b4c5-1dad5789de64">
       <database-info product="MySQL" version="5.6.27-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.44 ( Revision: b3cda4f864902ffdde495b9df93937c3e20009be )">
