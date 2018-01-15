@@ -50,4 +50,19 @@ class SubscriberDetailsRepository extends EntityRepository
         $query = $qb->getQuery();
         return $query ->getResult();
     }
+
+    public function emailClean($numcampaigns) {
+        $conn = $this->getEntityManager()->getConnection();
+        $conn->getConfiguration()->setSQLLogger(null);
+        //$em = $this ->getDoctrine() ->getManager();
+        ####primary query to select users for future campaigns
+        $qb = $this->getEntityManager()->createQueryBuilder();
+        $qb
+            -> select('s')
+            -> from('App\Entity\SubscriberDetails', 's')
+            -> setMaxResults($numcampaigns)
+        ;
+        $query = $qb->getQuery();
+        return $query ->getResult();
+    }
 }

@@ -6,7 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * @ORM\Table(name="01.1_emailstatus", uniqueConstraints={@ORM\UniqueConstraint(name="email_status_pkey", columns={"id"})}, indexes={@ORM\Index(name="email_status_idx", columns={"emailaddress"})} )
+ * @ORM\Table(name="emailstatus", uniqueConstraints={@ORM\UniqueConstraint(name="email_status_pkey", columns={"id"})}, indexes={@ORM\Index(name="email_status_idx", columns={"emailaddress"})} )
  * @ORM\Entity(repositoryClass="App\Repository\EmailStatusRepository")
  */
 class EmailStatus
