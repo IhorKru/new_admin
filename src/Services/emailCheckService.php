@@ -13,7 +13,7 @@ class emailCheckService extends PublisherController
         # 1a. Definition of entities
         $subscriber = new SubscriberDetails();
         $emailStatus = new EmailStatus();
-
+        $rootdir = getcwd();
         //selecting all subscribers from DB
         $subscribers = $this->getDoctrine()->getRepository('App:SubscriberDetails')->campEligibilityCalc($numemails);
         if (is_array($subscribers)) {

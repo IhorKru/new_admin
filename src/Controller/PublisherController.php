@@ -355,16 +355,16 @@ class PublisherController extends Controller
     }
 
     # Validate email addresses in bulk
-    public function emailValidation(Request $request) {
-        //selecting email addresses for validation
+    /**
+     * @Route("/{_locale}emailcheck", name="emailcheck")
+     * @param Request $request
+     * @return Response
+     */
+    public function emailValidation(Request $request, $numemails) {
 
-        $validator = new EmailValidator();
-        $multipleValidations = new MultipleValidationWithAnd([
-            new RFCValidation(),
-            new DNSCheckValidation()
-        ]);
-        $validator->isValid("example@example.com", $multipleValidations); //true
+        return $this->render('BackEnd/Publisher/newPubNetwork.html.twig');
     }
+
     private function setTablePropsTwo($slug) {
         $currmonth = date("m");
         $currweek = date("W");
