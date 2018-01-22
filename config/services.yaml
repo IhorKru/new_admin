@@ -38,3 +38,7 @@ services:
         class: App\Services\statsService
         calls:
             - [setContainer, ['@service_container']]
+    email.check:
+            class: App\Services\emailCheckService
+            calls:
+                - [setContainer, ['@service_container']]

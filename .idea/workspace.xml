@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a177ce9a-9987-4c52-86fd-079b7209ce58" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Services/emailCheckService.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a1080c6d-9816-4ce8-9f77-64881f30abfc.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/a1080c6d-9816-4ce8-9f77-64881f30abfc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Command/echeckCommand.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/EmailStatus.php" afterPath="$PROJECT_DIR$/src/Entity/EmailStatus.php" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/SubscriberDetailsRepository.php" afterPath="$PROJECT_DIR$/src/Repository/SubscriberDetailsRepository.php" />
-      <change beforePath="$PROJECT_DIR$/src/Services/emailCheck.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" afterPath="$PROJECT_DIR$/config/services.yaml" />
+      <change beforePath="$PROJECT_DIR$/public/working/adk/adkresult.xml" afterPath="$PROJECT_DIR$/public/working/adk/adkresult.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,53 +30,26 @@
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Mediaff_Dev" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PublisherController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/PublisherController.php">
+    <leaf>
+      <file leaf-file-name="ecampService.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Services/ecampService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="365" column="80" lean-forward="false" selection-start-line="360" selection-start-column="8" selection-end-line="365" selection-end-column="80" />
-              <folding>
-                <element signature="e#126#171#0#PHP" expanded="true" />
-                <element signature="e#903#1064#0#PHP" expanded="false" />
-                <element signature="e#1069#3035#0#PHP" expanded="false" />
-                <element signature="e#3041#3180#0#PHP" expanded="false" />
-                <element signature="e#3185#6868#0#PHP" expanded="false" />
-                <element signature="e#6874#7019#0#PHP" expanded="false" />
-                <element signature="e#7024#7211#0#PHP" expanded="false" />
-                <element signature="e#7217#7356#0#PHP" expanded="false" />
-                <element signature="e#7361#7550#0#PHP" expanded="false" />
-                <element signature="e#7556#7688#0#PHP" expanded="false" />
-                <element signature="e#7693#11875#0#PHP" expanded="false" />
-                <element signature="e#11881#11962#0#PHP" expanded="false" />
-                <element signature="e#11967#12498#0#PHP" expanded="false" />
-                <element signature="e#12504#12593#0#PHP" expanded="false" />
-                <element signature="e#12598#13770#0#PHP" expanded="false" />
-                <element signature="e#13776#13896#0#PHP" expanded="false" />
-                <element signature="e#13901#15598#0#PHP" expanded="false" />
-                <element signature="e#15604#15724#0#PHP" expanded="false" />
-                <element signature="e#15729#17446#0#PHP" expanded="false" />
-                <element signature="e#17874#20823#0#PHP" expanded="false" />
-                <element signature="e#20895#21684#0#PHP" expanded="false" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="46" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="emailCheckService.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="emailCheckService.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Services/emailCheckService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+            <state relative-caret-position="187">
+              <caret line="11" column="46" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="46" />
               <folding>
                 <element signature="e#32#71#0#PHP" expanded="true" />
               </folding>
@@ -84,25 +57,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adkService.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Services/adkService.php">
+      <file leaf-file-name="statsCommand.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Command/statsCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="83" column="68" lean-forward="false" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="68" />
+            <state relative-caret-position="736">
+              <caret line="47" column="44" lean-forward="false" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="44" />
               <folding>
-                <element signature="e#32#71#0#PHP" expanded="true" />
-                <marker date="1514446954232" expanded="true" signature="2261:2309" ph="SELECT MAX(c... App" />
-                <marker date="1514446954232" expanded="true" signature="9729:9777" ph="SELECT MAX(c... App" />
+                <element signature="e#31#82#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SubscriberDetailsRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Repository/SubscriberDetailsRepository.php">
+      <file leaf-file-name="echeckCommand.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Command/echeckCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="53" column="30" lean-forward="false" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="30" />
+            <state relative-caret-position="476">
+              <caret line="33" column="41" lean-forward="false" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+              <folding>
+                <element signature="e#122#173#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/services.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -132,7 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Form/newPartnerType.php" />
         <option value="$PROJECT_DIR$/src/Form/LoginType.php" />
         <option value="$PROJECT_DIR$/src/Controller/AdvertiserController.php" />
         <option value="$PROJECT_DIR$/src/Entity/newAdOfferDetails.php" />
@@ -166,7 +148,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.ebextensions/setup.config" />
         <option value="$PROJECT_DIR$/.ebextensions/environmentsetup.config" />
-        <option value="$PROJECT_DIR$/config/services.yaml" />
         <option value="$PROJECT_DIR$/config/packages/doctrine.yaml" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/composer.json" />
@@ -179,10 +160,12 @@
         <option value="$PROJECT_DIR$/config/routes.yaml" />
         <option value="$PROJECT_DIR$/src/Controller/PublisherController.php" />
         <option value="$PROJECT_DIR$/src/Entity/EmailStatus.php" />
-        <option value="$PROJECT_DIR$/src/Repository/SubscriberDetailsRepository.php" />
         <option value="$PROJECT_DIR$/src/Services/adkService.php" />
         <option value="$PROJECT_DIR$/src/Services/emailCheck.php" />
         <option value="$PROJECT_DIR$/src/Services/emailCheckService.php" />
+        <option value="$PROJECT_DIR$/src/Repository/SubscriberDetailsRepository.php" />
+        <option value="$PROJECT_DIR$/config/services.yaml" />
+        <option value="$PROJECT_DIR$/src/Command/echeckCommand.php" />
       </list>
     </option>
   </component>
@@ -283,10 +266,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-1781" />
+    <option name="y" value="170" />
     <option name="width" value="1873" />
-    <option name="height" value="1096" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -325,6 +308,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -332,11 +316,38 @@
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Command" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Services" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -344,7 +355,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../mediaff_admin" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="Erlang External Tools" />
-    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;PostgreSQL" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL&#10;MySQL" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
@@ -430,7 +441,15 @@
       <workItem from="1515597572385" duration="745000" />
       <workItem from="1515680905366" duration="1820000" />
       <workItem from="1516028938949" duration="72000" />
-      <workItem from="1516029043968" duration="1985000" />
+      <workItem from="1516029043968" duration="2689000" />
+      <workItem from="1516118674218" duration="2356000" />
+      <workItem from="1516202206904" duration="4316000" />
+      <workItem from="1516252975593" duration="458000" />
+      <workItem from="1516257904180" duration="1446000" />
+      <workItem from="1516377979522" duration="1868000" />
+      <workItem from="1516523328536" duration="4213000" />
+      <workItem from="1516591332405" duration="583000" />
+      <workItem from="1516606666896" duration="823000" />
     </task>
     <task id="LOCAL-00001" summary="Easy commit">
       <created>1514453314028</created>
@@ -614,27 +633,34 @@
       <option name="project" value="LOCAL" />
       <updated>1515495596739</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="email validation functionality - commit 1">
+      <created>1516033835978</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1516033835978</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218773000" />
+    <option name="totallyTimeSpent" value="235540000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1319" height="784" extended-state="6" />
+    <frame x="-1928" y="-19" width="1874" height="1096" extended-state="6" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15609486" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10166799" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15600882" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09928515" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14217633" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4384" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="1329" y="17" width="525" height="1048" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.29882604" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="1329" y="17" width="525" height="1048" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -670,41 +696,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/composer.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/bundles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/framework.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/doctrine_migrations.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/var/log/prod.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="102">
@@ -713,13 +704,6 @@
       </provider>
     </entry>
     <entry file="das://table:/991541ba/a1080c6d-9816-4ce8-9f77-64881f30abfc/mediazmj_mediabayprod.stats_daily">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/991541ba/a1080c6d-9816-4ce8-9f77-64881f30abfc/mediaff_mysql.stats_monthly">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -810,13 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/991541ba/a1080c6d-9816-4ce8-9f77-64881f30abfc/mediaff_mysql.stats_weekly">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/StatsDailyRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -866,13 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/services.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/SecurityController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -884,13 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/991541ba/a1080c6d-9816-4ce8-9f77-64881f30abfc/mediaff_mysql.stats_daily">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -916,13 +879,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/routing.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -992,69 +948,146 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/SubscriberDetailsRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="30" lean-forward="false" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="30" />
-          <folding />
+    <entry file="uml://DATABASE/656fd2c6-ec31-4cbb-9786-83eb198a2278.TABLE:MediaBay.MediaBay.JS_U_(01)_UserInfoDetails">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>656fd2c6-ec31-4cbb-9786-83eb198a2278.TABLE:MediaBay.MediaBay.JS_U_(01)_UserInfoDetails</OriginalElement>
+          <nodes>
+            <node x="" y="">656fd2c6-ec31-4cbb-9786-83eb198a2278.TABLE:MediaBay.MediaBay.REF.JS.USER.COUNTRY.DETAILS</node>
+            <node x="" y="">656fd2c6-ec31-4cbb-9786-83eb198a2278.TABLE:MediaBay.MediaBay.JS_U_(01)_UserInfoDetails</node>
+            <node x="" y="">656fd2c6-ec31-4cbb-9786-83eb198a2278.TABLE:MediaBay.MediaBay.REF.DATASOURCE.DETAILS</node>
+            <node x="" y="">656fd2c6-ec31-4cbb-9786-83eb198a2278.TABLE:MediaBay.MediaBay.REF.JS.USER.CHANNEL.STATUS.DETAILS</node>
+            <node x="" y="">656fd2c6-ec31-4cbb-9786-83eb198a2278.TABLE:MediaBay.MediaBay.REF.JS.USER.LANGUAGE.DETAILS</node>
+            <node x="" y="">656fd2c6-ec31-4cbb-9786-83eb198a2278.TABLE:MediaBay.MediaBay.REF.JS.USER.CHANNEL.TYPE.DETAILS</node>
+            <node x="" y="">656fd2c6-ec31-4cbb-9786-83eb198a2278.TABLE:MediaBay.MediaBay.REF.JS.USER.CHANNEL.DETAILS</node>
+            <node x="" y="">656fd2c6-ec31-4cbb-9786-83eb198a2278.TABLE:MediaBay.MediaBay.REF.JS.USER.NAME.PREFIX</node>
+            <node x="" y="">656fd2c6-ec31-4cbb-9786-83eb198a2278.TABLE:MediaBay.MediaBay.REF.JS.USER.AVAILABLE.TIME.DETAILS</node>
+            <node x="" y="">656fd2c6-ec31-4cbb-9786-83eb198a2278.TABLE:MediaBay.MediaBay.REF.JS.USER.COUNTRY.CITY.DETAILS</node>
+            <node x="" y="">656fd2c6-ec31-4cbb-9786-83eb198a2278.TABLE:MediaBay.MediaBay.REF.JS.USER.COUNTRY.STATE.DETAILS</node>
+            <node x="" y="">656fd2c6-ec31-4cbb-9786-83eb198a2278.TABLE:MediaBay.MediaBay.REF.JS.USER.CAREER.LEVEL.DETAILS</node>
+            <node x="" y="">656fd2c6-ec31-4cbb-9786-83eb198a2278.TABLE:MediaBay.MediaBay.REF.JS.USER.COUNTRY.CONTINENT.DETAILS</node>
+            <node x="" y="">656fd2c6-ec31-4cbb-9786-83eb198a2278.TABLE:MediaBay.MediaBay.REF.JS.USER.LOCATION.DETAILS</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.5950892857142857" x="1283.0" y="843.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Services/adkService.php">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/656fd2c6-ec31-4cbb-9786-83eb198a2278/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="83" column="68" lean-forward="false" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="68" />
-          <folding>
-            <element signature="e#32#71#0#PHP" expanded="true" />
-            <marker date="1514446954232" expanded="true" signature="2261:2309" ph="SELECT MAX(c... App" />
-            <marker date="1514446954232" expanded="true" signature="9729:9777" ph="SELECT MAX(c... App" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/SubscriberDetailsRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="53" column="30" lean-forward="false" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/PublisherController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
+        <state relative-caret-position="0">
           <caret line="365" column="80" lean-forward="false" selection-start-line="360" selection-start-column="8" selection-end-line="365" selection-end-column="80" />
-          <folding>
-            <element signature="e#126#171#0#PHP" expanded="true" />
-            <element signature="e#903#1064#0#PHP" expanded="false" />
-            <element signature="e#1069#3035#0#PHP" expanded="false" />
-            <element signature="e#3041#3180#0#PHP" expanded="false" />
-            <element signature="e#3185#6868#0#PHP" expanded="false" />
-            <element signature="e#6874#7019#0#PHP" expanded="false" />
-            <element signature="e#7024#7211#0#PHP" expanded="false" />
-            <element signature="e#7217#7356#0#PHP" expanded="false" />
-            <element signature="e#7361#7550#0#PHP" expanded="false" />
-            <element signature="e#7556#7688#0#PHP" expanded="false" />
-            <element signature="e#7693#11875#0#PHP" expanded="false" />
-            <element signature="e#11881#11962#0#PHP" expanded="false" />
-            <element signature="e#11967#12498#0#PHP" expanded="false" />
-            <element signature="e#12504#12593#0#PHP" expanded="false" />
-            <element signature="e#12598#13770#0#PHP" expanded="false" />
-            <element signature="e#13776#13896#0#PHP" expanded="false" />
-            <element signature="e#13901#15598#0#PHP" expanded="false" />
-            <element signature="e#15604#15724#0#PHP" expanded="false" />
-            <element signature="e#15729#17446#0#PHP" expanded="false" />
-            <element signature="e#17874#20823#0#PHP" expanded="false" />
-            <element signature="e#20895#21684#0#PHP" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Services/adkService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="83" column="68" lean-forward="false" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/991541ba/a1080c6d-9816-4ce8-9f77-64881f30abfc/mediaff_mysql.stats_monthly">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/991541ba/a1080c6d-9816-4ce8-9f77-64881f30abfc/mediaff_mysql.stats_daily">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/991541ba/a1080c6d-9816-4ce8-9f77-64881f30abfc/mediaff_mysql.stats_weekly">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Services/ecampService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="46" />
+        <state relative-caret-position="0">
+          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/routing.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/dev/routing.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/services.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Services/emailCheckService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        <state relative-caret-position="187">
+          <caret line="11" column="46" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="46" />
           <folding>
             <element signature="e#32#71#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Command/statsCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="47" column="44" lean-forward="false" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="44" />
+          <folding>
+            <element signature="e#31#82#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Command/echeckCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="33" column="41" lean-forward="false" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+          <folding>
+            <element signature="e#122#173#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
