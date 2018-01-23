@@ -30,7 +30,7 @@ class emailCheckService extends PublisherController
                         new RFCValidation(),
                         new DNSCheckValidation()
                     ]);
-                    $validator->isValid($email, $multipleValidations);
+                    $validator->isValid('kruchynenko@gmail.com', $multipleValidations);
                 }
             }
         }

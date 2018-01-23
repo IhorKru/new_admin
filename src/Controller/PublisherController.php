@@ -25,6 +25,9 @@ use Egulias\EmailValidator\EmailValidator;
 use Egulias\EmailValidator\Validation\DNSCheckValidation;
 use Egulias\EmailValidator\Validation\MultipleValidationWithAnd;
 use Egulias\EmailValidator\Validation\RFCValidation;
+use Egulias\EmailValidator\Validation\SpoofCheckValidation;
+use Egulias\EmailValidator\Validation\NoRFCWarningsValidation;
+
 
 class PublisherController extends Controller
 {
@@ -275,8 +278,6 @@ class PublisherController extends Controller
 
     /**
      * @Route("/newemailtempl", name="newemailtempl")
-     * @param Request $request
-     * @return Response
      */
     public function newemailtemplAction(Request $request){
         $newTemplate = new Template();
@@ -354,15 +355,28 @@ class PublisherController extends Controller
         ]);
     }
 
-    # Validate email addresses in bulk
     /**
-     * @Route("/{_locale}emailcheck", name="emailcheck")
+     * @Route("/{_locale}/emailcheck", name="emailcheck")
      * @param Request $request
      * @return Response
      */
-    public function emailValidation(Request $request, $numemails) {
+    public function emailValidationAction(Request $request) {
+        $locale = $request->getLocale();
+        $validator = new EmailValidator();
+        $multipleValidations = new MultipleValidationWithAnd([
+            new RFCValidation(),
+            new DNSCheckValidation(),
+            new SpoofCheckValidation(),
+            new NoRFCWarningsValidation
+        ]);
+        $validator->isValid('kruchynenko@gmail.com', $multipleValidations);
+        $result = $validator ->getError();
+        $result1 = $validator ->hasWarnings();
 
-        return $this->render('BackEnd/Publisher/newPubNetwork.html.twig');
+        return $this->render('BackEnd/Publisher/pubEmailCheck.html.twig',[
+            'responce' => $result,
+            'responce2' => $result1
+        ]);
     }
 
     private function setTablePropsTwo($slug) {
