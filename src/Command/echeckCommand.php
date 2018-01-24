@@ -22,7 +22,7 @@ class echeckCommand  extends ContainerAwareCommand
             // the name of the command (the part after "bin/console")
             ->setName('app:checkemails')
             // the short description shown while running "php bin/console list"
-            ->setDescription('check email addres on pre-defined checks')
+            ->setDescription('check email addresses for validity')
             // the full command description shown when running the command with
             // the "--help" option
             ->setHelp('This command allows update all stats on overall dashboard')
@@ -31,10 +31,9 @@ class echeckCommand  extends ContainerAwareCommand
     }
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $request = Request::createFromGlobals();
-        $allstats = $this->getContainer()->get('email.check');
-        $output->writeln('Check completed!');
+        $emailcheck = $this->getContainer()->get('email.check');
         $numemails = $input->getArgument('numemails');
-        $output->writeln('Whoa!' & $numemails);
+        $emailcheck-> emailCheckServiceAction($numemails);
+        $output->writeln('Check completed!');
     }
 }

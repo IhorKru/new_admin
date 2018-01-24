@@ -6,40 +6,53 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * @ORM\Table(name="emailstatus", uniqueConstraints={@ORM\UniqueConstraint(name="email_status_pkey", columns={"id"})}, indexes={@ORM\Index(name="email_status_idx", columns={"emailaddress"})} )
+ * @ORM\Table(name="emailstatus", uniqueConstraints={@ORM\UniqueConstraint(name="email_status_pkey", columns={"id"})}, indexes={@ORM\Index(name="email_status_idx", columns={"userID"})} )
  * @ORM\Entity(repositoryClass="App\Repository\EmailStatusRepository")
  */
 class EmailStatus
 {
     /**
      * @ORM\Id
-     * @ORM\GeneratedValue
+     * @ORM\GeneratedValue(strategy="AUTO")
      * @ORM\Column(type="integer")
      */
     private $id;
 
     /**
-     * @var string
-     * @Assert\NotBlank (message="Complete Email Address field")
-     * @ORM\Column(name="emailaddress", type="string", length=100)
-     * @Assert\Email(
-     *     message = "The email '{{ value }}' is not a valid email.",
-     *     checkMX = true,
-     *     checkHost = true
-     * )
+     * @var int
+     *
+     * @ORM\Column(name="userID", type="integer")
      */
-    private $emailaddress;
+    private $userid;
 
     /**
      * @var string
-     * @ORM\Column(name="emailstatus", type="string", length=100)
+     * @ORM\Column(name="rfccheck", type="string", length=100)
      */
-    private $emailstatus;
+    private $rfccheck;
+
+    /**
+     * @var string
+     * @ORM\Column(name="dnscheck", type="string", length=100)
+     */
+    private $dnscheck;
+
+    /**
+     * @var string
+     * @ORM\Column(name="spoofcheck", type="string", length=100)
+     */
+    private $spoofcheck;
+
+    /**
+     * @var string
+     * @ORM\Column(name="smtpcheck", type="string", length=100)
+    */
+    private $smtpcheck;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="datecreated", type="datetime", nullable=false)
+     * @ORM\Column(name="datecreated", type="datetime", length=255)
      */
     private $datecreated;
 
@@ -60,41 +73,89 @@ class EmailStatus
     }
 
     /**
+     * @return int
+     */
+    public function getUserid(): int
+    {
+        return $this->userid;
+    }
+
+    /**
+     * @param int $userid
+     */
+    public function setUserid(int $userid): void
+    {
+        $this->userid = $userid;
+    }
+
+    /**
      * @return string
      */
-    public function getEmailaddress(): string
+    public function getRfccheck(): string
     {
-        return $this->emailaddress;
+        return $this->rfccheck;
     }
 
     /**
-     * @param string $emailaddress
+     * @param string $rfccheck
      */
-    public function setEmailaddress(string $emailaddress): void
+    public function setRfccheck(string $rfccheck): void
     {
-        $this->emailaddress = $emailaddress;
+        $this->rfccheck = $rfccheck;
     }
 
     /**
      * @return string
      */
-    public function getEmailstatus(): string
+    public function getDnscheck(): string
     {
-        return $this->emailstatus;
+        return $this->dnscheck;
     }
 
     /**
-     * @param string $emailstatus
+     * @param string $dnscheck
      */
-    public function setEmailstatus(string $emailstatus): void
+    public function setDnscheck(string $dnscheck): void
     {
-        $this->emailstatus = $emailstatus;
+        $this->dnscheck = $dnscheck;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSpoofcheck(): string
+    {
+        return $this->spoofcheck;
+    }
+
+    /**
+     * @param string $spoofcheck
+     */
+    public function setSpoofcheck(string $spoofcheck): void
+    {
+        $this->spoofcheck = $spoofcheck;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSmtpcheck(): string
+    {
+        return $this->smtpcheck;
+    }
+
+    /**
+     * @param string $smtpcheck
+     */
+    public function setSmtpcheck(string $smtpcheck): void
+    {
+        $this->smtpcheck = $smtpcheck;
     }
 
     /**
      * @return int
      */
-    public function getDatecreated(): int
+    public function getDatecreated()
     {
         return $this->datecreated;
     }
@@ -102,7 +163,7 @@ class EmailStatus
     /**
      * @param int $datecreated
      */
-    public function setDatecreated(int $datecreated): void
+    public function setDatecreated($datecreated)
     {
         $this->datecreated = $datecreated;
     }

@@ -51,7 +51,7 @@ class SubscriberDetailsRepository extends EntityRepository
         return $query ->getResult();
     }
 
-    public function emailClean($numcampaigns) {
+    public function emailClean($numemails) {
         $conn = $this->getEntityManager()->getConnection();
         $conn->getConfiguration()->setSQLLogger(null);
         //$em = $this ->getDoctrine() ->getManager();
@@ -60,7 +60,7 @@ class SubscriberDetailsRepository extends EntityRepository
         $qb
             -> select('s')
             -> from('App\Entity\SubscriberDetails', 's')
-            -> setMaxResults($numcampaigns)
+            -> setMaxResults($numemails)
         ;
         $query = $qb->getQuery();
         return $query ->getResult();

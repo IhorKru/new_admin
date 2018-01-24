@@ -14,10 +14,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use App\Entity\CampaignInputDetails;
 use App\Entity\Template;
 use App\Entity\PartnerDetails;
+use App\Entity\newEmailCheck;
 use App\Form\CampaignInputType;
 use App\Form\NewEmailType;
 use App\Form\newPartnerType;
+use App\Form\EmailValidationType;
 use Symfony\Component\Process\Process;
+use App\Entity\SubscriberDetails;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use DateTime;
@@ -27,7 +30,6 @@ use Egulias\EmailValidator\Validation\MultipleValidationWithAnd;
 use Egulias\EmailValidator\Validation\RFCValidation;
 use Egulias\EmailValidator\Validation\SpoofCheckValidation;
 use Egulias\EmailValidator\Validation\NoRFCWarningsValidation;
-
 
 class PublisherController extends Controller
 {
@@ -58,9 +60,12 @@ class PublisherController extends Controller
                 $where0 = "s.date = DATE_ADD(CURRENT_DATE(),'-".$i."','DAY')";
             } elseif ($slug == 2) {
                 $where0 = "s.week = ".strftime('%W',$timestamp);
+                if ($gperiod == 52) {
+                    $where3 = "s.year = year(now())-1";
+                }
             } elseif ($slug == 3) {
-                $where0 = "s.month = ".substr(strftime('%m',$timestamp),-1);
-                if ($where0 == '12') {
+                $where0 = "s.month = ".strftime('%m',$timestamp);
+                if ($gperiod == 12) {
                     $where3 = "s.year = year(now())-1";
                 }
             } elseif ($slug == 4) {
@@ -71,7 +76,7 @@ class PublisherController extends Controller
             $timestamp = strtotime($addperiod, $timestamp);
         }
         $emaildata = array_reverse($emaildata);
-        return $this->render('BackEnd/Publisher/pubMasterDash.twig', ['statsdata' => $statsdata, 'period' => $period, 'emaildata' => $emaildata]);
+        return $this->render('BackEnd/Publisher/pubMasterDash.twig', ['statsdata' => $statsdata, 'period' => $period, 'emaildata' => $emaildata, 'where0' => $gperiod]);
         //return $emaildata;
     }
 
@@ -362,20 +367,31 @@ class PublisherController extends Controller
      */
     public function emailValidationAction(Request $request) {
         $locale = $request->getLocale();
-        $validator = new EmailValidator();
-        $multipleValidations = new MultipleValidationWithAnd([
-            new RFCValidation(),
-            new DNSCheckValidation(),
-            new SpoofCheckValidation(),
-            new NoRFCWarningsValidation
+        $numemails = 200;
+        $emailCheck = new newEmailCheck();
+        $form = $this->createForm(EmailValidationType::class, $emailCheck, [
+            'action' => $this -> generateUrl('emailcheck'),
+            'method' => 'POST'
         ]);
-        $validator->isValid('kruchynenko@gmail.com', $multipleValidations);
-        $result = $validator ->getError();
-        $result1 = $validator ->hasWarnings();
+        $form->handleRequest($request);
+        if($form->isSubmitted() && $form->isValid()) {
+            session_write_close();
+            $rootDir = getcwd();
+            $email_process = new Process(
+                'php ../bin/console app:checkemails ' . $numemails
+            );
+            $email_process->setWorkingDirectory($rootDir);
+            $email_process->setTimeout(null);
+            $email_process->start();
+            if($email_process->isRunning()){
+                while($email_process->isRunning()){
+                }
+                //var_dump($email_process);
+            }
+        }
 
-        return $this->render('BackEnd/Publisher/pubEmailCheck.html.twig',[
-            'responce' => $result,
-            'responce2' => $result1
+        return $this->render('BackEnd/Publisher/pubEmailCheck.html.twig', [
+            'form'=>$form->createView()
         ]);
     }
 
@@ -451,7 +467,6 @@ class PublisherController extends Controller
             $format = '%m(%Y)';
             $addperiod = '+1 week';
         }
-
         return [$table,$where0,$where1,$where2,$where3,$period,$timestamp,$format,$addperiod];
     } //getting details of the table that will be queried for index dash
     private function setTableProps($slug) {
@@ -473,4 +488,5 @@ class PublisherController extends Controller
         }
         return [$table, $where0];
     } //getting details of the table that will be queried for campaigns dash
+
 }
