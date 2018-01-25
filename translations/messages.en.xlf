@@ -122,6 +122,10 @@
                 <source>Offer Description</source>
                 <target>Offer Description</target>
             </trans-unit>
+            <trans-unit id="email_check_button">
+                <source>Validate Emails</source>
+                <target>Validate Emails</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

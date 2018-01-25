@@ -367,7 +367,7 @@ class PublisherController extends Controller
      */
     public function emailValidationAction(Request $request) {
         $locale = $request->getLocale();
-        $numemails = 200;
+        $numemails = 1200;
         $emailCheck = new newEmailCheck();
         $form = $this->createForm(EmailValidationType::class, $emailCheck, [
             'action' => $this -> generateUrl('emailcheck'),
