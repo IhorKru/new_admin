@@ -55,11 +55,20 @@ class SubscriberDetailsRepository extends EntityRepository
         $conn = $this->getEntityManager()->getConnection();
         $conn->getConfiguration()->setSQLLogger(null);
         //$em = $this ->getDoctrine() ->getManager();
+        //selecting only emails that were not checked within last 24 hours
+        $qb0 = $this->getEntityManager()->createQueryBuilder();
+        $qb0
+            -> select('check')
+            -> from('App\Entity\EmailStatus', 'check')
+            -> where('s.id = check.userid')
+            -> andWhere('DATE_FORMAT(now(), \'%e-%b-%Y\') - DATE_FORMAT(check.datecreated, \'%e-%b-%Y\') <=5')
+        ;
         ####primary query to select users for future campaigns
         $qb = $this->getEntityManager()->createQueryBuilder();
         $qb
             -> select('s')
             -> from('App\Entity\SubscriberDetails', 's')
+            -> where($qb->expr()->not($qb->expr()->exists($qb0->getDQL())))
             -> setMaxResults($numemails)
         ;
         $query = $qb->getQuery();

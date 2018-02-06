@@ -24,12 +24,6 @@ use App\Entity\SubscriberDetails;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use DateTime;
-use Egulias\EmailValidator\EmailValidator;
-use Egulias\EmailValidator\Validation\DNSCheckValidation;
-use Egulias\EmailValidator\Validation\MultipleValidationWithAnd;
-use Egulias\EmailValidator\Validation\RFCValidation;
-use Egulias\EmailValidator\Validation\SpoofCheckValidation;
-use Egulias\EmailValidator\Validation\NoRFCWarningsValidation;
 
 class PublisherController extends Controller
 {
@@ -145,8 +139,7 @@ class PublisherController extends Controller
      * @param Request $request
      * @return Response
      */
-    public function emailcampaignsAction(Request $request)
-    {
+    public function emailcampaignsAction(Request $request) {
         $locale = $request->getLocale();
         //setting up form entity
         $em = $this ->getDoctrine() ->getManager();
@@ -366,8 +359,9 @@ class PublisherController extends Controller
      * @return Response
      */
     public function emailValidationAction(Request $request) {
+        $em = $this ->getDoctrine() ->getManager();
         $locale = $request->getLocale();
-        $numemails = 1200;
+        $numemails = 10000;
         $emailCheck = new newEmailCheck();
         $form = $this->createForm(EmailValidationType::class, $emailCheck, [
             'action' => $this -> generateUrl('emailcheck'),
@@ -377,6 +371,7 @@ class PublisherController extends Controller
         if($form->isSubmitted() && $form->isValid()) {
             session_write_close();
             $rootDir = getcwd();
+            //$command = 'php ../bin/console app:checkemails ' . $numemails;
             $email_process = new Process(
                 'php ../bin/console app:checkemails ' . $numemails
             );
@@ -386,15 +381,12 @@ class PublisherController extends Controller
             if($email_process->isRunning()){
                 while($email_process->isRunning()){
                 }
-                //var_dump($email_process);
             }
         }
-
         return $this->render('BackEnd/Publisher/pubEmailCheck.html.twig', [
             'form'=>$form->createView()
         ]);
     }
-
     private function setTablePropsTwo($slug) {
         $currmonth = date("m");
         $currweek = date("W");
@@ -488,5 +480,4 @@ class PublisherController extends Controller
         }
         return [$table, $where0];
     } //getting details of the table that will be queried for campaigns dash
-
 }

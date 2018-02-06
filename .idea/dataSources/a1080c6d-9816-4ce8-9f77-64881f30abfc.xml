@@ -10,7 +10,7 @@
     <schema id="3" parent="1" name="mediaff_mysql">
       <Current>1</Current>
       <Visible>1</Visible>
-      <Collation>latin1_swedish_ci</Collation>
+      <Collation>utf8_general_ci</Collation>
     </schema>
     <schema id="4" parent="1" name="mysql">
       <Visible>1</Visible>

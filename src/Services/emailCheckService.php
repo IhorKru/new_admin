@@ -7,6 +7,12 @@ use App\Entity\SubscriberDetails;
 use App\Entity\EmailStatus;
 use App\Controller\verifyEmail;
 use DateTime;
+use Egulias\EmailValidator\EmailValidator;
+use Egulias\EmailValidator\Validation\DNSCheckValidation;
+use Egulias\EmailValidator\Validation\MultipleValidationWithAnd;
+use Egulias\EmailValidator\Validation\RFCValidation;
+use Egulias\EmailValidator\Validation\SpoofCheckValidation;
+use Egulias\EmailValidator\Validation\NoRFCWarningsValidation;
 
 class emailCheckService extends PublisherController
 {
@@ -14,7 +20,6 @@ class emailCheckService extends PublisherController
 
     public function emailCheckServiceAction($numemails) {
         $em = $this ->getDoctrine() ->getManager();
-        $emailStatus = new EmailStatus();
         $subscriber = new SubscriberDetails();
         # 1. Creating sub batches
         $batcharray = array(); # master sub batch
@@ -33,16 +38,17 @@ class emailCheckService extends PublisherController
                 array_push($batcharray, $batchsize);
             }
         }
+        //var_dump($batcharray);
         foreach ($batcharray as $sizecnt) {
+            unset($subscribers);
             $subscribers = $this->getDoctrine()->getRepository('App:SubscriberDetails')->emailClean($sizecnt);
             foreach ($subscribers as $subscriber) {
                 $email = $subscriber->getEmailaddress();
-                $userid = $subscriber->getId();
                 $vmail = new verifyEmail();
                 $vmail->setStreamTimeoutWait(20);
                 //$vmail->Debug = TRUE;
                 //$vmail->Debugoutput= 'html';
-                $vmail->setEmailFrom('viska@viska.is');
+                $vmail->setEmailFrom('m@mediaff.com');
                 if ($vmail->check($email)) {
                     $smtpstatus =  1;
                 } elseif (verifyEmail::validate($email)) {
@@ -50,16 +56,27 @@ class emailCheckService extends PublisherController
                 } else {
                     $smtpstatus = 3;
                 }
-                $emailStatus ->setUserid($userid);
+                //eguilar email check
+                $validator = new EmailValidator();
+                $multipleValidations = new MultipleValidationWithAnd([
+                    new RFCValidation(),
+                    new DNSCheckValidation(),
+                    new SpoofCheckValidation(),
+                ]);
+                $validator->isValid($email, $multipleValidations);
+                $emailStatus = new EmailStatus();
+                $emailStatus ->setUserid($subscriber->getId());
                 $emailStatus ->setRfccheck(-1);
                 $emailStatus ->setDnscheck(-1);
                 $emailStatus ->setSpoofcheck(-1);
                 $emailStatus ->setSmtpcheck($smtpstatus);
                 $emailStatus ->setDateCreated(new DateTime());
+                //var_dump($emailStatus);
                 $em->persist($emailStatus);
-                $em->flush();
-                $em->clear();
+                unset($emailStatus);
             }
+            $em->flush();
+            $em->clear();
         }
     }
 }
