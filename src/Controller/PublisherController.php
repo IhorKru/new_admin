@@ -361,7 +361,7 @@ class PublisherController extends Controller
     public function emailValidationAction(Request $request) {
         $em = $this ->getDoctrine() ->getManager();
         $locale = $request->getLocale();
-        $numemails = 10000;
+        $numemails = 5000;
         $emailCheck = new newEmailCheck();
         $form = $this->createForm(EmailValidationType::class, $emailCheck, [
             'action' => $this -> generateUrl('emailcheck'),
@@ -387,6 +387,15 @@ class PublisherController extends Controller
             'form'=>$form->createView()
         ]);
     }
+
+    /**
+     * @Route("/emailcheckbar", name="emailcheckbar")
+     * @Method({"GET", "POST"})
+     */
+    public function AjaxEmailCheckAction () {
+
+    }
+
     private function setTablePropsTwo($slug) {
         $currmonth = date("m");
         $currweek = date("W");
