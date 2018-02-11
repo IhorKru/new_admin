@@ -45,7 +45,7 @@ class emailCheckService extends PublisherController
             foreach ($subscribers as $subscriber) {
                 $email = $subscriber->getEmailaddress();
                 $vmail = new verifyEmail();
-                $vmail->setStreamTimeoutWait(20);
+                $vmail->setStreamTimeoutWait(1);
                 //$vmail->Debug = TRUE;
                 //$vmail->Debugoutput= 'html';
                 $vmail->setEmailFrom('m@mediaff.com');
