@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a177ce9a-9987-4c52-86fd-079b7209ce58" name="Default" comment="" />
+    <list default="true" id="a177ce9a-9987-4c52-86fd-079b7209ce58" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,8 +68,8 @@
       <file leaf-file-name="PublisherController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/PublisherController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="397" column="0" lean-forward="false" selection-start-line="397" selection-start-column="0" selection-end-line="397" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="279" column="51" lean-forward="false" selection-start-line="279" selection-start-column="51" selection-end-line="279" selection-end-column="51" />
               <folding>
                 <element signature="e#126#171#0#PHP" expanded="true" />
                 <element signature="e#782#943#0#PHP" expanded="false" />
@@ -89,7 +91,6 @@
                 <element signature="e#15546#15666#0#PHP" expanded="false" />
                 <element signature="e#15671#17388#0#PHP" expanded="false" />
                 <element signature="e#17394#17518#0#PHP" expanded="false" />
-                <element signature="e#17973#18569#0#PHP" expanded="false" />
                 <element signature="e#18865#21813#0#PHP" expanded="false" />
                 <element signature="e#21885#22674#0#PHP" expanded="false" />
               </folding>
@@ -100,22 +101,9 @@
       <file leaf-file-name="emailCheckService.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Services/emailCheckService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="44" column="7" lean-forward="false" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+            <state relative-caret-position="782">
+              <caret line="78" column="25" lean-forward="false" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adkService.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Services/adkService.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="351" column="33" lean-forward="false" selection-start-line="351" selection-start-column="33" selection-end-line="351" selection-end-column="33" />
-              <folding>
-                <marker date="1514446954232" expanded="true" signature="2261:2309" ph="SELECT MAX(c... App" />
-                <marker date="1514446954232" expanded="true" signature="9729:9777" ph="SELECT MAX(c... App" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -123,8 +111,8 @@
       <file leaf-file-name="SubscriberDetailsRepository.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Repository/SubscriberDetailsRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="719">
-              <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="24" />
+            <state relative-caret-position="753">
+              <caret line="76" column="5" lean-forward="false" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -223,9 +211,9 @@
         <option value="$PROJECT_DIR$/src/Entity/EmailStatus.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a1080c6d-9816-4ce8-9f77-64881f30abfc/console_2.sql" />
         <option value="$PROJECT_DIR$/src/Controller/PublisherController.php" />
-        <option value="$PROJECT_DIR$/src/Services/emailCheckService.php" />
         <option value="$PROJECT_DIR$/src/Repository/SubscriberDetailsRepository.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql" />
+        <option value="$PROJECT_DIR$/src/Services/emailCheckService.php" />
       </list>
     </option>
   </component>
@@ -326,10 +314,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1982" />
-    <option name="y" value="130" />
-    <option name="width" value="1319" />
-    <option name="height" value="772" />
+    <option name="width" value="1303" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -346,6 +332,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -379,7 +366,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -528,7 +514,8 @@
       <workItem from="1518152186787" duration="6628000" />
       <workItem from="1518284793075" duration="25743000" />
       <workItem from="1518410028437" duration="2180000" />
-      <workItem from="1518414376378" duration="2608000" />
+      <workItem from="1518414376378" duration="3393000" />
+      <workItem from="1518422334420" duration="4897000" />
     </task>
     <task id="LOCAL-00001" summary="Easy commit">
       <created>1514453314028</created>
@@ -789,11 +776,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518417730341</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="email validation functionality - commit 5 - changed close connection to DB">
+      <created>1518417832026</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1518417832026</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="554698000" />
+    <option name="totallyTimeSpent" value="560380000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -805,18 +799,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-19" width="1874" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1873" height="1096" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870865" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870865" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="true" show_stripe_button="true" weight="0.22518677" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="1329" y="17" width="525" height="1048" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="true" show_stripe_button="true" weight="0.21878335" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="1329" y="17" width="525" height="1048" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2790954" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22987872" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11631753" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2107005" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08769994" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19415334" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1940463" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1169,10 +1163,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1513787730727" expanded="true" signature="235:457" ph="SELECT a.app... App" />
-            <marker date="1513787730727" expanded="true" signature="1427:1678" ph="SELECT c FRO... App" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1183,37 +1173,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Services/emailCheckService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="44" column="7" lean-forward="false" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Services/adkService.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="583">
           <caret line="351" column="33" lean-forward="false" selection-start-line="351" selection-start-column="33" selection-end-line="351" selection-end-column="33" />
-          <folding>
-            <marker date="1514446954232" expanded="true" signature="2261:2309" ph="SELECT MAX(c... App" />
-            <marker date="1514446954232" expanded="true" signature="9729:9777" ph="SELECT MAX(c... App" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a1080c6d-9816-4ce8-9f77-64881f30abfc/console_2.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/PublisherController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="397" column="0" lean-forward="false" selection-start-line="397" selection-start-column="0" selection-end-line="397" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="279" column="51" lean-forward="false" selection-start-line="279" selection-start-column="51" selection-end-line="279" selection-end-column="51" />
           <folding>
             <element signature="e#126#171#0#PHP" expanded="true" />
             <element signature="e#782#943#0#PHP" expanded="false" />
@@ -1235,7 +1205,6 @@
             <element signature="e#15546#15666#0#PHP" expanded="false" />
             <element signature="e#15671#17388#0#PHP" expanded="false" />
             <element signature="e#17394#17518#0#PHP" expanded="false" />
-            <element signature="e#17973#18569#0#PHP" expanded="false" />
             <element signature="e#18865#21813#0#PHP" expanded="false" />
             <element signature="e#21885#22674#0#PHP" expanded="false" />
           </folding>
@@ -1244,8 +1213,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/SubscriberDetailsRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="24" />
+        <state relative-caret-position="753">
+          <caret line="76" column="5" lean-forward="false" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Services/emailCheckService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="78" column="25" lean-forward="false" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a1080c6d-9816-4ce8-9f77-64881f30abfc/console_2.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="64" />
           <folding />
         </state>
       </provider>
