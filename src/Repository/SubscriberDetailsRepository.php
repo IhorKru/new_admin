@@ -61,7 +61,7 @@ class SubscriberDetailsRepository extends EntityRepository
             -> select('check')
             -> from('App\Entity\EmailStatus', 'check')
             -> where('s.id = check.userid')
-            -> andWhere('DATE_FORMAT(now(), \'%e-%b-%Y\') - DATE_FORMAT(check.datecreated, \'%e-%b-%Y\') <=5')
+            -> andWhere('DATE_FORMAT(now(), \'%e-%b-%Y\') - DATE_FORMAT(check.datecreated, \'%e-%b-%Y\') <=10')
         ;
         ####primary query to select users for future campaigns
         $qb = $this->getEntityManager()->createQueryBuilder();
@@ -72,6 +72,7 @@ class SubscriberDetailsRepository extends EntityRepository
             -> setMaxResults($numemails)
         ;
         $query = $qb->getQuery();
+        $conn ->close();
         return $query ->getResult();
     }
 }
