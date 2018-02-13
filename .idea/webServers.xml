@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="99c15cb1-0c62-4c59-b299-50a701310a6f" name="Mediaff_Prod" url="http://ec2-34-201-144-253.compute-1.amazonaws.com">
-        <fileTransfer host="ec2-34-201-144-253.compute-1.amazonaws.com" port="22" privateKey="D:\keys\mediaff.ppk" accessType="SFTP" keyPair="true">
+      <webServer id="99c15cb1-0c62-4c59-b299-50a701310a6f" name="Mediaff_Prod" url="http://ec2-34-239-111-78.compute-1.amazonaws.com">
+        <fileTransfer host="ec2-34-239-111-78.compute-1.amazonaws.com" port="22" privateKey="D:\keys\mediaff.ppk" accessType="SFTP" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
