@@ -110,7 +110,7 @@ class PublisherController extends Controller
         $tabledata = $this->getDoctrine()->getRepository('App:StatsDaily')->campDetailTable();//getting data for table
 
         //pushing variables to template
-        return $this->render('BackEnd/Publisher/pubCampDash.html.twig',['batchesperiod'=>$batchesperiod,'prevbatches'=>$prevbatches,'campaignsperiod'=>$campaignsperiod,'prevcampaigns'=>$prevcampaigns,
+        return $this->render('BackEnd/Publisher/pubCampDash.twig',['batchesperiod'=>$batchesperiod,'prevbatches'=>$prevbatches,'campaignsperiod'=>$campaignsperiod,'prevcampaigns'=>$prevcampaigns,
             'emailsperiod'=>$emailsperiod, 'prevemailssent'=>$prevemailssent,'opensperiod'=>$opensperiod,'prevopens'=>$prevopens,'clicksperiod'=>$clicksperiod,'prevclicks'=>$prevclicks,'bouncesperiod'=>$bouncesperiod,
             'prevbounces'=>$prevbounces,'complaintsperiod'=>$complaintsperiod,'prevcomplaints'=>$prevcomplaints,'spendperiod'=>$spendperiod,'prevspend'=>$prevspend,'revenueperiod'=>$revenue, 'tabledata'=>$tabledata,
             'daily'=>$slug,'weekly'=>$slug,'monthly'=>$slug,'yearly'=>$slug]);
@@ -221,7 +221,7 @@ class PublisherController extends Controller
                 $subscriberst = $getcampaign -> ecampServiceAction($geo, $app_id, $templateid, $numcampaigns, $link1, $link2, $timezone, $depdate);
             }
         }
-        return $this->render('BackEnd/Publisher/newPubCampaign.html.twig',[
+        return $this->render('BackEnd/Publisher/newPubCampaign.twig',[
             'form'=>$form->createView()
         ]);
     }
