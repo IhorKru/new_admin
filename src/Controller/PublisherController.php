@@ -83,29 +83,33 @@ class PublisherController extends Controller
         $revenue = 0;
         $table = $this->setTableProps($slug)[0];
         $where0 = $this->setTableProps($slug)[1];
+        $where1 = $this->setTableProps($slug)[2];
+        $where2 = $this->setTableProps($slug)[3];
+        $where3 = $this->setTableProps($slug)[4];
+
         $what = 's.batchesperiod';
-        $batchesperiod = $this->getDoctrine()->getRepository('App:StatsDaily')->currentCp($what,$table,$where0);//count of batches sent for the period
+        $batchesperiod = $this->getDoctrine()->getRepository('App:StatsDaily')->currentCp($what,$table,$where0,$where3);//count of batches sent for the period
         $prevbatches = $this->getDoctrine()->getRepository('App:StatsDaily')->historyLp($what,$table);//selecting 18 prev occurances of above data
         $what = 's.campaignsperiod';
-        $campaignsperiod = $this->getDoctrine()->getRepository('App:StatsDaily')->currentCp($what,$table,$where0);//count campaigns current period
+        $campaignsperiod = $this->getDoctrine()->getRepository('App:StatsDaily')->currentCp($what,$table,$where0,$where3);//count campaigns current period
         $prevcampaigns = $this->getDoctrine()->getRepository('App:StatsDaily')->historyLp($what,$table);//selecting 18 prev occurances of above data
         $what = 's.emailssentperiod';
-        $emailsperiod = $this->getDoctrine()->getRepository('App:StatsDaily')->currentCp($what,$table,$where0);//count of emails sent for the period
+        $emailsperiod = $this->getDoctrine()->getRepository('App:StatsDaily')->currentCp($what,$table,$where0,$where3);//count of emails sent for the period
         $prevemailssent = $this->getDoctrine()->getRepository('App:StatsDaily')->historyLp($what,$table);//selecting 18 prev occurances of above data
         $what = 's.opensperiod';
-        $opensperiod = $this->getDoctrine()->getRepository('App:StatsDaily')->currentCp($what,$table,$where0);//count of opens for the period
+        $opensperiod = $this->getDoctrine()->getRepository('App:StatsDaily')->currentCp($what,$table,$where0,$where3);//count of opens for the period
         $prevopens = $this->getDoctrine()->getRepository('App:StatsDaily')->historyLp($what,$table);//selecting 18 prev occurances of above data
         $what = 's.clicksperiod';
-        $clicksperiod = $this->getDoctrine()->getRepository('App:StatsDaily')->currentCp($what,$table,$where0);//count of opens for the period
+        $clicksperiod = $this->getDoctrine()->getRepository('App:StatsDaily')->currentCp($what,$table,$where0,$where3);//count of opens for the period
         $prevclicks = $this->getDoctrine()->getRepository('App:StatsDaily')->historyLp($what,$table);//selecting 18 prev occurances of above data
         $what = 's.bouncesperiod';
-        $bouncesperiod = $this->getDoctrine()->getRepository('App:StatsDaily')->currentCp($what,$table,$where0);//count of bounces for the period
+        $bouncesperiod = $this->getDoctrine()->getRepository('App:StatsDaily')->currentCp($what,$table,$where0,$where3);//count of bounces for the period
         $prevbounces = $this->getDoctrine()->getRepository('App:StatsDaily')->historyLp($what,$table);//selecting 18 prev occurances of above data
         $what = 's.complaintsperiod';
-        $complaintsperiod = $this->getDoctrine()->getRepository('App:StatsDaily')->currentCp($what,$table,$where0);//count of complaints for the period
+        $complaintsperiod = $this->getDoctrine()->getRepository('App:StatsDaily')->currentCp($what,$table,$where0,$where3);//count of complaints for the period
         $prevcomplaints = $this->getDoctrine()->getRepository('App:StatsDaily')->historyLp($what,$table);//selecting 18 prev occurances of above data
         $what = 's.spendperiod';
-        $spendperiod = $this->getDoctrine()->getRepository('App:StatsDaily')->currentCp($what,$table,$where0);//count of complaints for the period
+        $spendperiod = $this->getDoctrine()->getRepository('App:StatsDaily')->currentCp($what,$table,$where0,$where3);//count of complaints for the period
         $prevspend = $this->getDoctrine()->getRepository('App:StatsDaily')->historyLp($what,$table);//selecting 18 prev occurances of above data
         $tabledata = $this->getDoctrine()->getRepository('App:StatsDaily')->campDetailTable();//getting data for table
 
@@ -471,22 +475,57 @@ class PublisherController extends Controller
         return [$table,$where0,$where1,$where2,$where3,$period,$timestamp,$format,$addperiod];
     } //getting details of the table that will be queried for index dash
     private function setTableProps($slug) {
-        if($slug == "daily") { //daily stats
+        $currmonth = date("m");
+        $currweek = date("W");
+        if($slug == "1") { //daily stats
             $table = "App\Entity\StatsDaily";
             $where0 = "s.date = CURRENT_DATE()";
-        } elseif ($slug == "weekly") { //weekly stats
+            $where1 = "s.id LIKE '%'";
+            $where2 = "s.id LIKE '%'";
+            $where3 = "s.id LIKE '%'";
+        } elseif ($slug == "2") { //weekly stats
             $table = "App\Entity\StatsWeekly";
             $where0 = "s.week = week(now(),1)";
-        } elseif ($slug == "monthly") { //monthly stats
+            if ($currweek == 1) {
+                $where1 = "s.week = 52";
+                $where2 = "s.year = year(now())-1";
+                $where3 = "s.year = year(now())";
+            } else {
+                $where1 = "s.week = week(now(),1)-1";
+                $where2 = "s.year = year(now())";
+                $where3 = $where2;
+            }
+        } elseif ($slug == "3") { //monthly stats
             $table = "App\Entity\StatsMonthly";
             $where0 = "s.month = month(now())";
-        } elseif ($slug == "yearly") { //yearly stats
+            if($currmonth == 1) {
+                $where1 = "s.month = 12";
+                $where2 = "s.year = year(now())-1";
+                $where3 = "s.year = year(now())";
+            } else {
+                $where1 = "s.month = month(now())-1";
+                $where2 = "s.year = year(now())";
+                $where3 = $where2;
+            }
+        } elseif ($slug == "4") { //yearly stats
             $table = "App\Entity\StatsYearly";
             $where0 = "s.year = year(now())";
+            $where1 = "s.year = year(now())-1";
+            $where2 = "s.id LIKE '%'";
+            $where3 = "s.id LIKE '%'";
         } else {
             $table = "App\Entity\StatsWeekly";
             $where0 = "s.week = week(now(),1)";
+            if ($currweek == 1) {
+                $where1 = "s.week = 52";
+                $where2 = "s.year = year(now())-1";
+                $where3 = "s.year = year(now())";
+            } else {
+                $where1 = "s.week = week(now(),1)-1";
+                $where2 = "s.year = year(now())";
+                $where3 = $where2;
+            }
         }
-        return [$table, $where0];
+        return [$table, $where0, $where1, $where2, $where3];
     } //getting details of the table that will be queried for campaigns dash
 }

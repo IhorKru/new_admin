@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a177ce9a-9987-4c52-86fd-079b7209ce58" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PublisherController.php" afterPath="$PROJECT_DIR$/src/Controller/PublisherController.php" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/StatsDailyRepository.php" afterPath="$PROJECT_DIR$/src/Repository/StatsDailyRepository.php" />
+      <change beforePath="$PROJECT_DIR$/templates/BackEnd/Publisher/pubCampDash.twig" afterPath="$PROJECT_DIR$/templates/BackEnd/Publisher/pubCampDash.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,64 +48,70 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="console_2.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a1080c6d-9816-4ce8-9f77-64881f30abfc/console_2.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PublisherController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/PublisherController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="279" column="51" lean-forward="false" selection-start-line="279" selection-start-column="51" selection-end-line="279" selection-end-column="51" />
+            <state relative-caret-position="552">
+              <caret line="514" column="38" lean-forward="false" selection-start-line="514" selection-start-column="38" selection-end-line="514" selection-end-column="38" />
               <folding>
                 <element signature="e#126#171#0#PHP" expanded="true" />
                 <element signature="e#782#943#0#PHP" expanded="false" />
-                <element signature="e#948#3036#0#PHP" expanded="false" />
-                <element signature="e#3042#3181#0#PHP" expanded="false" />
-                <element signature="e#3186#6869#0#PHP" expanded="false" />
-                <element signature="e#6875#7020#0#PHP" expanded="false" />
-                <element signature="e#7025#7212#0#PHP" expanded="false" />
-                <element signature="e#7218#7357#0#PHP" expanded="false" />
-                <element signature="e#7362#7551#0#PHP" expanded="false" />
-                <element signature="e#7557#7689#0#PHP" expanded="false" />
-                <element signature="e#7694#11872#0#PHP" expanded="false" />
-                <element signature="e#11878#11959#0#PHP" expanded="false" />
-                <element signature="e#11964#12495#0#PHP" expanded="false" />
-                <element signature="e#12501#12590#0#PHP" expanded="false" />
-                <element signature="e#12595#13767#0#PHP" expanded="false" />
-                <element signature="e#13773#13838#0#PHP" expanded="false" />
-                <element signature="e#13843#15540#0#PHP" expanded="false" />
-                <element signature="e#15546#15666#0#PHP" expanded="false" />
-                <element signature="e#15671#17388#0#PHP" expanded="false" />
-                <element signature="e#17394#17518#0#PHP" expanded="false" />
-                <element signature="e#18865#21813#0#PHP" expanded="false" />
-                <element signature="e#21885#22674#0#PHP" expanded="false" />
+                <element signature="e#7085#7230#0#PHP" expanded="false" />
+                <element signature="e#7235#7422#0#PHP" expanded="false" />
+                <element signature="e#7428#7567#0#PHP" expanded="false" />
+                <element signature="e#7572#7761#0#PHP" expanded="false" />
+                <element signature="e#7767#7899#0#PHP" expanded="false" />
+                <element signature="e#7904#12077#0#PHP" expanded="false" />
+                <element signature="e#12083#12164#0#PHP" expanded="false" />
+                <element signature="e#12169#12700#0#PHP" expanded="false" />
+                <element signature="e#12706#12795#0#PHP" expanded="false" />
+                <element signature="e#12800#13972#0#PHP" expanded="false" />
+                <element signature="e#13978#14043#0#PHP" expanded="false" />
+                <element signature="e#14048#15745#0#PHP" expanded="false" />
+                <element signature="e#15751#15871#0#PHP" expanded="false" />
+                <element signature="e#15876#17593#0#PHP" expanded="false" />
+                <element signature="e#17599#17723#0#PHP" expanded="false" />
+                <element signature="e#17728#18908#0#PHP" expanded="false" />
+                <element signature="e#18914#19011#0#PHP" expanded="false" />
+                <element signature="e#19016#19064#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="emailCheckService.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Services/emailCheckService.php">
+      <file leaf-file-name="stats_daily" pinned="false" current-in-tab="false">
+        <entry file="das://table:/991541ba/a1080c6d-9816-4ce8-9f77-64881f30abfc/mediaff_mysql.stats_daily">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dev.log" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/var/log/dev.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider">
+            <state relative-caret-position="255">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pubCampDash.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/pubCampDash.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="77" column="25" lean-forward="false" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
+            <state relative-caret-position="-289">
+              <caret line="19" column="57" lean-forward="false" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SubscriberDetailsRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Repository/SubscriberDetailsRepository.php">
+      <file leaf-file-name="StatsDailyRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Repository/StatsDailyRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="76" column="5" lean-forward="false" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+            <state relative-caret-position="2550">
+              <caret line="150" column="0" lean-forward="false" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -143,6 +151,7 @@
       <find>stream_socket_sendto</find>
       <find>clos</find>
       <find>close</find>
+      <find>currentCp</find>
     </findStrings>
     <replaceStrings>
       <replace>App</replace>
@@ -154,7 +163,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Entity/SubscriberADKCampErrors.php" />
         <option value="$PROJECT_DIR$/src/Entity/SubscriberDetails.php" />
         <option value="$PROJECT_DIR$/src/Entity/SubscriberOptInDetails.php" />
         <option value="$PROJECT_DIR$/src/Entity/SubscriberOptOutDetails.php" />
@@ -173,7 +181,6 @@
         <option value="$PROJECT_DIR$/config/packages/doctrine.yaml" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/.env.dist" />
-        <option value="$PROJECT_DIR$/src/Repository/StatsDailyRepository.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console_1.sql" />
         <option value="$PROJECT_DIR$/translations/messages.ru.xlf" />
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
@@ -196,15 +203,17 @@
         <option value="$PROJECT_DIR$/src/Form/EmailValidationType.php" />
         <option value="$PROJECT_DIR$/src/Command/echeckCommand.php" />
         <option value="$PROJECT_DIR$/translations/messages.en.xlf" />
-        <option value="$PROJECT_DIR$/var/log/dev.log" />
         <option value="$PROJECT_DIR$/templates/BackEnd/Publisher/pubEmailCheck.html.twig" />
         <option value="$PROJECT_DIR$/src/Entity/newEmailCheck.php" />
         <option value="$PROJECT_DIR$/src/Entity/EmailStatus.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a1080c6d-9816-4ce8-9f77-64881f30abfc/console_2.sql" />
-        <option value="$PROJECT_DIR$/src/Controller/PublisherController.php" />
         <option value="$PROJECT_DIR$/src/Repository/SubscriberDetailsRepository.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql" />
         <option value="$PROJECT_DIR$/src/Services/emailCheckService.php" />
+        <option value="$PROJECT_DIR$/var/log/dev.log" />
+        <option value="$PROJECT_DIR$/src/Repository/StatsDailyRepository.php" />
+        <option value="$PROJECT_DIR$/templates/BackEnd/Publisher/pubCampDash.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/PublisherController.php" />
       </list>
     </option>
   </component>
@@ -305,9 +314,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1319" />
+    <option name="x" value="757" />
+    <option name="y" value="244" />
+    <option name="width" value="1382" />
     <option name="height" value="784" />
   </component>
   <component name="ProjectView">
@@ -325,7 +334,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -337,6 +345,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -510,7 +519,9 @@
       <workItem from="1518414376378" duration="3393000" />
       <workItem from="1518422334420" duration="8506000" />
       <workItem from="1518501657709" duration="5345000" />
-      <workItem from="1518593581508" duration="2861000" />
+      <workItem from="1518593581508" duration="9533000" />
+      <workItem from="1518712212054" duration="6125000" />
+      <workItem from="1518778973915" duration="1620000" />
     </task>
     <task id="LOCAL-00001" summary="Easy commit">
       <created>1514453314028</created>
@@ -792,11 +803,25 @@
       <option name="project" value="LOCAL" />
       <updated>1518504080108</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="email validation functionality - commit 5 - changed close connection to DB">
+      <created>1518621592417</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1518621592417</updated>
+    </task>
+    <task id="LOCAL-00042" summary="email validation functionality - commit 5 - rename twig templates">
+      <created>1518623672302</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1518623672302</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="572195000" />
+    <option name="totallyTimeSpent" value="586612000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -808,25 +833,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1319" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1873" height="1096" extended-state="6" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15995587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16792738" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30579826" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09211252" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870865" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14057332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870865" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36679536" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870865" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.3472" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="1329" y="17" width="525" height="1048" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.34685165" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="1329" y="17" width="525" height="1048" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22890237" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30738682" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -876,7 +901,8 @@
     <MESSAGE value="email validation functionality - commit 5" />
     <MESSAGE value="email validation functionality - commit 5 - change email and frequency" />
     <MESSAGE value="email validation functionality - commit 5 - changed close connection to DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="email validation functionality - commit 5 - changed close connection to DB" />
+    <MESSAGE value="email validation functionality - commit 5 - rename twig templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="email validation functionality - commit 5 - rename twig templates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -885,23 +911,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://table:/991541ba/a1080c6d-9816-4ce8-9f77-64881f30abfc/mediaff_mysql.migration_versions">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/EmailStatusRepository.php" />
-    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20180109102948.php" />
-    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20180123103301.php" />
-    <entry file="file://$PROJECT_DIR$/src/Entity/Campaigns.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/991541ba/a1080c6d-9816-4ce8-9f77-64881f30abfc/mediaff_mysql.ad_01_offer_details">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -913,13 +922,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
           <caret line="309" column="21" lean-forward="false" selection-start-line="309" selection-start-column="11" selection-end-line="309" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/pubMasterDash.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="59" lean-forward="false" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -1021,7 +1023,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/newPubCampaign.html.twig">
+    <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/newPubCampaign.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="231" column="13" lean-forward="true" selection-start-line="231" selection-start-column="13" selection-end-line="231" selection-end-column="13" />
@@ -1140,13 +1142,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/StatsDailyRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2630">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/991541ba/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.stats_monthly">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1161,10 +1156,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/991541ba/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.stats_weekly">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/pubMasterDash.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="59" lean-forward="false" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/991541ba/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.stats_daily">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.elasticbeanstalk/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.ebextensions/environmentsetup.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.ebextensions/setup.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-107">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1176,64 +1206,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Services/emailCheckService.php">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a1080c6d-9816-4ce8-9f77-64881f30abfc/console_2.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="77" column="25" lean-forward="false" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/PublisherController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="279" column="51" lean-forward="false" selection-start-line="279" selection-start-column="51" selection-end-line="279" selection-end-column="51" />
-          <folding>
-            <element signature="e#126#171#0#PHP" expanded="true" />
-            <element signature="e#782#943#0#PHP" expanded="false" />
-            <element signature="e#948#3036#0#PHP" expanded="false" />
-            <element signature="e#3042#3181#0#PHP" expanded="false" />
-            <element signature="e#3186#6869#0#PHP" expanded="false" />
-            <element signature="e#6875#7020#0#PHP" expanded="false" />
-            <element signature="e#7025#7212#0#PHP" expanded="false" />
-            <element signature="e#7218#7357#0#PHP" expanded="false" />
-            <element signature="e#7362#7551#0#PHP" expanded="false" />
-            <element signature="e#7557#7689#0#PHP" expanded="false" />
-            <element signature="e#7694#11872#0#PHP" expanded="false" />
-            <element signature="e#11878#11959#0#PHP" expanded="false" />
-            <element signature="e#11964#12495#0#PHP" expanded="false" />
-            <element signature="e#12501#12590#0#PHP" expanded="false" />
-            <element signature="e#12595#13767#0#PHP" expanded="false" />
-            <element signature="e#13773#13838#0#PHP" expanded="false" />
-            <element signature="e#13843#15540#0#PHP" expanded="false" />
-            <element signature="e#15546#15666#0#PHP" expanded="false" />
-            <element signature="e#15671#17388#0#PHP" expanded="false" />
-            <element signature="e#17394#17518#0#PHP" expanded="false" />
-            <element signature="e#18865#21813#0#PHP" expanded="false" />
-            <element signature="e#21885#22674#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/var/log/dev.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="-57108">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/991541ba/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.stats_daily">
+    <entry file="das://table:/991541ba/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.stats_weekly">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql">
+    <entry file="file://$PROJECT_DIR$/src/Services/emailCheckService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="64" />
+        <state relative-caret-position="407">
+          <caret line="77" column="25" lean-forward="false" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/991541ba/a1080c6d-9816-4ce8-9f77-64881f30abfc/mediaff_mysql.stats_weekly">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/StatsDailyRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2550">
+          <caret line="150" column="0" lean-forward="false" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/pubCampDash.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="19" column="57" lean-forward="false" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/PublisherController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="514" column="38" lean-forward="false" selection-start-line="514" selection-start-column="38" selection-end-line="514" selection-end-column="38" />
+          <folding>
+            <element signature="e#126#171#0#PHP" expanded="true" />
+            <element signature="e#782#943#0#PHP" expanded="false" />
+            <element signature="e#7085#7230#0#PHP" expanded="false" />
+            <element signature="e#7235#7422#0#PHP" expanded="false" />
+            <element signature="e#7428#7567#0#PHP" expanded="false" />
+            <element signature="e#7572#7761#0#PHP" expanded="false" />
+            <element signature="e#7767#7899#0#PHP" expanded="false" />
+            <element signature="e#7904#12077#0#PHP" expanded="false" />
+            <element signature="e#12083#12164#0#PHP" expanded="false" />
+            <element signature="e#12169#12700#0#PHP" expanded="false" />
+            <element signature="e#12706#12795#0#PHP" expanded="false" />
+            <element signature="e#12800#13972#0#PHP" expanded="false" />
+            <element signature="e#13978#14043#0#PHP" expanded="false" />
+            <element signature="e#14048#15745#0#PHP" expanded="false" />
+            <element signature="e#15751#15871#0#PHP" expanded="false" />
+            <element signature="e#15876#17593#0#PHP" expanded="false" />
+            <element signature="e#17599#17723#0#PHP" expanded="false" />
+            <element signature="e#17728#18908#0#PHP" expanded="false" />
+            <element signature="e#18914#19011#0#PHP" expanded="false" />
+            <element signature="e#19016#19064#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1244,11 +1286,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a1080c6d-9816-4ce8-9f77-64881f30abfc/console_2.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="64" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/var/log/dev.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
         </state>
       </provider>
     </entry>

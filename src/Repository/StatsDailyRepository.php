@@ -147,12 +147,15 @@ class StatsDailyRepository extends EntityRepository
         $result = $qb ->getQuery() ->getSingleScalarResult();
         return $result;
     }//count of emails, sent this period*/
-    public function currentCp($what, $table, $where0) {
+
+
+    public function currentCp($what, $table, $where0, $where3) {
         $qb = $this->getEntityManager()->createQueryBuilder();
         $qb
             -> select($what)
             -> from($table, 's')
             -> where($where0)
+            -> andWhere($where3)
         ;
         $result = $qb ->getQuery() ->getSingleScalarResult();
         return $result;
