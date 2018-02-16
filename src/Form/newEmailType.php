@@ -10,7 +10,7 @@ use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class NewEmailType extends AbstractType{
+class newEmailType extends AbstractType{
     /**
      * @param FormBuilderInterface $builder
      * @param array                $options

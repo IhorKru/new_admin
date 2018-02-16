@@ -16,7 +16,7 @@ use App\Entity\Template;
 use App\Entity\PartnerDetails;
 use App\Entity\newEmailCheck;
 use App\Form\CampaignInputType;
-use App\Form\NewEmailType;
+use App\Form\newEmailType;
 use App\Form\newPartnerType;
 use App\Form\EmailValidationType;
 use Symfony\Component\Process\Process;
@@ -284,7 +284,7 @@ class PublisherController extends Controller
     public function newemailtemplAction(Request $request){
         $newTemplate = new Template();
         $em = $this ->getDoctrine() ->getManager();
-        $form = $this->createForm(NewEmailType::class, $newTemplate, [
+        $form = $this->createForm(newEmailType::class, $newTemplate, [
             'action' => $this -> generateUrl('newemailtempl'),
             'method' => 'POST'
         ]);
