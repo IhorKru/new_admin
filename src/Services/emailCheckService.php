@@ -57,13 +57,13 @@ class emailCheckService extends PublisherController
                     $smtpstatus = 3;
                 }
                 //eguilar email check
-                $validator = new EmailValidator();
+                /*$validator = new EmailValidator();
                 $multipleValidations = new MultipleValidationWithAnd([
                     new RFCValidation(),
                     new DNSCheckValidation(),
                     new SpoofCheckValidation(),
                 ]);
-                $validator->isValid($email, $multipleValidations);
+                $validator->isValid($email, $multipleValidations);*/
                 $emailStatus = new EmailStatus();
                 $emailStatus ->setUserid($subscriber->getId());
                 $emailStatus ->setRfccheck(-1);
