@@ -72,6 +72,8 @@ class SubscriberDetailsRepository extends EntityRepository
             -> setMaxResults($numemails)
         ;
         $query = $qb->getQuery();
-        return $query ->getResult();
+        $output = $query ->getResult();
+        $conn ->close();
+        return $output;
     }
 }
