@@ -45,7 +45,7 @@ class emailCheckService extends PublisherController
             foreach ($subscribers as $subscriber) {
                 $email = $subscriber->getEmailaddress();
                 $vmail = new verifyEmail();
-                $vmail->setStreamTimeoutWait(1);
+                $vmail->setStreamTimeoutWait(5);
                 //$vmail->Debug = TRUE;
                 //$vmail->Debugoutput= 'html';
                 $vmail->setEmailFrom('m@mediaff.com');
@@ -73,10 +73,10 @@ class emailCheckService extends PublisherController
                 $emailStatus ->setDateCreated(new DateTime());
                 //var_dump($emailStatus);
                 $em->persist($emailStatus);
+                $em->flush();
+                $em->clear();
                 unset($emailStatus);
             }
-            $em->flush();
-            $em->clear();
         }
     }
 }
