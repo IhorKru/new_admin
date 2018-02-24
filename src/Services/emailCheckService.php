@@ -77,6 +77,7 @@ class emailCheckService extends PublisherController
             }
             $em->flush();
             $em->clear();
+            $em ->getConnection()->close();
         }
     }
 }

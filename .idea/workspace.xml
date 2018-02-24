@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a177ce9a-9987-4c52-86fd-079b7209ce58" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.ebextensions/setup.config" afterPath="$PROJECT_DIR$/.ebextensions/setup.config" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change beforePath="$PROJECT_DIR$/public/working/adk/adkresult.xml" afterPath="$PROJECT_DIR$/public/working/adk/adkresult.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/SubscriberDetailsRepository.php" afterPath="$PROJECT_DIR$/src/Repository/SubscriberDetailsRepository.php" />
       <change beforePath="$PROJECT_DIR$/src/Services/emailCheckService.php" afterPath="$PROJECT_DIR$/src/Services/emailCheckService.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,16 +28,16 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Mediaff_Dev" type="feb32156:DbDataSourceImpl" />
+        <item name="Mediaff_Prod" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Mediaff_Dev" type="feb32156:DbDataSourceImpl" />
+        <item name="Mediaff_Prod" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Mediaff_Dev" type="feb32156:DbDataSourceImpl" />
+        <item name="Mediaff_Prod" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="mediaff_mysql: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
@@ -50,6 +46,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="console_2.sql" pinned="false" current-in-tab="true">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a1080c6d-9816-4ce8-9f77-64881f30abfc/console_2.sql">
           <provider selected="true" editor-type-id="text-editor">
@@ -60,12 +66,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="statsCommand.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Command/statsCommand.php">
+      <file leaf-file-name="emailCheckService.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Services/emailCheckService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-184">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="411">
+              <caret line="79" column="43" lean-forward="true" selection-start-line="79" selection-start-column="43" selection-end-line="79" selection-end-column="43" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="statsService.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Services/statsService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="394">
+              <caret line="420" column="39" lean-forward="true" selection-start-line="420" selection-start-column="8" selection-end-line="420" selection-end-column="39" />
+              <folding>
+                <element signature="e#576#710#0#PHP" expanded="false" />
+                <marker date="1519055569295" expanded="true" signature="4499:4702" ph="SELECT COUNT... App" />
+                <marker date="1519055569295" expanded="true" signature="5145:5344" ph="SELECT COUNT... App" />
+                <marker date="1519055569295" expanded="true" signature="5790:5829" ph="SELECT COUNT... App" />
+                <marker date="1519055569295" expanded="true" signature="6274:6315" ph="SELECT SUM(c... App" />
+                <marker date="1519055569295" expanded="true" signature="6837:6891" ph="SELECT COUNT... App" />
+                <marker date="1519055569295" expanded="true" signature="7343:7404" ph="SELECT c.ope... App" />
+                <marker date="1519055569295" expanded="true" signature="9453:9512" ph="SELECT l.cli... App" />
+                <marker date="1519055569295" expanded="true" signature="10966:11027" ph="SELECT COUNT... App" />
+                <marker date="1519055569295" expanded="true" signature="11492:11555" ph="SELECT COUNT... App" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,18 +183,18 @@
         <option value="$PROJECT_DIR$/templates/BackEnd/Publisher/pubEmailCheck.html.twig" />
         <option value="$PROJECT_DIR$/src/Entity/newEmailCheck.php" />
         <option value="$PROJECT_DIR$/src/Entity/EmailStatus.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql" />
         <option value="$PROJECT_DIR$/templates/BackEnd/Publisher/pubCampDash.twig" />
         <option value="$PROJECT_DIR$/src/Controller/PublisherController.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/var/log/dev.log" />
         <option value="$PROJECT_DIR$/var/log/prod.log" />
         <option value="$PROJECT_DIR$/.ebextensions/setup.config" />
-        <option value="$PROJECT_DIR$/src/Services/emailCheckService.php" />
         <option value="$PROJECT_DIR$/src/Repository/SubscriberDetailsRepository.php" />
         <option value="$PROJECT_DIR$/src/Services/statsService.php" />
         <option value="$PROJECT_DIR$/src/Repository/StatsDailyRepository.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a1080c6d-9816-4ce8-9f77-64881f30abfc/console_2.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql" />
+        <option value="$PROJECT_DIR$/src/Services/emailCheckService.php" />
       </list>
     </option>
   </component>
@@ -267,7 +294,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/dotenv" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -288,17 +315,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
@@ -317,6 +333,17 @@
               <item name="admin" type="cbb8eebc:String" user="admin" />
               <item name="src" type="cbb8eebc:String" user="src" />
               <item name="Repository" type="cbb8eebc:String" user="Repository" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -480,14 +507,8 @@
       <workItem from="1518967882511" duration="3731000" />
       <workItem from="1519012067642" duration="5898000" />
       <workItem from="1519098625867" duration="5856000" />
-      <workItem from="1519290293370" duration="6423000" />
-    </task>
-    <task id="LOCAL-00002" summary="Easy commit">
-      <created>1514455710444</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1514455710444</updated>
+      <workItem from="1519290293370" duration="8113000" />
+      <workItem from="1519467432373" duration="9985000" />
     </task>
     <task id="LOCAL-00003" summary="added translations">
       <created>1514525456774</created>
@@ -825,11 +846,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518932109796</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="email validation functionality - commit 5 - warmed up cache">
+      <created>1519465221415</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1519465221416</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="642795000" />
+    <option name="totallyTimeSpent" value="654470000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -841,17 +869,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870865" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4605042" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="1329" y="17" width="525" height="1048" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.28067228" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="1329" y="17" width="525" height="1048" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1632653" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2980333" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12708019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2708018" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16414523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22844176" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -915,7 +942,8 @@
     <MESSAGE value="email validation functionality - commit 5 - fixed create camapign" />
     <MESSAGE value="email validation functionality - commit 5 - multiple connections to DB" />
     <MESSAGE value="email validation functionality - commit 5 - warmed up cache" />
-    <option name="LAST_COMMIT_MESSAGE" value="email validation functionality - commit 5 - warmed up cache" />
+    <MESSAGE value="email validation functionality - commit 5 - closed connection after email check" />
+    <option name="LAST_COMMIT_MESSAGE" value="email validation functionality - commit 5 - closed connection after email check" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1145,7 +1173,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1156,24 +1183,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/991541ba/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.stats_yearly">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/991541ba/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.07_campaigninputdetails">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Services/ecampService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1151">
-          <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -1184,21 +1197,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/SubscriberDetailsRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="53" column="54" lean-forward="false" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
-          <folding>
-            <element signature="e#328#2318#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1206,7 +1208,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="543">
           <caret line="122" column="78" lean-forward="false" selection-start-line="122" selection-start-column="78" selection-end-line="122" selection-end-column="78" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1214,44 +1215,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding>
-            <element signature="e#782#943#0#PHP" expanded="false" />
-            <element signature="e#948#3036#0#PHP" expanded="false" />
-            <element signature="e#3042#3181#0#PHP" expanded="false" />
-            <element signature="e#3186#7079#0#PHP" expanded="false" />
-            <element signature="e#7085#7230#0#PHP" expanded="false" />
-            <element signature="e#7235#7422#0#PHP" expanded="false" />
-            <element signature="e#7428#7567#0#PHP" expanded="false" />
-            <element signature="e#7572#7761#0#PHP" expanded="false" />
-            <element signature="e#7767#7899#0#PHP" expanded="false" />
-            <element signature="e#7904#12077#0#PHP" expanded="false" />
-            <element signature="e#12083#12164#0#PHP" expanded="false" />
-            <element signature="e#12169#12700#0#PHP" expanded="false" />
-            <element signature="e#12706#12795#0#PHP" expanded="false" />
-            <element signature="e#12800#13972#0#PHP" expanded="false" />
-            <element signature="e#13978#14043#0#PHP" expanded="false" />
-            <element signature="e#14048#15745#0#PHP" expanded="false" />
-            <element signature="e#15751#15871#0#PHP" expanded="false" />
-            <element signature="e#15876#17593#0#PHP" expanded="false" />
-            <element signature="e#17599#17723#0#PHP" expanded="false" />
-            <element signature="e#17728#18908#0#PHP" expanded="false" />
-            <element signature="e#18914#19011#0#PHP" expanded="false" />
-            <element signature="e#19016#19064#0#PHP" expanded="false" />
-            <element signature="e#19070#22018#0#PHP" expanded="false" />
-            <element signature="e#22090#24246#0#PHP" expanded="false" />
-            <marker date="1518782232838" expanded="true" signature="14767:14805" ph="SELECT MAX(l... App" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/991541ba/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.stats_daily">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a1080c6d-9816-4ce8-9f77-64881f30abfc/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/991541ba/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.stats_monthly">
+    <entry file="file://$PROJECT_DIR$/.ebextensions/setup.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="34" column="63" lean-forward="false" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/991541ba/a1080c6d-9816-4ce8-9f77-64881f30abfc/mediaff_mysql.stats_daily">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1265,26 +1246,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a1080c6d-9816-4ce8-9f77-64881f30abfc/console_1.sql">
+    <entry file="das://table:/991541ba/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.stats_monthly">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/991541ba/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.stats_yearly">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Command/statsCommand.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="58" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Services/emailCheckService.php">
+    <entry file="das://table:/991541ba/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.stats_daily">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Services/ecampService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="75" column="16" lean-forward="false" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="-269">
+          <caret line="42" column="50" lean-forward="false" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
+          <folding>
+            <marker date="1513746702696" expanded="true" signature="4537:4578" ph="SELECT MAX(l... AppBundle" />
+            <marker date="1513746702696" expanded="true" signature="7756:7829" ph="SELECT COUNT... AppBundle" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Services/statsService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="420" column="39" lean-forward="true" selection-start-line="420" selection-start-column="39" selection-end-line="420" selection-end-column="39" />
+        <state relative-caret-position="394">
+          <caret line="420" column="39" lean-forward="true" selection-start-line="420" selection-start-column="8" selection-end-line="420" selection-end-column="39" />
           <folding>
             <element signature="e#576#710#0#PHP" expanded="false" />
             <marker date="1519055569295" expanded="true" signature="4499:4702" ph="SELECT COUNT... App" />
@@ -1300,26 +1305,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Command/statsCommand.php">
+    <entry file="file://$PROJECT_DIR$/src/Services/emailCheckService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-184">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="411">
+          <caret line="79" column="43" lean-forward="true" selection-start-line="79" selection-start-column="43" selection-end-line="79" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.ebextensions/setup.config">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="34" column="63" lean-forward="false" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="64" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/991541ba/a1080c6d-9816-4ce8-9f77-64881f30abfc/mediaff_mysql.stats_daily">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
