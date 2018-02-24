@@ -73,10 +73,10 @@ class emailCheckService extends PublisherController
                 $emailStatus ->setDateCreated(new DateTime());
                 //var_dump($emailStatus);
                 $em->persist($emailStatus);
-                $em->flush();
-                $em->clear();
                 unset($emailStatus);
             }
+            $em->flush();
+            $em->clear();
         }
     }
 }

@@ -51,6 +51,7 @@ class SubscriberDetailsRepository extends EntityRepository
         return $query ->getResult();
     }
 
+    # select emails to run through cleaning procedures
     public function emailClean($numemails) {
         $conn = $this->getEntityManager()->getConnection();
         $conn->getConfiguration()->setSQLLogger(null);
