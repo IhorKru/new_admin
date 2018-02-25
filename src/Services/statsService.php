@@ -301,7 +301,7 @@ class statsService extends Controller
         //revenue period
         $revenueperiod = 0;
 
-        //email statuses
+        //valid emails
         $qb17 = $em->createQueryBuilder();
         $qb17
             -> select('count(es.id)')
@@ -310,6 +310,23 @@ class statsService extends Controller
         ;
         $validemails = $qb17 ->getQuery() ->getSingleScalarResult();
 
+        //invalid but formatted emails
+        $qb18 = $em->createQueryBuilder();
+        $qb18
+            -> select('count(es.id)')
+            -> from('App:EmailStatus', 'es')
+            -> where('es.smtpcheck = 2')
+        ;
+        $invalidform = $qb18 ->getQuery() ->getSingleScalarResult();
+
+        //invalid but formatted emails
+        $qb19 = $em->createQueryBuilder();
+        $qb19
+            -> select('count(es.id)')
+            -> from('App:EmailStatus', 'es')
+            -> where('es.smtpcheck = 3')
+        ;
+        $invalid = $qb19 ->getQuery() ->getSingleScalarResult();
 
         if (!$existingstats) {
             $statsentity ->setYear($curryear);
@@ -341,8 +358,8 @@ class statsService extends Controller
             $statsentity ->setRevenueperiod($revenueperiod);
             $statsentity ->setDatemodified(new DateTime());
             $statsentity ->setValidemails($validemails);
-            $statsentity ->setValidbutmissing($validemails);
-            $statsentity ->setInvalidemails($validemails);
+            $statsentity ->setValidbutmissing($invalidform);
+            $statsentity ->setInvalidemails($invalid);
             $em->persist($statsentity);
             $em->flush();
         } else {
@@ -376,8 +393,8 @@ class statsService extends Controller
             $statsentity ->setRevenueperiod($revenueperiod);
             $statsentity ->setDatemodified(new DateTime());
             $statsentity ->setValidemails($validemails);
-            $statsentity ->setValidbutmissing($validemails);
-            $statsentity ->setInvalidemails($validemails);
+            $statsentity ->setValidbutmissing($invalidform);
+            $statsentity ->setInvalidemails($invalid);
             $em->flush();
         }
 

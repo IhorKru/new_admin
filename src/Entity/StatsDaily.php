@@ -969,5 +969,4 @@ class StatsDaily
         return $this->complaintsperiod;
     }
 
-
 }
