@@ -417,6 +417,18 @@ class statsService extends Controller
                 $em->flush();
             }
         }
+        # STATS FOR EMAIL VERIFICATION
+        $qb17 = $em->createQueryBuilder();
+        $qb17
+            -> select('es.smtpcheck, count(es.id)')
+            -> from('App:EmailStatus', 'es')
+            -> groupBy('es.id')
+            ;
+        $tbldata1 = $qb17 ->getQuery() ->getResult();
+        foreach($tbldata1 as $emailstatus){
+
+        }
+
         $em ->clear();
         $em ->getConnection()->close();
     }
