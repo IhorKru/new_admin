@@ -301,6 +301,16 @@ class statsService extends Controller
         //revenue period
         $revenueperiod = 0;
 
+        //email statuses
+        $qb17 = $em->createQueryBuilder();
+        $qb17
+            -> select('count(es.id)')
+            -> from('App:EmailStatus', 'es')
+            -> where('es.smtpcheck = 1')
+        ;
+        $validemails = $qb17 ->getQuery() ->getSingleScalarResult();
+
+
         if (!$existingstats) {
             $statsentity ->setYear($curryear);
             $statsentity ->setMonth($currmonth);
@@ -330,6 +340,9 @@ class statsService extends Controller
             $statsentity ->setRevenue($revenue);
             $statsentity ->setRevenueperiod($revenueperiod);
             $statsentity ->setDatemodified(new DateTime());
+            $statsentity ->setValidemails($validemails);
+            $statsentity ->setValidbutmissing($validemails);
+            $statsentity ->setInvalidemails($validemails);
             $em->persist($statsentity);
             $em->flush();
         } else {
@@ -362,6 +375,9 @@ class statsService extends Controller
             $statsentity ->setRevenue($revenue);
             $statsentity ->setRevenueperiod($revenueperiod);
             $statsentity ->setDatemodified(new DateTime());
+            $statsentity ->setValidemails($validemails);
+            $statsentity ->setValidbutmissing($validemails);
+            $statsentity ->setInvalidemails($validemails);
             $em->flush();
         }
 
@@ -416,17 +432,6 @@ class statsService extends Controller
                 $em->persist($currbatch);
                 $em->flush();
             }
-        }
-        # STATS FOR EMAIL VERIFICATION
-        $qb17 = $em->createQueryBuilder();
-        $qb17
-            -> select('es.smtpcheck, count(es.id)')
-            -> from('App:EmailStatus', 'es')
-            -> groupBy('es.id')
-            ;
-        $tbldata1 = $qb17 ->getQuery() ->getResult();
-        foreach($tbldata1 as $emailstatus){
-
         }
 
         $em ->clear();

@@ -210,6 +210,26 @@ class StatsDaily
      */
     private $spendperiod;
 
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="validemails", type="float")
+     */
+    private $validemails;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="validbutmissing", type="float")
+     */
+    private $validbutmissing;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="invalidemails", type="float")
+     */
+    private $invalidemails;
 
     /**
      * @var \DateTime
@@ -878,6 +898,54 @@ class StatsDaily
     }
 
     /**
+     * @return int
+     */
+    public function getValidemails(): int
+    {
+        return $this->validemails;
+    }
+
+    /**
+     * @param int $validemails
+     */
+    public function setValidemails(int $validemails): void
+    {
+        $this->validemails = $validemails;
+    }
+
+    /**
+     * @return int
+     */
+    public function getValidbutmissing(): int
+    {
+        return $this->validbutmissing;
+    }
+
+    /**
+     * @param int $validbutmissing
+     */
+    public function setValidbutmissing(int $validbutmissing): void
+    {
+        $this->validbutmissing = $validbutmissing;
+    }
+
+    /**
+     * @return int
+     */
+    public function getInvalidemails(): int
+    {
+        return $this->invalidemails;
+    }
+
+    /**
+     * @param int $invalidemails
+     */
+    public function setInvalidemails(int $invalidemails): void
+    {
+        $this->invalidemails = $invalidemails;
+    }
+
+    /**
      * Set complaintsperiod
      *
      * @param integer $complaintsperiod
@@ -900,4 +968,6 @@ class StatsDaily
     {
         return $this->complaintsperiod;
     }
+
+
 }

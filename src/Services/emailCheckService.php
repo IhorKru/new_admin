@@ -45,10 +45,10 @@ class emailCheckService extends PublisherController
             foreach ($subscribers as $subscriber) {
                 $email = $subscriber->getEmailaddress();
                 $vmail = new verifyEmail();
-                $vmail->setStreamTimeoutWait(5);
+                $vmail->setStreamTimeoutWait(20);
                 //$vmail->Debug = TRUE;
                 //$vmail->Debugoutput= 'html';
-                $vmail->setEmailFrom('m@mediaff.com');
+                $vmail->setEmailFrom('viska@viska.is');
                 if ($vmail->check($email)) {
                     $smtpstatus =  1;
                 } elseif (verifyEmail::validate($email)) {
