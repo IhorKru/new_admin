@@ -11,3 +11,8 @@ newpubcampaign:
         _locale: en|ru|de
 logout:
     path: /logout
+
+admin:
+    path: /{slug}
+    defaults:
+        _controller: App\Controller\FrontEndController::index

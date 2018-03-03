@@ -74,7 +74,7 @@ class PublisherController extends Controller
         //return $emaildata;
     }
 
-    /**
+   /**
      * @Route("/campaignsdash/{slug}", name="campaignsdash", defaults={"slug" = 2})
      * @param $slug
      * @return Response
@@ -387,8 +387,13 @@ class PublisherController extends Controller
                 }
             }
         }
+        //email statuses
+        $em = $this ->getDoctrine() ->getManager();
+        $emailstatuses = $em->getRepository('App:StatsDaily')->emailCheck();
+        //var_dump($emailstatuses);
         return $this->render('BackEnd/Publisher/pubEmailCheck.html.twig', [
-            'form'=>$form->createView()
+            'form'=>$form->createView(),
+            'emailstatuses' => $emailstatuses
         ]);
     }
 

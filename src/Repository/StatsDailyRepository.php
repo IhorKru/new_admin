@@ -202,4 +202,15 @@ class StatsDailyRepository extends EntityRepository
         }
         return $change;
     } //calculate change between 2 parameters
+    public function emailCheck() {
+        $qb = $this->getEntityManager()->createQueryBuilder();
+        $qb
+            -> select('eml.validemails, eml.validbutmissing, eml.invalidemails')
+            -> from('App:StatsDaily', 'eml')
+            -> orderBy('eml.datemodified', 'DESC')
+            -> setMaxResults('1')
+        ;
+        $result = $qb ->getQuery() ->getArrayResult();
+        return $result;
+    } //email check details
 }
