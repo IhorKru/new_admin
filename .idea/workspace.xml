@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a177ce9a-9987-4c52-86fd-079b7209ce58" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" afterPath="$PROJECT_DIR$/templates/base.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,9 +61,59 @@
       <file leaf-file-name="emailCheckService.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Services/emailCheckService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="306">
               <caret line="43" column="110" lean-forward="false" selection-start-line="43" selection-start-column="110" selection-end-line="43" selection-end-column="110" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="verifyEmail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/verifyEmail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="65">
+              <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="7" />
+              <folding>
+                <element signature="e#271#322#0#PHP" expanded="false" />
+                <element signature="e#354#417#0#PHP" expanded="false" />
+                <element signature="e#463#533#0#PHP" expanded="false" />
+                <element signature="e#583#654#0#PHP" expanded="false" />
+                <element signature="e#695#787#0#PHP" expanded="false" />
+                <element signature="e#833#937#0#PHP" expanded="false" />
+                <element signature="e#978#1076#0#PHP" expanded="false" />
+                <element signature="e#1114#1178#0#PHP" expanded="false" />
+                <element signature="e#1211#1510#0#PHP" expanded="false" />
+                <element signature="e#1550#1599#0#PHP" expanded="false" />
+                <element signature="e#1630#1705#0#PHP" expanded="false" />
+                <element signature="e#1739#1841#0#PHP" expanded="false" />
+                <element signature="e#1846#1953#0#PHP" expanded="false" />
+                <element signature="e#1959#2054#0#PHP" expanded="false" />
+                <element signature="e#2059#2405#0#PHP" expanded="false" />
+                <element signature="e#2411#2492#0#PHP" expanded="false" />
+                <element signature="e#2497#2649#0#PHP" expanded="false" />
+                <element signature="e#2554#2643#0#PHP" expanded="false" />
+                <element signature="e#2655#2759#0#PHP" expanded="false" />
+                <element signature="e#2764#2904#0#PHP" expanded="false" />
+                <element signature="e#2910#3060#0#PHP" expanded="false" />
+                <element signature="e#3066#3175#0#PHP" expanded="false" />
+                <element signature="e#3180#3295#0#PHP" expanded="false" />
+                <element signature="e#3301#3488#0#PHP" expanded="false" />
+                <element signature="e#3493#4186#0#PHP" expanded="false" />
+                <element signature="e#4192#4373#0#PHP" expanded="false" />
+                <element signature="e#4378#4566#0#PHP" expanded="false" />
+                <element signature="e#4572#4706#0#PHP" expanded="false" />
+                <element signature="e#4711#4816#0#PHP" expanded="false" />
+                <element signature="e#4822#4941#0#PHP" expanded="false" />
+                <element signature="e#4946#5020#0#PHP" expanded="false" />
+                <element signature="e#5026#5218#0#PHP" expanded="false" />
+                <element signature="e#5223#6124#0#PHP" expanded="false" />
+                <element signature="e#6130#6264#0#PHP" expanded="false" />
+                <element signature="e#9928#10205#0#PHP" expanded="false" />
+                <element signature="e#10538#11261#0#PHP" expanded="false" />
+                <element signature="e#11267#11365#0#PHP" expanded="false" />
+                <element signature="e#11370#11578#0#PHP" expanded="false" />
+                <element signature="e#11582#11893#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,9 +131,18 @@
       <file leaf-file-name="console.sql" pinned="false" current-in-tab="true">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="56" />
+            <state relative-caret-position="493">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="56" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="emailstatus" pinned="false" current-in-tab="false">
+        <entry file="das://table:/991541ba/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.emailstatus">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -129,6 +186,8 @@
       <find>invalidemails</find>
       <find>socket</find>
       <find>stream_socket_client</find>
+      <find>$from</find>
+      <find>$max_connection_timeout</find>
     </findStrings>
     <replaceStrings>
       <replace>App</replace>
@@ -170,7 +229,6 @@
         <option value="$PROJECT_DIR$/var/log/dev.log" />
         <option value="$PROJECT_DIR$/var/log/prod.log" />
         <option value="$PROJECT_DIR$/src/Repository/SubscriberDetailsRepository.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql" />
         <option value="$PROJECT_DIR$/.ebextensions/setup.config" />
         <option value="$PROJECT_DIR$/src/Services/statsService.php" />
         <option value="$PROJECT_DIR$/src/Entity/StatsDaily.php" />
@@ -191,6 +249,7 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/656fd2c6-ec31-4cbb-9786-83eb198a2278/console_1.sql" />
         <option value="$PROJECT_DIR$/src/Services/emailCheckService.php" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql" />
       </list>
     </option>
   </component>
@@ -318,6 +377,17 @@
             <path>
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -497,14 +567,7 @@
       <workItem from="1520338481380" duration="13857000" />
       <workItem from="1520459170484" duration="2526000" />
       <workItem from="1520497258556" duration="5313000" />
-      <workItem from="1520584026187" duration="10951000" />
-    </task>
-    <task id="LOCAL-00012" summary="massive commit 1">
-      <created>1514538273364</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1514538273364</updated>
+      <workItem from="1520584026187" duration="13813000" />
     </task>
     <task id="LOCAL-00013" summary="added env variables 1">
       <created>1514540094627</created>
@@ -842,11 +905,18 @@
       <option name="project" value="LOCAL" />
       <updated>1520598207938</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="updated side bar showing on mobile devices - first attempt">
+      <created>1520602594404</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1520602594404</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="774420000" />
+    <option name="totallyTimeSpent" value="777282000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -860,8 +930,8 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30484116" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16792738" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4160363" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13388805" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -934,11 +1004,12 @@
     <MESSAGE value="email validation functionality - commit 5 - closed connection after email check" />
     <MESSAGE value="email validation functionality - commit 5 - email status stats" />
     <MESSAGE value="email validation functionality - commit 5 - email status stats completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="email validation functionality - commit 5 - email status stats completed" />
+    <MESSAGE value="updated side bar showing on mobile devices - first attempt" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated side bar showing on mobile devices - first attempt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -947,13 +1018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/991541ba/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.emailstatus">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1217,54 +1281,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/verifyEmail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="329" column="52" lean-forward="false" selection-start-line="329" selection-start-column="52" selection-end-line="329" selection-end-column="52" />
-          <folding>
-            <element signature="e#271#322#0#PHP" expanded="false" />
-            <element signature="e#354#417#0#PHP" expanded="false" />
-            <element signature="e#463#533#0#PHP" expanded="false" />
-            <element signature="e#583#654#0#PHP" expanded="false" />
-            <element signature="e#695#787#0#PHP" expanded="false" />
-            <element signature="e#833#937#0#PHP" expanded="false" />
-            <element signature="e#978#1076#0#PHP" expanded="false" />
-            <element signature="e#1114#1178#0#PHP" expanded="false" />
-            <element signature="e#1211#1510#0#PHP" expanded="false" />
-            <element signature="e#1550#1599#0#PHP" expanded="false" />
-            <element signature="e#1630#1705#0#PHP" expanded="false" />
-            <element signature="e#1739#1841#0#PHP" expanded="false" />
-            <element signature="e#1846#1953#0#PHP" expanded="false" />
-            <element signature="e#1959#2054#0#PHP" expanded="false" />
-            <element signature="e#2059#2405#0#PHP" expanded="false" />
-            <element signature="e#2411#2492#0#PHP" expanded="false" />
-            <element signature="e#2497#2649#0#PHP" expanded="false" />
-            <element signature="e#2554#2643#0#PHP" expanded="false" />
-            <element signature="e#2655#2759#0#PHP" expanded="false" />
-            <element signature="e#2764#2904#0#PHP" expanded="false" />
-            <element signature="e#2910#3060#0#PHP" expanded="false" />
-            <element signature="e#3066#3175#0#PHP" expanded="false" />
-            <element signature="e#3180#3295#0#PHP" expanded="false" />
-            <element signature="e#3301#3488#0#PHP" expanded="false" />
-            <element signature="e#3493#4186#0#PHP" expanded="false" />
-            <element signature="e#4192#4373#0#PHP" expanded="false" />
-            <element signature="e#4378#4566#0#PHP" expanded="false" />
-            <element signature="e#4572#4706#0#PHP" expanded="false" />
-            <element signature="e#4711#4816#0#PHP" expanded="false" />
-            <element signature="e#4822#4941#0#PHP" expanded="false" />
-            <element signature="e#4946#5020#0#PHP" expanded="false" />
-            <element signature="e#5026#5218#0#PHP" expanded="false" />
-            <element signature="e#5223#6124#0#PHP" expanded="false" />
-            <element signature="e#6130#6264#0#PHP" expanded="false" />
-            <element signature="e#9928#10205#0#PHP" expanded="false" />
-            <element signature="e#10538#11261#0#PHP" expanded="false" />
-            <element signature="e#11267#11365#0#PHP" expanded="false" />
-            <element signature="e#11370#11578#0#PHP" expanded="false" />
-            <element signature="e#11582#11893#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/991541ba/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.stats_daily">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1310,10 +1326,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Services/emailCheckService.php">
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="43" column="110" lean-forward="false" selection-start-line="43" selection-start-column="110" selection-end-line="43" selection-end-column="110" />
+        <state relative-caret-position="357">
+          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1326,6 +1342,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://table:/991541ba/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.emailstatus">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Services/emailCheckService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="43" column="110" lean-forward="false" selection-start-line="43" selection-start-column="110" selection-end-line="43" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/verifyEmail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="7" />
+          <folding>
+            <element signature="e#271#322#0#PHP" expanded="false" />
+            <element signature="e#354#417#0#PHP" expanded="false" />
+            <element signature="e#463#533#0#PHP" expanded="false" />
+            <element signature="e#583#654#0#PHP" expanded="false" />
+            <element signature="e#695#787#0#PHP" expanded="false" />
+            <element signature="e#833#937#0#PHP" expanded="false" />
+            <element signature="e#978#1076#0#PHP" expanded="false" />
+            <element signature="e#1114#1178#0#PHP" expanded="false" />
+            <element signature="e#1211#1510#0#PHP" expanded="false" />
+            <element signature="e#1550#1599#0#PHP" expanded="false" />
+            <element signature="e#1630#1705#0#PHP" expanded="false" />
+            <element signature="e#1739#1841#0#PHP" expanded="false" />
+            <element signature="e#1846#1953#0#PHP" expanded="false" />
+            <element signature="e#1959#2054#0#PHP" expanded="false" />
+            <element signature="e#2059#2405#0#PHP" expanded="false" />
+            <element signature="e#2411#2492#0#PHP" expanded="false" />
+            <element signature="e#2497#2649#0#PHP" expanded="false" />
+            <element signature="e#2554#2643#0#PHP" expanded="false" />
+            <element signature="e#2655#2759#0#PHP" expanded="false" />
+            <element signature="e#2764#2904#0#PHP" expanded="false" />
+            <element signature="e#2910#3060#0#PHP" expanded="false" />
+            <element signature="e#3066#3175#0#PHP" expanded="false" />
+            <element signature="e#3180#3295#0#PHP" expanded="false" />
+            <element signature="e#3301#3488#0#PHP" expanded="false" />
+            <element signature="e#3493#4186#0#PHP" expanded="false" />
+            <element signature="e#4192#4373#0#PHP" expanded="false" />
+            <element signature="e#4378#4566#0#PHP" expanded="false" />
+            <element signature="e#4572#4706#0#PHP" expanded="false" />
+            <element signature="e#4711#4816#0#PHP" expanded="false" />
+            <element signature="e#4822#4941#0#PHP" expanded="false" />
+            <element signature="e#4946#5020#0#PHP" expanded="false" />
+            <element signature="e#5026#5218#0#PHP" expanded="false" />
+            <element signature="e#5223#6124#0#PHP" expanded="false" />
+            <element signature="e#6130#6264#0#PHP" expanded="false" />
+            <element signature="e#9928#10205#0#PHP" expanded="false" />
+            <element signature="e#10538#11261#0#PHP" expanded="false" />
+            <element signature="e#11267#11365#0#PHP" expanded="false" />
+            <element signature="e#11370#11578#0#PHP" expanded="false" />
+            <element signature="e#11582#11893#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/656fd2c6-ec31-4cbb-9786-83eb198a2278/console_1.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1334,18 +1413,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="56" />
+        <state relative-caret-position="493">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="56" />
           <folding />
         </state>
       </provider>
