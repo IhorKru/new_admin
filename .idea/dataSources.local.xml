@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="Mediaff_Dev" uuid="a1080c6d-9816-4ce8-9f77-64881f30abfc">
-      <database-info product="MySQL" version="5.6.34-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.45 ( Revision: 9131eefa398531c7dc98776e8a3fe839e544c5b2 )">
-        <extra-name-characters>#@</extra-name-characters>
-        <identifier-quote-string>`</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
-      <secret-storage>master_key</secret-storage>
-      <user-name>mediazmj</user-name>
-      <introspection-schemas>*:mediaff_mysql,mysql,test</introspection-schemas>
-    </data-source>
     <data-source name="Mediaff_Prod" uuid="2f09ce7a-c4bb-45ea-b4c5-1dad5789de64">
       <database-info product="MySQL" version="5.6.27-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.45 ( Revision: 9131eefa398531c7dc98776e8a3fe839e544c5b2 )">
         <extra-name-characters>#@</extra-name-characters>
@@ -29,6 +19,12 @@
       <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
       <introspection-schemas>MediaBay:MediaBay,MediaBayProd,MediaBayTest</introspection-schemas>
+    </data-source>
+    <data-source name="mediaff_mysql@localhost" uuid="34270964-8854-47e5-a981-18b13f90705d">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>mediazmj</user-name>
     </data-source>
   </component>
 </project>
