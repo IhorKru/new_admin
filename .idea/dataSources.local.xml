@@ -11,20 +11,15 @@
       <user-name>mediazmj</user-name>
       <introspection-schemas>*:mediaff_mysql</introspection-schemas>
     </data-source>
-    <data-source name="Mediaff_Arc" uuid="656fd2c6-ec31-4cbb-9786-83eb198a2278">
-      <database-info product="PostgreSQL" version="10.1" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.1.1">
-        <identifier-quote-string>&quot;</identifier-quote-string>
+    <data-source name="Mediaff_Stage" uuid="fb2b5495-6a14-407a-a5ba-39652aa20e01">
+      <database-info product="MySQL" version="5.6.38" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.45 ( Revision: 9131eefa398531c7dc98776e8a3fe839e544c5b2 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
       </database-info>
-      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper" />
       <secret-storage>master_key</secret-storage>
-      <user-name>postgres</user-name>
-      <introspection-schemas>MediaBay:MediaBay,MediaBayProd,MediaBayTest</introspection-schemas>
-    </data-source>
-    <data-source name="mediaff_mysql@localhost" uuid="34270964-8854-47e5-a981-18b13f90705d">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
-      <secret-storage>master_key</secret-storage>
-      <first-sync>true</first-sync>
       <user-name>mediazmj</user-name>
+      <introspection-schemas>*:mediaff_mysql</introspection-schemas>
     </data-source>
   </component>
 </project>

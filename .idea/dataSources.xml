@@ -15,13 +15,7 @@
         <property name="yearIsDateType" value="false" />
       </driver-properties>
     </data-source>
-    <data-source source="LOCAL" name="Mediaff_Arc" uuid="656fd2c6-ec31-4cbb-9786-83eb198a2278">
-      <driver-ref>postgresql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/MediaBay</jdbc-url>
-    </data-source>
-    <data-source source="LOCAL" name="mediaff_mysql@localhost" uuid="34270964-8854-47e5-a981-18b13f90705d">
+    <data-source source="LOCAL" name="Mediaff_Stage" uuid="fb2b5495-6a14-407a-a5ba-39652aa20e01">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
