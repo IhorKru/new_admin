@@ -398,8 +398,8 @@ class statsService extends Controller
             $em->flush();
         }
 
-        $em ->clear();
-        $em ->getConnection()->close();
+        #$em ->clear();
+        #$em ->getConnection()->close();
 
         # STATS FOR CAMPAIGN DETAILS ACTION (THIS REQUIRES PASSING BATCH ID OTHERWISE THIS WILL BE CALCULATED FOR ALL BATCHES EVERY TIME)
         //making final SQL
@@ -456,8 +456,8 @@ class statsService extends Controller
             }
         }
 
-        $em ->clear();
-        $em ->getConnection()->close();
+        #$em ->clear();
+        #$em ->getConnection()->close();
     }
 
 }
