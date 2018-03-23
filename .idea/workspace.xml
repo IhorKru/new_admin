@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a177ce9a-9987-4c52-86fd-079b7209ce58" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/Services/emailCheckService.php" afterPath="$PROJECT_DIR$/src/Services/emailCheckService.php" />
+      <change beforePath="$PROJECT_DIR$/src/Services/statsService.php" afterPath="$PROJECT_DIR$/src/Services/statsService.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,8 +40,8 @@
       <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="56" />
+            <state relative-caret-position="70">
+              <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -57,19 +60,29 @@
       <file leaf-file-name="statsService.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Services/statsService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5824">
-              <caret line="427" column="9" lean-forward="false" selection-start-line="427" selection-start-column="9" selection-end-line="427" selection-end-column="9" />
+            <state relative-caret-position="5460">
+              <caret line="401" column="8" lean-forward="false" selection-start-line="401" selection-start-column="8" selection-end-line="401" selection-end-column="8" />
               <folding>
-                <marker date="1521820541000" expanded="true" signature="4499:4702" ph="SELECT COUNT... App" />
-                <marker date="1521820541000" expanded="true" signature="5145:5344" ph="SELECT COUNT... App" />
-                <marker date="1521820541000" expanded="true" signature="5790:5829" ph="SELECT COUNT... App" />
-                <marker date="1521820541000" expanded="true" signature="6274:6315" ph="SELECT SUM(c... App" />
-                <marker date="1521820541000" expanded="true" signature="6837:6891" ph="SELECT COUNT... App" />
-                <marker date="1521820541000" expanded="true" signature="7343:7404" ph="SELECT c.ope... App" />
-                <marker date="1521820541000" expanded="true" signature="9453:9512" ph="SELECT l.cli... App" />
-                <marker date="1521820541000" expanded="true" signature="10966:11027" ph="SELECT COUNT... App" />
-                <marker date="1521820541000" expanded="true" signature="11492:11555" ph="SELECT COUNT... App" />
+                <marker date="1521828583000" expanded="true" signature="4499:4702" ph="SELECT COUNT... App" />
+                <marker date="1521828583000" expanded="true" signature="5145:5344" ph="SELECT COUNT... App" />
+                <marker date="1521828583000" expanded="true" signature="5790:5829" ph="SELECT COUNT... App" />
+                <marker date="1521828583000" expanded="true" signature="6274:6315" ph="SELECT SUM(c... App" />
+                <marker date="1521828583000" expanded="true" signature="6837:6891" ph="SELECT COUNT... App" />
+                <marker date="1521828583000" expanded="true" signature="7343:7404" ph="SELECT c.ope... App" />
+                <marker date="1521828583000" expanded="true" signature="9453:9512" ph="SELECT l.cli... App" />
+                <marker date="1521828583000" expanded="true" signature="10966:11027" ph="SELECT COUNT... App" />
+                <marker date="1521828583000" expanded="true" signature="11492:11555" ph="SELECT COUNT... App" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="emailCheckService.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Services/emailCheckService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="780">
+              <caret line="79" column="13" lean-forward="false" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -171,12 +184,12 @@
         <option value="$PROJECT_DIR$/src/Controller/verifyEmail.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a1080c6d-9816-4ce8-9f77-64881f30abfc/console_2.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/656fd2c6-ec31-4cbb-9786-83eb198a2278/console_1.sql" />
-        <option value="$PROJECT_DIR$/src/Services/emailCheckService.php" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/src/Services/statsService.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fb2b5495-6a14-407a-a5ba-39652aa20e01/console.sql" />
+        <option value="$PROJECT_DIR$/src/Services/emailCheckService.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql" />
+        <option value="$PROJECT_DIR$/src/Services/statsService.php" />
       </list>
     </option>
   </component>
@@ -276,7 +289,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/flex" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="37" />
     <option name="y" value="23" />
     <option name="width" value="1641" />
@@ -306,6 +319,11 @@
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name=".ebextensions" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -316,7 +334,7 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="Erlang External Tools" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;PostgreSQL" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
@@ -492,14 +510,7 @@
       <workItem from="1521092129671" duration="20430000" />
       <workItem from="1521735817570" duration="2916000" />
       <workItem from="1521739502482" duration="698000" />
-      <workItem from="1521740284929" duration="7959000" />
-    </task>
-    <task id="LOCAL-00019" summary="added env variables 2">
-      <created>1514876469197</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1514876469197</updated>
+      <workItem from="1521740284929" duration="12129000" />
     </task>
     <task id="LOCAL-00020" summary="added env variables 2">
       <created>1514878344716</created>
@@ -837,11 +848,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521820777777</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="updated side bar showing on mobile devices - first attempt to fight multiple connections">
+      <created>1521822832316</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1521822832317</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="835213000" />
+    <option name="totallyTimeSpent" value="839383000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -853,16 +871,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="37" y="23" width="1641" height="1027" extended-state="0" />
+    <frame x="36" y="23" width="1641" height="1027" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32738718" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843652" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870865" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="true" show_stripe_button="true" weight="0.29380903" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="1329" y="17" width="525" height="1048" />
-      <window_info id="Database Console" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18761726" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41025642" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20450282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11319575" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11569731" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17510945" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -977,13 +995,6 @@
     <entry file="das://table:/991541ba/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.stats_daily" />
     <entry file="das://table:/991541ba/a1080c6d-9816-4ce8-9f77-64881f30abfc/mediaff_mysql.stats_daily" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a1080c6d-9816-4ce8-9f77-64881f30abfc/console_2.sql" />
-    <entry file="file://$PROJECT_DIR$/src/Services/emailCheckService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="43" column="110" lean-forward="false" selection-start-line="43" selection-start-column="110" selection-end-line="43" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/34270964-8854-47e5-a981-18b13f90705d/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1113,14 +1124,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.ebextensions/setup.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="21" column="114" lean-forward="false" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="114" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.ebextensions/environmentsetup.config">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1245,14 +1248,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fb2b5495-6a14-407a-a5ba-39652aa20e01/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
@@ -1261,20 +1256,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Services/emailCheckService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="79" column="13" lean-forward="false" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.ebextensions/setup.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="21" column="110" lean-forward="false" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Services/statsService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5824">
-          <caret line="427" column="9" lean-forward="false" selection-start-line="427" selection-start-column="9" selection-end-line="427" selection-end-column="9" />
+        <state relative-caret-position="5460">
+          <caret line="401" column="8" lean-forward="false" selection-start-line="401" selection-start-column="8" selection-end-line="401" selection-end-column="8" />
           <folding>
-            <marker date="1521820541000" expanded="true" signature="4499:4702" ph="SELECT COUNT... App" />
-            <marker date="1521820541000" expanded="true" signature="5145:5344" ph="SELECT COUNT... App" />
-            <marker date="1521820541000" expanded="true" signature="5790:5829" ph="SELECT COUNT... App" />
-            <marker date="1521820541000" expanded="true" signature="6274:6315" ph="SELECT SUM(c... App" />
-            <marker date="1521820541000" expanded="true" signature="6837:6891" ph="SELECT COUNT... App" />
-            <marker date="1521820541000" expanded="true" signature="7343:7404" ph="SELECT c.ope... App" />
-            <marker date="1521820541000" expanded="true" signature="9453:9512" ph="SELECT l.cli... App" />
-            <marker date="1521820541000" expanded="true" signature="10966:11027" ph="SELECT COUNT... App" />
-            <marker date="1521820541000" expanded="true" signature="11492:11555" ph="SELECT COUNT... App" />
+            <marker date="1521828583000" expanded="true" signature="4499:4702" ph="SELECT COUNT... App" />
+            <marker date="1521828583000" expanded="true" signature="5145:5344" ph="SELECT COUNT... App" />
+            <marker date="1521828583000" expanded="true" signature="5790:5829" ph="SELECT COUNT... App" />
+            <marker date="1521828583000" expanded="true" signature="6274:6315" ph="SELECT SUM(c... App" />
+            <marker date="1521828583000" expanded="true" signature="6837:6891" ph="SELECT COUNT... App" />
+            <marker date="1521828583000" expanded="true" signature="7343:7404" ph="SELECT c.ope... App" />
+            <marker date="1521828583000" expanded="true" signature="9453:9512" ph="SELECT l.cli... App" />
+            <marker date="1521828583000" expanded="true" signature="10966:11027" ph="SELECT COUNT... App" />
+            <marker date="1521828583000" expanded="true" signature="11492:11555" ph="SELECT COUNT... App" />
           </folding>
         </state>
       </provider>
