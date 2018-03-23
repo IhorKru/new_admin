@@ -403,6 +403,7 @@ class statsService extends Controller
 
         # STATS FOR CAMPAIGN DETAILS ACTION (THIS REQUIRES PASSING BATCH ID OTHERWISE THIS WILL BE CALCULATED FOR ALL BATCHES EVERY TIME)
         //making final SQL
+        //this script calculates number of bounced, opened, sent emails for last 10 campaigns
         $qb16 = $em->createQueryBuilder();
         $qb16
             -> select('DISTINCT 
@@ -423,6 +424,7 @@ class statsService extends Controller
             -> leftJoin('App\Entity\Subscribers', 's', \Doctrine\ORM\Query\Expr\Join::WITH, 'li.id = s.list')
             -> groupBy('ca.id')
             -> orderBy('ca.id', 'ASC')
+            -> setMaxResults('10')
         ;
         $tbldata = $qb16 ->getQuery() ->getResult();
 
