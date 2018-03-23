@@ -404,7 +404,7 @@ class statsService extends Controller
         # STATS FOR CAMPAIGN DETAILS ACTION (THIS REQUIRES PASSING BATCH ID OTHERWISE THIS WILL BE CALCULATED FOR ALL BATCHES EVERY TIME)
         //making final SQL
         //this script calculates number of bounced, opened, sent emails for last 10 campaigns
-        $qb16 = $em->createQueryBuilder();
+        /*$qb16 = $em->createQueryBuilder();
         $qb16
             -> select('DISTINCT 
                               ca.id as id,
@@ -457,7 +457,7 @@ class statsService extends Controller
         }
 
         $em ->clear();
-        $em ->getConnection()->close();
+        $em ->getConnection()->close();*/
     }
 
 }
