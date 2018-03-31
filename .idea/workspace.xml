@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a177ce9a-9987-4c52-86fd-079b7209ce58" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.api_key.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,7 +30,17 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Mediaff_Prod" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Mediaff_Prod" type="feb32156:DbDataSourceImpl" />
+        <item name="mediaff_mysql: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FavoritesManager">
@@ -34,20 +48,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="stats_daily" pinned="false" current-in-tab="false">
-        <entry file="das://fb2b5495-6a14-407a-a5ba-39652aa20e01/schema/mediaff_mysql/table/stats_daily">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="verifyEmail.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Controller/verifyEmail.php">
+      <file leaf-file-name=".api_key.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.api_key.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="57" column="24" lean-forward="true" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+            <state relative-caret-position="42">
+              <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -104,7 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/BackEnd/Publisher/newPubCampaign.html.twig" />
         <option value="$PROJECT_DIR$/src/Form/CampaignInputType.php" />
         <option value="$PROJECT_DIR$/src/Form/NewEmailType.php" />
         <option value="$PROJECT_DIR$/src/Form/newAdOfferType.php" />
@@ -153,8 +157,9 @@
         <option value="$PROJECT_DIR$/src/Services/emailCheckService.php" />
         <option value="$PROJECT_DIR$/src/Services/statsService.php" />
         <option value="$PROJECT_DIR$/templates/BackEnd/Publisher/pubEmailCheck.html.twig" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql" />
         <option value="$PROJECT_DIR$/src/Controller/verifyEmail.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql" />
+        <option value="$PROJECT_DIR$/.api_key.php" />
       </list>
     </option>
   </component>
@@ -255,7 +260,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="38" />
+    <option name="x" value="39" />
     <option name="y" value="23" />
     <option name="width" value="1641" />
     <option name="height" value="1027" />
@@ -462,14 +467,8 @@
       <workItem from="1522422827921" duration="70000" />
       <workItem from="1522422923015" duration="616000" />
       <workItem from="1522479060829" duration="141000" />
-      <workItem from="1522485184995" duration="1531000" />
-    </task>
-    <task id="LOCAL-00029" summary="email validation functionality - commit 2">
-      <created>1516609286313</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1516609286313</updated>
+      <workItem from="1522485184995" duration="5262000" />
+      <workItem from="1522500619921" duration="2779000" />
     </task>
     <task id="LOCAL-00030" summary="email validation functionality - commit 2">
       <created>1516678734336</created>
@@ -807,11 +806,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522489046964</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="changed time between email checks to 20 second.">
+      <created>1522489138052</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1522489138052</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="858651000" />
+    <option name="totallyTimeSpent" value="865161000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -823,19 +829,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="38" y="23" width="1641" height="1027" extended-state="0" />
+    <frame x="39" y="23" width="1641" height="1027" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32977587" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32912722" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32738718" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32912722" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32870865" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32843652" />
-      <window_info anchor="bottom" x="1329" y="17" width="525" height="1048" id="Terminal" internal_type="SLIDING" order="11" type="SLIDING" weight="0.2633788" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3280757" />
+      <window_info anchor="bottom" x="1329" y="17" width="525" height="1048" id="Terminal" internal_type="SLIDING" order="11" type="SLIDING" weight="0.4511041" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.20450282" />
-      <window_info anchor="right" id="Database Console" order="5" weight="0.2951845" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16760476" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18761726" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" weight="0.32977587" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.1713571" />
+      <window_info anchor="right" id="Database" order="4" weight="0.17323327" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32980332" />
@@ -846,6 +852,7 @@
       <window_info anchor="bottom" id="Command Line Tools Console" order="10" weight="0.32941177" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Database Console" order="5" weight="0.3427142" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32977587" />
     </layout>
     <layout-to-restore>
@@ -858,14 +865,14 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32977587" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32843652" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32870865" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32977587" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="9" weight="0.32941177" />
       <window_info anchor="right" id="Database" order="4" weight="0.17510945" />
       <window_info anchor="bottom" x="1329" y="17" width="525" height="1048" id="Terminal" internal_type="SLIDING" order="11" type="SLIDING" weight="0.39664218" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32738718" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32843652" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -914,6 +921,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -1075,13 +1089,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/c2f91b82/fb2b5495-6a14-407a-a5ba-39652aa20e01/mediaff_mysql.01_subscriberdetails">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/c2f91b82/fb2b5495-6a14-407a-a5ba-39652aa20e01/mediaff_mysql.06_subscriberadkcamperrors">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1145,20 +1152,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.ebextensions/setup.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="21" column="109" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2f91b82/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.emailstatus">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/pubEmailCheck.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14">
@@ -1166,17 +1159,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/c2f91b82/fb2b5495-6a14-407a-a5ba-39652aa20e01/mediaff_mysql.emailstatus">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/src/Controller/verifyEmail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql">
+    <entry file="file://$PROJECT_DIR$/.ebextensions/setup.config">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="64" />
+        <state relative-caret-position="294">
+          <caret line="21" column="109" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="110" />
         </state>
       </provider>
     </entry>
@@ -1187,10 +1180,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/verifyEmail.php">
+    <entry file="das://2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/schema/mediaff_mysql/table/subscribers">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/c2f91b82/fb2b5495-6a14-407a-a5ba-39652aa20e01/mediaff_mysql.01_subscriberdetails">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/c2f91b82/fb2b5495-6a14-407a-a5ba-39652aa20e01/mediaff_mysql.emailstatus">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/schema/mediaff_mysql/table/01_subscriberdetails">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/c2f91b82/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.emailstatus">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="57" column="24" lean-forward="true" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+        <state relative-caret-position="392">
+          <caret line="28" selection-start-line="28" selection-end-line="28" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/neverbounce/neverbounce-php/examples/account-info.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.api_key.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
         </state>
       </provider>
     </entry>

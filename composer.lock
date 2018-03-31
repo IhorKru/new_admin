@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a4e026621e120b01697d716b9bb8d9a2",
+    "content-hash": "a7e1a335e5068c697c5ec3cdbac9de32",
     "packages": [
         {
             "name": "beberlei/DoctrineExtensions",
@@ -1213,6 +1213,58 @@
                 "psr-3"
             ],
             "time": "2017-06-19T01:22:40+00:00"
+        },
+        {
+            "name": "neverbounce/neverbounce-php",
+            "version": "v4.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NeverBounce/NeverBounceAPI-PHP.git",
+                "reference": "4c4ebcca5892715e49f43bc9a9c089080fc3cc25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NeverBounce/NeverBounceAPI-PHP/zipball/4c4ebcca5892715e49f43bc9a9c089080fc3cc25",
+                "reference": "4c4ebcca5892715e49f43bc9a9c089080fc3cc25",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "NeverBounce\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ankur Pandit",
+                    "email": "ankur@neverbounce.com"
+                },
+                {
+                    "name": "Michael Mollick",
+                    "email": "mike@neverbounce.com"
+                }
+            ],
+            "description": "This package provides convenient methods to integrate the NeverBounce API into your project.",
+            "homepage": "https://neverbounce.com",
+            "keywords": [
+                "email",
+                "email validation",
+                "validation",
+                "verification"
+            ],
+            "time": "2017-12-21T14:46:10+00:00"
         },
         {
             "name": "nikic/php-parser",
