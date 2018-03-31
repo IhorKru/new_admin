@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EBConfigMappings">
+    <file url="file://$PROJECT_DIR$/.ebextensions/environmentsetup.config" dialect="EB-EXT-YAML" />
+    <file url="file://$PROJECT_DIR$/.ebextensions/setup.config" dialect="EB-EXT-YAML" />
+  </component>
+</project>
