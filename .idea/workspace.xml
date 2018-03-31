@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a177ce9a-9987-4c52-86fd-079b7209ce58" name="Default" comment="" />
+    <list default="true" id="a177ce9a-9987-4c52-86fd-079b7209ce58" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -289,7 +291,7 @@
     <property name="database.data.extractors.current.id" value="Comma-separated (CSV)_id" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="vcs.Subversion.Network" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -312,7 +314,7 @@
     </option>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -460,21 +462,7 @@
       <workItem from="1522422827921" duration="70000" />
       <workItem from="1522422923015" duration="616000" />
       <workItem from="1522479060829" duration="141000" />
-      <workItem from="1522485184995" duration="1386000" />
-    </task>
-    <task id="LOCAL-00027" summary="email validation functionality - commit 1">
-      <created>1516033835978</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1516033835978</updated>
-    </task>
-    <task id="LOCAL-00028" summary="email validation functionality - commit 2">
-      <created>1516607551438</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1516607551438</updated>
+      <workItem from="1522485184995" duration="1531000" />
     </task>
     <task id="LOCAL-00029" summary="email validation functionality - commit 2">
       <created>1516609286313</created>
@@ -805,11 +793,25 @@
       <option name="project" value="LOCAL" />
       <updated>1522488688586</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="changed time between email checks to 20 second.">
+      <created>1522488928658</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1522488928658</updated>
+    </task>
+    <task id="LOCAL-00077" summary="changed time between email checks to 20 second.">
+      <created>1522489046964</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1522489046964</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="858506000" />
+    <option name="totallyTimeSpent" value="858651000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
