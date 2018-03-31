@@ -7,6 +7,8 @@ use App\Entity\SubscriberDetails;
 use App\Entity\EmailStatus;
 use App\Controller\verifyEmail;
 use DateTime;
+use NeverBounce\Single;
+use NeverBounce\Auth;
 use Egulias\EmailValidator\EmailValidator;
 use Egulias\EmailValidator\Validation\DNSCheckValidation;
 use Egulias\EmailValidator\Validation\MultipleValidationWithAnd;
@@ -21,6 +23,7 @@ class emailCheckService extends PublisherController
     public function emailCheckServiceAction($numemails) {
         $em = $this ->getDoctrine() ->getManager();
         $subscriber = new SubscriberDetails();
+        $key = Auth::setApiKey('secret_0073808a6d223620faf3860f368a2199');
         # 1. Creating sub batches
         $batcharray = array(); # master sub batch
         $batchsize = 100;
@@ -56,6 +59,7 @@ class emailCheckService extends PublisherController
                 } else {
                     $smtpstatus = 3;
                 }
+
                 //eguilar email check
                 /*$validator = new EmailValidator();
                 $multipleValidations = new MultipleValidationWithAnd([
@@ -64,12 +68,18 @@ class emailCheckService extends PublisherController
                     new SpoofCheckValidation(),
                 ]);
                 $validator->isValid($email, $multipleValidations);*/
+
+                #NEVERBOUNCE EMAIL CHECKER
+                $verification = new Single();
+                $singlecheck = $verification->check($email, true, true);
+
                 $emailStatus = new EmailStatus();
                 $emailStatus ->setUserid($subscriber->getId());
                 $emailStatus ->setRfccheck(-1);
                 $emailStatus ->setDnscheck(-1);
                 $emailStatus ->setSpoofcheck(-1);
                 $emailStatus ->setSmtpcheck($smtpstatus);
+                $emailStatus ->setNbstatus($singlecheck->result_integer);
                 $emailStatus ->setDateCreated(new DateTime());
                 //var_dump($emailStatus);
                 $em->persist($emailStatus);

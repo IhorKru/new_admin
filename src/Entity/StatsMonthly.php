@@ -220,16 +220,30 @@ class StatsMonthly
     /**
      * @var int
      *
-     * @ORM\Column(name="validbutmissing", type="float")
+     * @ORM\Column(name="invalidemails", type="float")
      */
-    private $validbutmissing;
+    private $invalidemails;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="invalidemails", type="float")
+     * @ORM\Column(name="dispemails", type="float")
      */
-    private $invalidemails;
+    private $dispemails;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="catchallemails", type="float")
+     */
+    private $catchallemails;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="unknownemails", type="float")
+     */
+    private $unknownemails;
 
     /**
      * @var \DateTime
@@ -940,22 +954,6 @@ class StatsMonthly
     /**
      * @return int
      */
-    public function getValidbutmissing(): int
-    {
-        return $this->validbutmissing;
-    }
-
-    /**
-     * @param int $validbutmissing
-     */
-    public function setValidbutmissing(int $validbutmissing): void
-    {
-        $this->validbutmissing = $validbutmissing;
-    }
-
-    /**
-     * @return int
-     */
     public function getInvalidemails(): int
     {
         return $this->invalidemails;
@@ -968,5 +966,55 @@ class StatsMonthly
     {
         $this->invalidemails = $invalidemails;
     }
+
+    /**
+     * @return int
+     */
+    public function getDispemails(): int
+    {
+        return $this->dispemails;
+    }
+
+    /**
+     * @param int $dispemails
+     */
+    public function setDispemails(int $dispemails): void
+    {
+        $this->dispemails = $dispemails;
+    }
+
+    /**
+     * @return int
+     */
+    public function getCatchallemails(): int
+    {
+        return $this->catchallemails;
+    }
+
+    /**
+     * @param int $catchallemails
+     */
+    public function setCatchallemails(int $catchallemails): void
+    {
+        $this->catchallemails = $catchallemails;
+    }
+
+    /**
+     * @return int
+     */
+    public function getUnknownemails(): int
+    {
+        return $this->unknownemails;
+    }
+
+    /**
+     * @param int $unknownemails
+     */
+    public function setUnknownemails(int $unknownemails): void
+    {
+        $this->unknownemails = $unknownemails;
+    }
+
+
 
 }

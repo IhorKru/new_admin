@@ -205,7 +205,7 @@ class StatsDailyRepository extends EntityRepository
     public function emailCheck() {
         $qb = $this->getEntityManager()->createQueryBuilder();
         $qb
-            -> select('eml.validemails, eml.validbutmissing, eml.invalidemails')
+            -> select('eml.validemails, eml.dispemails, eml.invalidemails, eml.catchallemails, eml.unknownemails')
             -> from('App:StatsDaily', 'eml')
             -> orderBy('eml.datemodified', 'DESC')
             -> setMaxResults('1')

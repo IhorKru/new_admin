@@ -50,6 +50,12 @@ class EmailStatus
     private $smtpcheck;
 
     /**
+     * @var string
+     * @ORM\Column(name="nbstatus", type="integer")
+     */
+    private $nbstatus;
+
+    /**
      * @var int
      *
      * @ORM\Column(name="datecreated", type="datetime", length=255)
@@ -166,6 +172,22 @@ class EmailStatus
     public function setDatecreated($datecreated)
     {
         $this->datecreated = $datecreated;
+    }
+
+    /**
+     * @return string
+     */
+    public function getNbstatus(): string
+    {
+        return $this->nbstatus;
+    }
+
+    /**
+     * @param string $nbstatus
+     */
+    public function setNbstatus(string $nbstatus): void
+    {
+        $this->nbstatus = $nbstatus;
     }
 
 }

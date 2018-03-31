@@ -280,18 +280,26 @@
                                 {% if loop.last == false %}
                                     {% if key == 'validemails' %}
                                         'Valid Emails'
-                                    {% elseif key == 'validbutmissing' %}
-                                        'Valid/Missing'
+                                    {% elseif key == 'dispemails' %}
+                                        'Disposable'
                                     {% elseif key == 'invalidemails' %}
-                                        'Invalid/Miss'
+                                        'Invalid'
+                                    {% elseif key == 'catchallemails' %}
+                                        'Catch All'
+                                    {% elseif key == 'unknownemails' %}
+                                        'Unknown'
                                     {% endif %},
                                 {% else %}
                                     {% if key == 'validemails' %}
                                         'Valid Emails'
-                                    {% elseif key == 'validbutmissing' %}
-                                        'Valid/Missing'
+                                    {% elseif key == 'dispemails' %}
+                                        'Disposable'
                                     {% elseif key == 'invalidemails' %}
-                                        'Invalid/Miss'
+                                        'Invalid'
+                                    {% elseif key == 'catchallemails' %}
+                                        'Catch All'
+                                    {% elseif key == 'unknownemails' %}
+                                        'Unknown'
                                     {% endif %}
                                 {% endif %}
                             {% endfor %}
@@ -333,21 +341,29 @@
                                     {{ "value:" }} {{ val }},
                                         {% if key == 'validemails' %}
                                             {{ "name:" }} 'Valid Emails'
-                                        {% elseif key == 'validbutmissing' %}
-                                            {{ "name:" }} 'Valid/Missing'
+                                        {% elseif key == 'dispemails' %}
+                                            {{ "name:" }} 'Disposable'
                                         {% elseif key == 'invalidemails' %}
-                                            {{ "name:" }} 'Invalid/Miss'
+                                            {{ "name:" }} 'Invalid'
+                                        {% elseif key == 'catchallemails' %}
+                                            {{ "name:" }} 'Catch All'
+                                        {% elseif key == 'unknownemails' %}
+                                            {{ "name:" }} 'Unknown'
                                         {% endif %}
                                     {{ "}, {" }}
                                 {% else %}
                                     {{ "value:" }} {{ val }},
                                         {% if key == 'validemails' %}
                                             {{ "name:" }} 'Valid Emails'
-                                        {% elseif key == 'validbutmissing' %}
-                                            {{ "name:" }} 'Valid/Missing'
+                                        {% elseif key == 'dispemails' %}
+                                            {{ "name:" }} 'Disposable'
                                         {% elseif key == 'invalidemails' %}
-                                            {{ "name:" }} 'Invalid/Miss'
-                                    {% endif %}
+                                            {{ "name:" }} 'Invalid'
+                                        {% elseif key == 'catchallemails' %}
+                                            {{ "name:" }} 'Catch All'
+                                        {% elseif key == 'unknownemails' %}
+                                            {{ "name:" }} 'Unknown'
+                                        {% endif %}
                                 {% endif %}
                             {% endfor %}
                         {% endfor %}

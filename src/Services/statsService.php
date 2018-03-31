@@ -306,27 +306,45 @@ class statsService extends Controller
         $qb17
             -> select('count(es.id)')
             -> from('App:EmailStatus', 'es')
-            -> where('es.smtpcheck = 1')
+            -> where('es.nbstatus = 0')
         ;
         $validemails = $qb17 ->getQuery() ->getSingleScalarResult();
 
-        //invalid but formatted emails
+        //invalid emails
         $qb18 = $em->createQueryBuilder();
         $qb18
             -> select('count(es.id)')
             -> from('App:EmailStatus', 'es')
-            -> where('es.smtpcheck = 2')
+            -> where('es.nbstatus = 1')
         ;
-        $invalidform = $qb18 ->getQuery() ->getSingleScalarResult();
+        $invalidemails = $qb18 ->getQuery() ->getSingleScalarResult();
 
-        //invalid but formatted emails
+        //disposable emails
         $qb19 = $em->createQueryBuilder();
         $qb19
             -> select('count(es.id)')
             -> from('App:EmailStatus', 'es')
-            -> where('es.smtpcheck = 3')
+            -> where('es.nbstatus = 2')
         ;
-        $invalid = $qb19 ->getQuery() ->getSingleScalarResult();
+        $disposable = $qb19 ->getQuery() ->getSingleScalarResult();
+
+        //disposable emails
+        $qb20 = $em->createQueryBuilder();
+        $qb20
+            -> select('count(es.id)')
+            -> from('App:EmailStatus', 'es')
+            -> where('es.nbstatus = 3')
+        ;
+        $catchall = $qb20 ->getQuery() ->getSingleScalarResult();
+
+        //disposable emails
+        $qb21 = $em->createQueryBuilder();
+        $qb21
+            -> select('count(es.id)')
+            -> from('App:EmailStatus', 'es')
+            -> where('es.nbstatus = 4')
+        ;
+        $unknown = $qb21 ->getQuery() ->getSingleScalarResult();
 
         if (!$existingstats) {
             $statsentity ->setYear($curryear);
@@ -358,8 +376,10 @@ class statsService extends Controller
             $statsentity ->setRevenueperiod($revenueperiod);
             $statsentity ->setDatemodified(new DateTime());
             $statsentity ->setValidemails($validemails);
-            $statsentity ->setValidbutmissing($invalidform);
-            $statsentity ->setInvalidemails($invalid);
+            $statsentity ->setInvalidemails($invalidemails);
+            $statsentity ->setDispemails($disposable);
+            $statsentity ->setCatchallemails($catchall);
+            $statsentity ->setUnknownemails($unknown);
             $em->persist($statsentity);
             $em->flush();
         } else {
@@ -393,8 +413,10 @@ class statsService extends Controller
             $statsentity ->setRevenueperiod($revenueperiod);
             $statsentity ->setDatemodified(new DateTime());
             $statsentity ->setValidemails($validemails);
-            $statsentity ->setValidbutmissing($invalidform);
-            $statsentity ->setInvalidemails($invalid);
+            $statsentity ->setInvalidemails($invalidemails);
+            $statsentity ->setDispemails($disposable);
+            $statsentity ->setCatchallemails($catchall);
+            $statsentity ->setUnknownemails($unknown);
             $em->flush();
         }
 
