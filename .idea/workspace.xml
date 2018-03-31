@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a177ce9a-9987-4c52-86fd-079b7209ce58" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/verifyEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/verifyEmail.php" afterDir="false" />
-    </list>
+    <list default="true" id="a177ce9a-9987-4c52-86fd-079b7209ce58" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,17 +24,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Mediaff_Prod" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Mediaff_Prod" type="feb32156:DbDataSourceImpl" />
-        <item name="mediaff_mysql: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FavoritesManager">
@@ -57,8 +44,8 @@
       <file leaf-file-name="verifyEmail.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/verifyEmail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+            <state relative-caret-position="364">
+              <caret line="57" column="24" lean-forward="true" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -283,17 +270,6 @@
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -313,7 +289,7 @@
     <property name="database.data.extractors.current.id" value="Comma-separated (CSV)_id" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="settings.editor.selected.configurable" value="vcs.Subversion.Network" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -484,14 +460,7 @@
       <workItem from="1522422827921" duration="70000" />
       <workItem from="1522422923015" duration="616000" />
       <workItem from="1522479060829" duration="141000" />
-      <workItem from="1522485184995" duration="1138000" />
-    </task>
-    <task id="LOCAL-00026" summary="email validation functionality - commit 1">
-      <created>1515495596739</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1515495596739</updated>
+      <workItem from="1522485184995" duration="1386000" />
     </task>
     <task id="LOCAL-00027" summary="email validation functionality - commit 1">
       <created>1516033835978</created>
@@ -829,11 +798,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522236008544</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="changed time between email checks to 20 second.">
+      <created>1522488688585</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1522488688586</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="858258000" />
+    <option name="totallyTimeSpent" value="858506000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -846,7 +822,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="38" y="23" width="1641" height="1027" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32977587" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32738718" />
@@ -856,9 +831,9 @@
       <window_info anchor="bottom" x="1329" y="17" width="525" height="1048" id="Terminal" internal_type="SLIDING" order="11" type="SLIDING" weight="0.2633788" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.20450282" />
       <window_info anchor="right" id="Database Console" order="5" weight="0.2951845" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11131957" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16760476" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" weight="0.32977587" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.15947467" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.1713571" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32980332" />
@@ -904,7 +879,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="added translations" />
     <MESSAGE value="massive commit 1" />
     <MESSAGE value="added env variables 1" />
     <MESSAGE value="added env variables 2" />
@@ -929,7 +903,8 @@
     <MESSAGE value="updated side bar showing on mobile devices - first attempt to fight multiple connections - removed part of stats code" />
     <MESSAGE value="changed time between email checks to 10 second. update display of email status details" />
     <MESSAGE value="changed time between email checks to 10 second." />
-    <option name="LAST_COMMIT_MESSAGE" value="changed time between email checks to 10 second." />
+    <MESSAGE value="changed time between email checks to 20 second." />
+    <option name="LAST_COMMIT_MESSAGE" value="changed time between email checks to 20 second." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1212,8 +1187,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/verifyEmail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+        <state relative-caret-position="364">
+          <caret line="57" column="24" lean-forward="true" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
         </state>
       </provider>
     </entry>
