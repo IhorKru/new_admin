@@ -30,7 +30,7 @@ class verifyEmail extends PublisherController
      * The connection timeout, in seconds.
      * @var int
      */
-    protected $max_connection_timeout = 10;
+    protected $max_connection_timeout = 20;
 
     /**
      * Timeout value on stream, in seconds.
