@@ -47,7 +47,7 @@ class emailCheckService extends PublisherController
             $subscribers = $this->getDoctrine()->getRepository('App:SubscriberDetails')->emailClean($sizecnt);
             foreach ($subscribers as $subscriber) {
                 $email = $subscriber->getEmailaddress();
-                $vmail = new verifyEmail();
+                /*$vmail = new verifyEmail();
                 $vmail->setStreamTimeoutWait(20);
                 //$vmail->Debug = TRUE;
                 //$vmail->Debugoutput= 'html';
@@ -78,7 +78,7 @@ class emailCheckService extends PublisherController
                 $emailStatus ->setRfccheck(-1);
                 $emailStatus ->setDnscheck(-1);
                 $emailStatus ->setSpoofcheck(-1);
-                $emailStatus ->setSmtpcheck($smtpstatus);
+                $emailStatus ->setSmtpcheck(-1);
                 $emailStatus ->setNbstatus($singlecheck->result_integer);
                 $emailStatus ->setDateCreated(new DateTime());
                 //var_dump($emailStatus);
