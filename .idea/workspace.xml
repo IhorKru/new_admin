@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a177ce9a-9987-4c52-86fd-079b7209ce58" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.api_key.php" beforeDir="false" afterPath="$PROJECT_DIR$/.api-key.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fb2b5495-6a14-407a-a5ba-39652aa20e01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fb2b5495-6a14-407a-a5ba-39652aa20e01.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/EmailStatus.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/EmailStatus.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/StatsDaily.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/StatsDaily.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/StatsMonthly.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/StatsMonthly.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/StatsWeekly.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/StatsWeekly.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/StatsYearly.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/StatsYearly.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/StatsDailyRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/StatsDailyRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/emailCheckService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/emailCheckService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/statsService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/statsService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/BackEnd/Publisher/pubEmailCheck.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/BackEnd/Publisher/pubEmailCheck.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,14 +50,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="emailCheckService.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Services/emailCheckService.php">
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="81" column="71" selection-start-line="81" selection-start-column="57" selection-end-line="81" selection-end-column="71" />
-              <folding>
-                <element signature="e#32#71#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="294">
+              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -84,7 +70,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>adk</find>
       <find>adkaction</find>
       <find>newpubcampaign</find>
       <find>image</find>
@@ -114,6 +99,7 @@
       <find>stream_socket_client</find>
       <find>$from</find>
       <find>$max_connection_timeout</find>
+      <find>nav-md</find>
     </findStrings>
     <replaceStrings>
       <replace>App</replace>
@@ -160,7 +146,6 @@
         <option value="$PROJECT_DIR$/src/Controller/PublisherController.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a1080c6d-9816-4ce8-9f77-64881f30abfc/console_2.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/656fd2c6-ec31-4cbb-9786-83eb198a2278/console_1.sql" />
-        <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fb2b5495-6a14-407a-a5ba-39652aa20e01/console.sql" />
         <option value="$PROJECT_DIR$/src/Controller/verifyEmail.php" />
@@ -176,6 +161,7 @@
         <option value="$PROJECT_DIR$/src/Entity/StatsMonthly.php" />
         <option value="$PROJECT_DIR$/src/Entity/StatsWeekly.php" />
         <option value="$PROJECT_DIR$/src/Entity/StatsYearly.php" />
+        <option value="$PROJECT_DIR$/templates/base.html.twig" />
       </list>
     </option>
   </component>
@@ -293,6 +279,41 @@
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="custom.css" type="620a8d5e:NestingTreeNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -312,7 +333,7 @@
     <property name="database.data.extractors.current.id" value="Comma-separated (CSV)_id" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -505,14 +526,7 @@
       <workItem from="1522485184995" duration="5262000" />
       <workItem from="1522500619921" duration="3532000" />
       <workItem from="1522509956041" duration="550000" />
-      <workItem from="1522510533268" duration="5005000" />
-    </task>
-    <task id="LOCAL-00031" summary="email validation functionality - commit 3">
-      <created>1516789392719</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1516789392719</updated>
+      <workItem from="1522510533268" duration="5679000" />
     </task>
     <task id="LOCAL-00032" summary="email validation functionality - commit 3">
       <created>1516880336863</created>
@@ -850,7 +864,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522508666968</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="adding nevebounce integration - second run - updated entities for new emails statuses check">
+      <created>1522515738816</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1522515738817</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -859,7 +880,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="871469000" />
+    <option name="totallyTimeSpent" value="872143000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -872,6 +893,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="23" width="1640" height="1027" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32912722" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32738718" />
@@ -880,7 +902,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3280757" />
       <window_info anchor="bottom" x="1329" y="17" width="525" height="1048" id="Terminal" internal_type="SLIDING" order="11" type="SLIDING" weight="0.32912722" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.20450282" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12140175" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18022528" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" weight="0.32977587" />
       <window_info anchor="right" id="Database" order="4" weight="0.18397997" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -929,7 +951,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="added env variables 1" />
     <MESSAGE value="added env variables 2" />
     <MESSAGE value="symfony 4.0.2 update" />
     <MESSAGE value="email validation functionality - commit 1" />
@@ -954,7 +975,8 @@
     <MESSAGE value="changed time between email checks to 10 second." />
     <MESSAGE value="changed time between email checks to 20 second." />
     <MESSAGE value="adding nevebounce integration - first run" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding nevebounce integration - first run" />
+    <MESSAGE value="adding nevebounce integration - second run - updated entities for new emails statuses check" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding nevebounce integration - second run - updated entities for new emails statuses check" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -962,20 +984,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://table:/c2f91b82/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.seg">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2f91b82/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.seg_cons">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://src:table:/c2f91b82/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.02_subscriberaddress">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14">
@@ -1276,6 +1284,20 @@
           <folding>
             <element signature="e#32#71#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resources/build/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="281" column="7" selection-start-line="281" selection-start-column="1" selection-end-line="281" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
         </state>
       </provider>
     </entry>
