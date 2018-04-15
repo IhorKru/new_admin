@@ -25,6 +25,13 @@ class newEmailCheck
     private $id;
 
     /**
+     * @var integer
+     *
+     * @ORM\Column(name="numemails", type="integer")
+     */
+    private $numemails;
+
+    /**
      * @return mixed
      */
     public function getId()
@@ -39,5 +46,23 @@ class newEmailCheck
     {
         $this->id = $id;
     }
+
+    /**
+     * @return int
+     */
+    public function getNumemails()
+    {
+        return $this->numemails;
+    }
+
+    /**
+     * @param int $numemails
+     */
+    public function setNumemails(int $numemails)
+    {
+        $this->numemails = $numemails;
+    }
+
+
 
 }

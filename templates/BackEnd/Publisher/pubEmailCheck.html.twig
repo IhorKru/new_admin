@@ -15,6 +15,12 @@
                 <div class="x_panel">
                     <div class="x_title">
                         {{ form_start(form, {'attr': {'novalidate': 'novalidate', 'id': 'emailcheckform'}}) }}
+                        <div class='input-group fieldsep'>
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-thumbs-up"></span>
+                            </span>
+                            {{ form_widget(form.numemails) }}
+                        </div>
                             {{ form_widget(form.submit) }}
                         {{ form_end(form) }}
                     </div>
@@ -539,6 +545,24 @@
                 });
             };
             formSubmit();
+            //getting status of email checking
+            var emailstosend = document.getElementById("email_validation_numemails").value; //getting count of emails to be validated
+            var timeOutId = 0;
+            var initCamp = function () {
+                $.ajax({
+                    type: "GET",
+                    url: "{{ path('emailcheckbar') }}",
+                    dataType: "json",
+                    cache: false,
+                    success: function(response) {
+                        initemails = response[0];
+                        console.log(response);
+                    },
+                    error: function(response) {
+                        console.log(response);
+                    }
+                })
+            }
         });
     </script>
 {% endblock %}

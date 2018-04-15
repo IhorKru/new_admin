@@ -74,7 +74,7 @@ class PublisherController extends Controller
         //return $emaildata;
     }
 
-   /**
+    /**
      * @Route("/campaignsdash/{slug}", name="campaignsdash", defaults={"slug" = 2})
      * @param $slug
      * @return Response
@@ -247,6 +247,22 @@ class PublisherController extends Controller
     }
 
     /**
+     * @Route("/bar", name="emailcheckbar")
+     * @Method({"GET", "POST"})
+     */
+    public function ajaxEmailCheckAction()
+    {
+        $barresp = array();
+        $cntsubscr = $this->getDoctrine()->getManager()->getRepository('App:EmailStatus')->findMaxRow();
+        //$cnterrors = $this->getDoctrine()->getManager()->getRepository('App:SubscriberADKCampErrors')->findMaxRow();
+        array_push($barresp,$cntsubscr);
+        //array_push($barresp,$cnterrors);
+        $response = new Response(json_encode($barresp));
+        $response->headers->set('Content-Type', 'application/json');
+        return $response;
+    }
+
+    /**
      * @Route("/campstats", name="campstats")
      * @Method({"GET", "POST"})
      */
@@ -365,7 +381,6 @@ class PublisherController extends Controller
     public function emailValidationAction(Request $request) {
         $em = $this ->getDoctrine() ->getManager();
         $locale = $request->getLocale();
-        $numemails = 100;
         $emailCheck = new newEmailCheck();
         $form = $this->createForm(EmailValidationType::class, $emailCheck, [
             'action' => $this -> generateUrl('emailcheck'),
@@ -373,6 +388,10 @@ class PublisherController extends Controller
         ]);
         $form->handleRequest($request);
         if($form->isSubmitted() && $form->isValid()) {
+            $numemails = $form['numemails']->getData();
+            $emailCheck ->setNumemails($numemails);
+            $em->persist($emailCheck);
+            $em->flush();
             session_write_close();
             $rootDir = getcwd();
             //$command = 'php ../bin/console app:checkemails ' . $numemails;
@@ -395,14 +414,6 @@ class PublisherController extends Controller
             'form'=>$form->createView(),
             'emailstatuses' => $emailstatuses
         ]);
-    }
-
-    /**
-     * @Route("/emailcheckbar", name="emailcheckbar")
-     * @Method({"GET", "POST"})
-     */
-    public function AjaxEmailCheckAction () {
-
     }
 
     private function setTablePropsTwo($slug) {
