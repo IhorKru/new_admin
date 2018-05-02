@@ -68,7 +68,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-12 col-sm-4 col-xs-12">
+            <!--<div class="col-md-12 col-sm-4 col-xs-12">
                 <div class='tableauPlaceholder' id='viz1523273627197' style='position:relative'>
                     <noscript>
                         <a href='http:&#47;&#47;admin.mediaff.com&#47;en&#47;emailcheck'>
@@ -97,7 +97,7 @@
                         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
                         vizElement.parentNode.insertBefore(scriptElement, vizElement);
                     </script>
-            </div>
+            </div>--!>
             <!-- campaign stats -->
             <div id="campstats">
 
@@ -535,18 +535,12 @@
                     url: $form.attr('action'),
                     method: 'POST',
                     data: $form.serialize(),
-                    timeout: 1000,
-                    success: function( response ) {
-                        console.log( response );
-                    },
-                    error: function( response ) {
-                        console.log( response );
-                    }
+                    timeout: 1000
                 });
             };
             formSubmit();
             //getting status of email checking
-            var emailstosend = document.getElementById("email_validation_numemails").value; //getting count of emails to be validated
+            var emailstocheck = document.getElementById("email_validation_numemails").value; //getting count of emails to be validated
             var timeOutId = 0;
             var initCamp = function () {
                 $.ajax({
@@ -556,7 +550,34 @@
                     cache: false,
                     success: function(response) {
                         initemails = response[0];
-                        console.log(response);
+                        console.log(initemails);
+                        /*var ajaxFn = function() {
+                            var currcount = "0%";
+                            $.ajax({
+                                type: "GET",
+                                url: "{{ path('emailcheckbar') }}",
+                                dataType: "json",
+                                success: function(response) {
+                                    curemails = response[0];
+                                    emailprog = Math.floor(Number(curemails) - Number(initemails));
+                                    progress = Math.floor(Number(emailprog) / Number(emailstocheck) * Number(100)) + "%";
+                                    $("#progress_bar").attr("style", "width: " + progress);
+                                    $("#progress_bar").attr("aria-valuenow", progress);
+                                    document.getElementById("progress_bar").innerHTML = "Running - " + progress + " processed";
+                                    /*if(progress.replace("%", "") >= 97){
+                                        $("#progress_bar").attr("style", "width: 100%");
+                                        $("#progress_bar").attr("aria-valuenow", "100%");
+                                        document.getElementById("progress_bar").innerHTML = "Completed - 100% - " + (Number(curusers) - Number(initusers)) + " emails created /" + (Number(curerrors) - Number(initerrors)) + " errors created";
+                                    } else {
+                                        timeOutId = setTimeout(ajaxFn, 2000);
+                                    }
+                                    prevprogress = progress;
+                                },
+                                error: function(result) {
+                                    console.log('error');
+                                }
+                            });
+                        }*/
                     },
                     error: function(response) {
                         console.log(response);

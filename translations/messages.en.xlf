@@ -126,6 +126,10 @@
                 <source>Validate Emails</source>
                 <target>Validate Emails</target>
             </trans-unit>
+            <trans-unit id="email_validation_numemails">
+                <source>Number of Emails</source>
+                <target>Number of Emails</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

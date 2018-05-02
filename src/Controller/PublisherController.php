@@ -253,10 +253,8 @@ class PublisherController extends Controller
     public function ajaxEmailCheckAction()
     {
         $barresp = array();
-        $cntsubscr = $this->getDoctrine()->getManager()->getRepository('App:EmailStatus')->findMaxRow();
-        //$cnterrors = $this->getDoctrine()->getManager()->getRepository('App:SubscriberADKCampErrors')->findMaxRow();
-        array_push($barresp,$cntsubscr);
-        //array_push($barresp,$cnterrors);
+        $cntemails = $this->getDoctrine()->getManager()->getRepository('App:EmailStatus')->findMaxRow();
+        array_push($barresp, $cntemails);
         $response = new Response(json_encode($barresp));
         $response->headers->set('Content-Type', 'application/json');
         return $response;
