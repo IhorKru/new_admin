@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a177ce9a-9987-4c52-86fd-079b7209ce58" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Repository/EmailStatusRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fb2b5495-6a14-407a-a5ba-39652aa20e01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fb2b5495-6a14-407a-a5ba-39652aa20e01.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PublisherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PublisherController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/BackEnd/Publisher/pubEmailCheck.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/BackEnd/Publisher/pubEmailCheck.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/messages.en.xlf" beforeDir="false" afterPath="$PROJECT_DIR$/translations/messages.en.xlf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/EmailStatusRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/EmailStatusRepository.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -92,11 +87,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pubEmailCheck.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EmailStatusRepository.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Repository/EmailStatusRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="70">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmailStatus.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entity/EmailStatus.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="9" column="68" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pubEmailCheck.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/pubEmailCheck.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="553" column="51" lean-forward="true" selection-start-line="553" selection-start-column="51" selection-end-line="553" selection-end-column="51" />
+            <state relative-caret-position="309">
+              <caret line="548" column="37" lean-forward="true" selection-start-line="548" selection-start-column="37" selection-end-line="548" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -212,9 +225,9 @@
         <option value="$PROJECT_DIR$/translations/messages.en.xlf" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console_2.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fb2b5495-6a14-407a-a5ba-39652aa20e01/console.sql" />
-        <option value="$PROJECT_DIR$/src/Repository/EmailStatusRepository.php" />
         <option value="$PROJECT_DIR$/src/Controller/PublisherController.php" />
         <option value="$PROJECT_DIR$/templates/BackEnd/Publisher/pubEmailCheck.html.twig" />
+        <option value="$PROJECT_DIR$/src/Repository/EmailStatusRepository.php" />
       </list>
     </option>
   </component>
@@ -339,6 +352,23 @@
             <path>
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
@@ -592,14 +622,7 @@
       <workItem from="1525061846688" duration="455000" />
       <workItem from="1525086450310" duration="384000" />
       <workItem from="1525155422271" duration="1631000" />
-      <workItem from="1525249218245" duration="3007000" />
-    </task>
-    <task id="LOCAL-00042" summary="email validation functionality - commit 5 - rename twig templates">
-      <created>1518623672302</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1518623672302</updated>
+      <workItem from="1525249218245" duration="3134000" />
     </task>
     <task id="LOCAL-00043" summary="email validation functionality - commit 5 - fixed campaign dash">
       <created>1518780717623</created>
@@ -937,7 +960,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524565628422</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="added tableau chart">
+      <created>1525285065326</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1525285065326</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -946,7 +976,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="920602000" />
+    <option name="totallyTimeSpent" value="920729000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -968,9 +998,9 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3280757" />
       <window_info anchor="bottom" x="1329" y="17" width="525" height="1048" id="Terminal" internal_type="SLIDING" order="11" type="SLIDING" weight="0.4090431" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.20387742" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17761101" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17761101" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" weight="0.32977587" />
-      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.1438399" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.1438399" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39957938" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32980332" />
@@ -1409,13 +1439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/EmailStatus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2660">
-          <caret line="191" selection-start-line="191" selection-end-line="191" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/SubscriberDetailsRepository.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1430,20 +1453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="8" selection-start-line="8" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/EmailStatusRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/PublisherController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="249" column="41" selection-start-line="249" selection-start-column="28" selection-end-line="249" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1463,8 +1472,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/pubEmailCheck.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="553" column="51" lean-forward="true" selection-start-line="553" selection-start-column="51" selection-end-line="553" selection-end-column="51" />
+        <state relative-caret-position="309">
+          <caret line="548" column="37" lean-forward="true" selection-start-line="548" selection-start-column="37" selection-end-line="548" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/PublisherController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="249" column="41" selection-start-line="249" selection-start-column="28" selection-end-line="249" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/EmailStatus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="9" column="68" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/EmailStatusRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
         </state>
       </provider>
     </entry>
