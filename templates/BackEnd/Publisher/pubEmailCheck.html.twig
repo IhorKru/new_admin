@@ -39,35 +39,11 @@
                     </div>
                 </div>
             </div>
-            <!-- current stats -->
-            <div class="col-md-4 col-sm-4 col-xs-12" style="clear: left;">
-                <div class="x_panel">
-                    <div class="x_title">
-                        <h2>Email Status Details</h2>
-                        <ul class="nav navbar-right panel_toolbox">
-                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
-                        </ul>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="x_content">
-                        <div id="echart_pie2" style="height:350px;"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8 col-sm-4 col-xs-12">
-                <div class="x_panel">
-                    <div class="x_title">
-                        <h2>Email Status Weekly stats</h2>
-                        <ul class="nav navbar-right panel_toolbox">
-                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
-                        </ul>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="x_content">
-                        <div id="echart_stack2" style="height:350px;"></div>
-                    </div>
-                </div>
-            </div>
+            <!-- current emails status stats -->
+            <div id="emailstats">
+                {% embed "BackEnd/Publisher/newPubEmailStatusUpdate.twig" %}
+
+                {% endembed %}
             <!--<div class="col-md-12 col-sm-4 col-xs-12">
                 <div class='tableauPlaceholder' id='viz1523273627197' style='position:relative'>
                     <noscript>
@@ -109,7 +85,7 @@
 {% block custjs %}
     <!-- ECharts -->
     <script src="{{ asset('resources/vendors/echartsn/echarts2.min.js')}}"></script>
-    <script>
+    <!--<script>
         /*setting up general theme */
         var theme = {
             color: [
@@ -515,7 +491,7 @@
                 }
             ]
         })
-    </script>
+    </script>-->
     <script>
         /*
         * Submitting the form for email validation
@@ -542,6 +518,7 @@
             //getting status of email checking
             var emailstocheck = document.getElementById("email_validation_numemails").value; //getting count of emails to be validated
             var timeOutId = 0;
+            console.log(emailstocheck);
             var initCamp = function () {
                 $.ajax({
                     type: "GET",
@@ -551,7 +528,7 @@
                     success: function(response) {
                         initemails = response[0];
                         console.log(initemails);
-                        /*var ajaxFn = function() {
+                        var ajaxFn = function() {
                             var currcount = "0%";
                             $.ajax({
                                 type: "GET",
@@ -560,14 +537,38 @@
                                 success: function(response) {
                                     curemails = response[0];
                                     emailprog = Math.floor(Number(curemails) - Number(initemails));
-                                    progress = Math.floor(Number(emailprog) / Number(emailstocheck) * Number(100)) + "%";
+                                    progress = Math.floor((Number(emailprog) / Number(emailstocheck)) * Number(100)) + "%";
                                     $("#progress_bar").attr("style", "width: " + progress);
                                     $("#progress_bar").attr("aria-valuenow", progress);
                                     document.getElementById("progress_bar").innerHTML = "Running - " + progress + " processed";
-                                    /*if(progress.replace("%", "") >= 97){
+                                    console.log(curemails);
+                                    console.log(emailprog);
+                                    console.log(progress);
+                                    if(progress.replace("%", "") >= 97){
                                         $("#progress_bar").attr("style", "width: 100%");
                                         $("#progress_bar").attr("aria-valuenow", "100%");
-                                        document.getElementById("progress_bar").innerHTML = "Completed - 100% - " + (Number(curusers) - Number(initusers)) + " emails created /" + (Number(curerrors) - Number(initerrors)) + " errors created";
+                                        document.getElementById("progress_bar").innerHTML = "Completed - 100% - " + (Number(curemails) - Number(initemails)) + " emails checked";
+                                        //trigger update of email statuses count
+
+                                        //display new setup of email statuses
+                                        var cdAjax = function () {
+                                            $.ajax({
+                                                type: "GET",
+                                                url: "{{ path('emailstats') }}",
+                                                dataType: "html",
+                                                success: function(response) {
+                                                    if(response.length != 0) {
+                                                        $('#emailstats').html(response);
+                                                    } else {
+                                                        timeOutId = setTimeout(cdAjax, 2000);
+                                                    }
+                                                },
+                                                error: function(result) {
+                                                    console.log('error');
+                                                }
+                                            });
+                                        }
+                                        cdAjax();
                                     } else {
                                         timeOutId = setTimeout(ajaxFn, 2000);
                                     }
@@ -577,13 +578,15 @@
                                     console.log('error');
                                 }
                             });
-                        }*/
+                        }
+                        ajaxFn();
                     },
                     error: function(response) {
                         console.log(response);
                     }
                 })
             }
+            initCamp();
         });
     </script>
 {% endblock %}

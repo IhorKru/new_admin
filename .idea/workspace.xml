@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a177ce9a-9987-4c52-86fd-079b7209ce58" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/BackEnd/Publisher/newPubEmailStatusUpdate.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fb2b5495-6a14-407a-a5ba-39652aa20e01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fb2b5495-6a14-407a-a5ba-39652aa20e01.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PublisherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PublisherController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/EmailStatusRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/EmailStatusRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/BackEnd/Publisher/pubEmailCheck.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/BackEnd/Publisher/pubEmailCheck.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,23 +33,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Mediaff_Stage" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Mediaff_Stage" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Mediaff_Stage" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="mediaff_mysql: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FavoritesManager">
@@ -54,53 +44,26 @@
       <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="36" selection-start-line="36" selection-end-line="38" selection-end-column="21" />
+            <state relative-caret-position="560">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmailValidationType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Form/EmailValidationType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="28" column="54" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fb2b5495-6a14-407a-a5ba-39652aa20e01/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PublisherController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PublisherController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/PublisherController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="249" column="41" selection-start-line="249" selection-start-column="28" selection-end-line="249" selection-end-column="41" />
+            <state relative-caret-position="615">
+              <caret line="298" column="40" selection-start-line="298" selection-start-column="40" selection-end-line="298" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmailStatusRepository.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Repository/EmailStatusRepository.php">
+      <file leaf-file-name="newPubEmailStatusUpdate.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/newPubEmailStatusUpdate.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmailStatus.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entity/EmailStatus.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="9" column="68" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="68" />
+            <state relative-caret-position="322">
+              <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -108,8 +71,12 @@
       <file leaf-file-name="pubEmailCheck.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/pubEmailCheck.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="548" column="37" lean-forward="true" selection-start-line="548" selection-start-column="37" selection-end-line="548" selection-end-column="37" />
+            <state relative-caret-position="533">
+              <caret line="551" selection-start-line="551" selection-end-line="551" />
+              <folding>
+                <element signature="e#1320#1341#0#HTML" expanded="true" />
+                <element signature="e#4508#19019#0#HTML" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,8 +84,8 @@
       <file leaf-file-name="newPubCampaign.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/newPubCampaign.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="263" column="49" selection-start-line="263" selection-start-column="49" selection-end-line="263" selection-end-column="49" />
+            <state relative-caret-position="876">
+              <caret line="277" column="72" selection-start-line="277" selection-start-column="63" selection-end-line="277" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -128,14 +95,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>adkaction</find>
       <find>newpubcampaign</find>
       <find>image</find>
       <find>AppBu</find>
@@ -144,7 +110,7 @@
       <find>year</find>
       <find>cntEmailsSentCp</find>
       <find>root</find>
-      <find>Connection success</find>
+      <find />
       <find>emailaddress</find>
       <find>datecreated</find>
       <find>datetosend</find>
@@ -165,6 +131,7 @@
       <find>$from</find>
       <find>$max_connection_timeout</find>
       <find>nav-md</find>
+      <find>emailstats</find>
     </findStrings>
     <replaceStrings>
       <replace>App</replace>
@@ -177,9 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/.ebextensions/environmentsetup.config" />
-        <option value="$PROJECT_DIR$/config/packages/doctrine.yaml" />
         <option value="$PROJECT_DIR$/.env.dist" />
         <option value="$PROJECT_DIR$/translations/messages.ru.xlf" />
         <option value="$PROJECT_DIR$/src/Services/adkService.php" />
@@ -218,16 +182,19 @@
         <option value="$PROJECT_DIR$/src/Services/emailCheckService.php" />
         <option value="$PROJECT_DIR$/.ebextensions/setup.config" />
         <option value="$PROJECT_DIR$/public/resources/vendors/echartsn/echarts2.min.js" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console_1.sql" />
         <option value="$PROJECT_DIR$/src/Form/EmailValidationType.php" />
         <option value="$PROJECT_DIR$/src/Entity/newEmailCheck.php" />
         <option value="$PROJECT_DIR$/translations/messages.en.xlf" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console_2.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fb2b5495-6a14-407a-a5ba-39652aa20e01/console.sql" />
-        <option value="$PROJECT_DIR$/src/Controller/PublisherController.php" />
-        <option value="$PROJECT_DIR$/templates/BackEnd/Publisher/pubEmailCheck.html.twig" />
         <option value="$PROJECT_DIR$/src/Repository/EmailStatusRepository.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql" />
+        <option value="$PROJECT_DIR$/templates/BackEnd/Publisher/newPubEmailStatusUpdate.html" />
+        <option value="$PROJECT_DIR$/templates/BackEnd/Publisher/newPubEmailStatusUpdate.html.twig" />
+        <option value="$PROJECT_DIR$/templates/BackEnd/Publisher/newPubCampaign.twig" />
+        <option value="$PROJECT_DIR$/templates/BackEnd/Publisher/pubEmailCheck.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/PublisherController.php" />
       </list>
     </option>
   </component>
@@ -357,18 +324,6 @@
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
@@ -622,14 +577,7 @@
       <workItem from="1525061846688" duration="455000" />
       <workItem from="1525086450310" duration="384000" />
       <workItem from="1525155422271" duration="1631000" />
-      <workItem from="1525249218245" duration="3134000" />
-    </task>
-    <task id="LOCAL-00043" summary="email validation functionality - commit 5 - fixed campaign dash">
-      <created>1518780717623</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1518780717623</updated>
+      <workItem from="1525249218245" duration="12387000" />
     </task>
     <task id="LOCAL-00044" summary="email validation functionality - commit 5 - fixed create camapign">
       <created>1518793974436</created>
@@ -967,7 +915,14 @@
       <option name="project" value="LOCAL" />
       <updated>1525285065326</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="added tableau chart">
+      <created>1525285082061</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1525285082061</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -976,7 +931,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="920729000" />
+    <option name="totallyTimeSpent" value="929982000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -988,19 +943,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="39" y="23" width="1641" height="1027" extended-state="0" />
-    <editor active="true" />
+    <frame x="39" y="23" width="1641" height="1027" extended-state="1" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32912722" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32738718" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32912722" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3280757" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3280757" />
-      <window_info anchor="bottom" x="1329" y="17" width="525" height="1048" id="Terminal" internal_type="SLIDING" order="11" type="SLIDING" weight="0.4090431" />
+      <window_info active="true" anchor="bottom" x="1329" y="17" width="525" height="1048" id="Terminal" internal_type="SLIDING" order="11" type="SLIDING" visible="true" weight="0.4090431" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.20387742" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17761101" />
+      <window_info anchor="right" id="Database Console" order="5" weight="0.33333334" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2539087" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" weight="0.32977587" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.1438399" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.18198875" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32912722" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39957938" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32980332" />
@@ -1011,8 +967,6 @@
       <window_info anchor="bottom" id="Command Line Tools Console" order="10" weight="0.32912722" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Database Console" order="5" weight="0.33333334" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32977587" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Database Console" order="5" visible="true" weight="0.3958724" />
@@ -1106,34 +1060,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Entity/StatsDaily.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="219" selection-start-line="219" selection-end-line="245" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/resources/build/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="281" column="7" selection-start-line="281" selection-start-column="1" selection-end-line="281" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Services/emailCheckService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="80" column="46" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.ebextensions/setup.config">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -1204,13 +1130,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/c2f91b82/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.emailstatus">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/schema/mediaff_mysql/table/subscribers">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1239,21 +1158,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/pubCampDash.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Form/ContactType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="82">
           <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="56" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Campaigns.php">
@@ -1335,7 +1244,7 @@
           <settings layout="Hierarchic Group" zoom="0.6232650125854009" x="550.0" y="2392.0" />
           <SelectedNodes />
           <Categories>
-            <Category>Key columns</Category>
+            <Category />
             <Category>Columns</Category>
           </Categories>
           <SCOPE>All</SCOPE>
@@ -1349,13 +1258,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/c2f91b82/fb2b5495-6a14-407a-a5ba-39652aa20e01/mediaff_mysql.stats_daily">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/c2f91b82/fb2b5495-6a14-407a-a5ba-39652aa20e01/mediaff_mysql.stats_weekly">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1364,13 +1266,6 @@
       </provider>
     </entry>
     <entry file="das://fb2b5495-6a14-407a-a5ba-39652aa20e01/schema/mediaff_mysql/table/stats_monthly">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2f91b82/fb2b5495-6a14-407a-a5ba-39652aa20e01/mediaff_mysql.emailstatus">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1397,13 +1292,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="36" selection-start-line="36" selection-end-line="38" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console_1.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1418,14 +1306,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/EmailValidationType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="28" column="54" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="54" />
+    <entry file="das://fb2b5495-6a14-407a-a5ba-39652aa20e01/schema/mediaff_mysql/table/subscribers">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="das://fb2b5495-6a14-407a-a5ba-39652aa20e01/schema/mediaff_mysql/table/subscribers">
+    <entry file="file://$PROJECT_DIR$/src/Repository/SubscriberDetailsRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/ContactRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Contact.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/EmailTemplateDetailsRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/EmailStatus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="9" column="68" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/EmailStatusRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://fb2b5495-6a14-407a-a5ba-39652aa20e01/schema/mediaff_mysql/table/emailcheckrequests">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1439,62 +1357,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/SubscriberDetailsRepository.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/EmailTemplateDetailsRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/SubscribersRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" selection-start-line="8" selection-end-line="12" selection-end-column="5" />
+        <state relative-caret-position="154">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="das://fb2b5495-6a14-407a-a5ba-39652aa20e01/schema/mediaff_mysql/table/emailcheckrequests">
+    <entry file="das://table:/c2f91b82/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.emailstatus">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
+    <entry file="das://table:/c2f91b82/fb2b5495-6a14-407a-a5ba-39652aa20e01/mediaff_mysql.emailstatus">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/EmailValidationType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="28" column="54" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/newPubEmailStatusUpdate.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/pubCampDash.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://table:/c2f91b82/fb2b5495-6a14-407a-a5ba-39652aa20e01/mediaff_mysql.stats_daily">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/pubCampDetails.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7084">
+          <caret line="506" selection-start-line="506" selection-end-line="506" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/newPubEmailStatusUpdate.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/newPubCampaign.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="263" column="49" selection-start-line="263" selection-start-column="49" selection-end-line="263" selection-end-column="49" />
+        <state relative-caret-position="876">
+          <caret line="277" column="72" selection-start-line="277" selection-start-column="63" selection-end-line="277" selection-end-column="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/pubEmailCheck.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="548" column="37" lean-forward="true" selection-start-line="548" selection-start-column="37" selection-end-line="548" selection-end-column="37" />
+        <state relative-caret-position="533">
+          <caret line="551" selection-start-line="551" selection-end-line="551" />
+          <folding>
+            <element signature="e#1320#1341#0#HTML" expanded="true" />
+            <element signature="e#4508#19019#0#HTML" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/PublisherController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="249" column="41" selection-start-line="249" selection-start-column="28" selection-end-line="249" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/EmailStatus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="9" column="68" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/EmailStatusRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        <state relative-caret-position="615">
+          <caret line="298" column="40" selection-start-line="298" selection-start-column="40" selection-end-line="298" selection-end-column="40" />
         </state>
       </provider>
     </entry>

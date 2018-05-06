@@ -247,15 +247,15 @@ class PublisherController extends Controller
     }
 
     /**
-     * @Route("/bar", name="emailcheckbar")
+     * @Route("/ebar", name="emailcheckbar")
      * @Method({"GET", "POST"})
      */
     public function ajaxEmailCheckAction()
     {
-        $barresp = array();
+        $barresps = array();
         $cntemails = $this->getDoctrine()->getManager()->getRepository('App:EmailStatus')->findMaxRow();
-        array_push($barresp, $cntemails);
-        $response = new Response(json_encode($barresp));
+        array_push($barresps, $cntemails);
+        $response = new Response(json_encode($barresps));
         $response->headers->set('Content-Type', 'application/json');
         return $response;
     }
@@ -288,6 +288,20 @@ class PublisherController extends Controller
             'resourceemails' => $resourceemails,
             'partnername' => $partner,
             'emaillimit' => $sendlimit
+        ]));
+        return $response;
+    }
+
+    /**
+     * @Route("/emailstats", name="emailstats")
+     * @Method({"GET", "POST"})
+     */
+    public function emailStatsAction() {
+        $em = $this ->getDoctrine() ->getManager();
+        $emailstatuses = $em->getRepository('App:StatsDaily')->emailCheck();
+        $response = new Response();
+        $response->setContent($this->renderView('BackEnd/Publisher/newPubEmailStatusUpdate.twig',[
+            'emailstatuses' => $emailstatuses
         ]));
         return $response;
     }
