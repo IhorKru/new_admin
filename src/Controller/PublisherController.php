@@ -252,6 +252,7 @@ class PublisherController extends Controller
      */
     public function ajaxEmailCheckAction()
     {
+        //pushing responce to webpage
         $barresps = array();
         $cntemails = $this->getDoctrine()->getManager()->getRepository('App:EmailStatus')->findMaxRow();
         array_push($barresps, $cntemails);
@@ -297,6 +298,18 @@ class PublisherController extends Controller
      * @Method({"GET", "POST"})
      */
     public function emailStatsAction() {
+        //create process to update daily table stats
+        /*$rootDir = getcwd();
+        $adk_process = new Process(
+            'php ../bin/console app:updatestats d'
+        );
+        $adk_process->setWorkingDirectory($rootDir);
+        $adk_process->setTimeout(null);
+        $adk_process->start();
+        if($adk_process->isRunning()){
+            while($adk_process->isRunning()){
+            }
+        }*/
         $em = $this ->getDoctrine() ->getManager();
         $emailstatuses = $em->getRepository('App:StatsDaily')->emailCheck();
         $response = new Response();

@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a177ce9a-9987-4c52-86fd-079b7209ce58" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/BackEnd/Publisher/newPubEmailStatusUpdate.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/fb2b5495-6a14-407a-a5ba-39652aa20e01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fb2b5495-6a14-407a-a5ba-39652aa20e01.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/PublisherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PublisherController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/EmailStatusRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/EmailStatusRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/BackEnd/Publisher/pubEmailCheck.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/BackEnd/Publisher/pubEmailCheck.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/emailCheckService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/emailCheckService.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,7 +30,23 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Mediaff_Stage" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Mediaff_Stage" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Mediaff_Stage" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="mediaff_mysql: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FavoritesManager">
@@ -41,51 +54,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql">
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fb2b5495-6a14-407a-a5ba-39652aa20e01/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PublisherController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Controller/PublisherController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="298" column="40" selection-start-line="298" selection-start-column="40" selection-end-line="298" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newPubEmailStatusUpdate.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/newPubEmailStatusUpdate.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pubEmailCheck.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/pubEmailCheck.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="551" selection-start-line="551" selection-end-line="551" />
-              <folding>
-                <element signature="e#1320#1341#0#HTML" expanded="true" />
-                <element signature="e#4508#19019#0#HTML" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newPubCampaign.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/newPubCampaign.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="876">
-              <caret line="277" column="72" selection-start-line="277" selection-start-column="63" selection-end-line="277" selection-end-column="72" />
+            <state relative-caret-position="70">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -110,7 +83,7 @@
       <find>year</find>
       <find>cntEmailsSentCp</find>
       <find>root</find>
-      <find />
+      <find>Connection success</find>
       <find>emailaddress</find>
       <find>datecreated</find>
       <find>datetosend</find>
@@ -179,7 +152,6 @@
         <option value="$PROJECT_DIR$/src/Entity/StatsWeekly.php" />
         <option value="$PROJECT_DIR$/src/Entity/StatsYearly.php" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
-        <option value="$PROJECT_DIR$/src/Services/emailCheckService.php" />
         <option value="$PROJECT_DIR$/.ebextensions/setup.config" />
         <option value="$PROJECT_DIR$/public/resources/vendors/echartsn/echarts2.min.js" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console_1.sql" />
@@ -187,7 +159,6 @@
         <option value="$PROJECT_DIR$/src/Entity/newEmailCheck.php" />
         <option value="$PROJECT_DIR$/translations/messages.en.xlf" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console_2.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fb2b5495-6a14-407a-a5ba-39652aa20e01/console.sql" />
         <option value="$PROJECT_DIR$/src/Repository/EmailStatusRepository.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/console.sql" />
         <option value="$PROJECT_DIR$/templates/BackEnd/Publisher/newPubEmailStatusUpdate.html" />
@@ -195,6 +166,8 @@
         <option value="$PROJECT_DIR$/templates/BackEnd/Publisher/newPubCampaign.twig" />
         <option value="$PROJECT_DIR$/templates/BackEnd/Publisher/pubEmailCheck.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/PublisherController.php" />
+        <option value="$PROJECT_DIR$/src/Services/emailCheckService.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fb2b5495-6a14-407a-a5ba-39652aa20e01/console.sql" />
       </list>
     </option>
   </component>
@@ -319,29 +292,6 @@
             <path>
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Publisher" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -577,14 +527,15 @@
       <workItem from="1525061846688" duration="455000" />
       <workItem from="1525086450310" duration="384000" />
       <workItem from="1525155422271" duration="1631000" />
-      <workItem from="1525249218245" duration="12387000" />
-    </task>
-    <task id="LOCAL-00044" summary="email validation functionality - commit 5 - fixed create camapign">
-      <created>1518793974436</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1518793974436</updated>
+      <workItem from="1525249218245" duration="15568000" />
+      <workItem from="1525756781773" duration="453000" />
+      <workItem from="1525778662824" duration="1857000" />
+      <workItem from="1526029622992" duration="7846000" />
+      <workItem from="1526218893826" duration="2757000" />
+      <workItem from="1526375831559" duration="301000" />
+      <workItem from="1526387499710" duration="1927000" />
+      <workItem from="1526584042704" duration="840000" />
+      <workItem from="1526661584459" duration="869000" />
     </task>
     <task id="LOCAL-00045" summary="email validation functionality - commit 5 - fixed create camapign">
       <created>1518794031640</created>
@@ -922,7 +873,14 @@
       <option name="project" value="LOCAL" />
       <updated>1525285082061</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="added tableau chart">
+      <created>1525595186564</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1525595186564</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -931,7 +889,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="929982000" />
+    <option name="totallyTimeSpent" value="950013000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -943,20 +901,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="39" y="23" width="1641" height="1027" extended-state="1" />
+    <frame x="39" y="23" width="1641" height="1027" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32912722" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32738718" />
-      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32912722" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5003127" side_tool="true" weight="0.32912722" />
+      <window_info anchor="bottom" id="Database Changes" order="9" sideWeight="0.4996873" weight="0.32912722" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3280757" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3280757" />
-      <window_info active="true" anchor="bottom" x="1329" y="17" width="525" height="1048" id="Terminal" internal_type="SLIDING" order="11" type="SLIDING" visible="true" weight="0.4090431" />
+      <window_info anchor="bottom" x="1329" y="17" width="525" height="1048" id="Terminal" internal_type="SLIDING" order="11" type="SLIDING" weight="0.4090431" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.20387742" />
-      <window_info anchor="right" id="Database Console" order="5" weight="0.33333334" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2539087" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11444653" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" weight="0.32977587" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.18198875" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32912722" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.191995" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39957938" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32980332" />
@@ -964,9 +920,12 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="SQL Generator" order="12" weight="0.32912722" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="10" weight="0.32912722" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Database Console" order="5" weight="0.33333334" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32912722" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Database Console" order="5" visible="true" weight="0.3958724" />
@@ -1060,230 +1019,12 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.ebextensions/setup.config">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fb2b5495-6a14-407a-a5ba-39652aa20e01/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="21" column="110" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="110" />
+        <state relative-caret-position="70">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/resources/vendors/echartsn/echarts2.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="706259" selection-start-column="706259" selection-end-column="706259" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/resources/vendors/echartsn/echarts.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54788">
-          <caret selection-end-line="37" selection-end-column="18981" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2f91b82/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.stats_daily">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2f91b82/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/mediaff_mysql.stats_weekly">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/schema/mediaff_mysql/table/stats_monthly">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/schema/mediaff_mysql/table/stats_yearly">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://fb2b5495-6a14-407a-a5ba-39652aa20e01/schema/mediaff_mysql/table/stats_yearly">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/schema/mediaff_mysql/table/subscribers">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/schema/mediaff_mysql/table/lists">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/schema/mediaff_mysql/table/campaigns">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/CampaignInputType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="87" column="14" lean-forward="true" selection-start-line="78" selection-start-column="12" selection-end-line="87" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/ContactType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Campaigns.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="26" selection-start-line="26" selection-end-line="30" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/CampaignInputDetails.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8546" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/newEmailCheck.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="60" column="48" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.api-key.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/2f09ce7a-c4bb-45ea-b4c5-1dad5789de64">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>2f09ce7a-c4bb-45ea-b4c5-1dad5789de64</OriginalElement>
-          <nodes>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.ref_tire_details</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.07_campaigninputdetails</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.stats_daily</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.ref_partner_type_details</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.campaigns</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.queue</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.template</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.stats_weekly</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.app_users</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.ares</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.apps</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.REF.GENDER.DETAILS</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.REF.RESOURCE.DETAILS</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.p_01_partner_details</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.emailcheckrequests</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.links</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.REF.SOURCE.DETAILS</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.ref_offer_status_details</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.seg</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.zapier</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.emailstatus</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.ref_web_traffic_type_details</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.ares_emails</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.seg_cons</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.subscribers</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.REF.EDUCATION.LEVEL.DETAILS</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.ad_01_offer_details</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.03_subscriberoptindetails</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.04_subscriberoptoutdetails</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.06_subscriberadkcamperrors</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.ref_user_suppression_list</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.login</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.subscribers_seg</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.01_subscriberdetails</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.ref_adk_category_details</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.05_contactformdetails</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.stats_monthly</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.stats_yearly</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.REF.EMAIL.ADDRESS.STATUS.DETAILS</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.lists</node>
-            <node x="" y="">2f09ce7a-c4bb-45ea-b4c5-1dad5789de64.TABLE:mediaff_mysql.02_subscriberaddress</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.6232650125854009" x="550.0" y="2392.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category />
-            <Category>Columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c2f91b82/fb2b5495-6a14-407a-a5ba-39652aa20e01/mediaff_mysql.stats_weekly">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://fb2b5495-6a14-407a-a5ba-39652aa20e01/schema/mediaff_mysql/table/stats_monthly">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/BackEnd/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/LoginType.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/translations/messages.ru.xlf">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/translations/messages.en.xlf">
       <provider selected="true" editor-type-id="text-editor">
@@ -1305,22 +1046,6 @@
           <caret column="33" lean-forward="true" selection-end-column="33" />
         </state>
       </provider>
-    </entry>
-    <entry file="das://fb2b5495-6a14-407a-a5ba-39652aa20e01/schema/mediaff_mysql/table/subscribers">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/SubscriberDetailsRepository.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/ContactRepository.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Contact.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/EmailTemplateDetailsRepository.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1347,13 +1072,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fb2b5495-6a14-407a-a5ba-39652aa20e01/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1385,16 +1103,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/newPubEmailStatusUpdate.php">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/pubCampDetails.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7084">
+          <caret line="506" selection-start-line="506" selection-end-line="506" selection-end-column="14" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/pubCampDash.twig">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+        </state>
+      </provider>
     </entry>
-    <entry file="das://table:/c2f91b82/fb2b5495-6a14-407a-a5ba-39652aa20e01/mediaff_mysql.stats_daily">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/src/Controller/PublisherController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="311" column="11" selection-start-line="311" selection-start-column="11" selection-end-line="311" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1405,42 +1131,224 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/pubCampDetails.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7084">
-          <caret line="506" selection-start-line="506" selection-end-line="506" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/newPubEmailStatusUpdate.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
+        <state relative-caret-position="14">
           <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/newPubCampaign.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="876">
-          <caret line="277" column="72" selection-start-line="277" selection-start-column="63" selection-end-line="277" selection-end-column="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/pubEmailCheck.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
+        <state relative-caret-position="260">
           <caret line="551" selection-start-line="551" selection-end-line="551" />
-          <folding>
-            <element signature="e#1320#1341#0#HTML" expanded="true" />
-            <element signature="e#4508#19019#0#HTML" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/PublisherController.php">
+    <entry file="file://$PROJECT_DIR$/src/Services/emailCheckService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="298" column="40" selection-start-line="298" selection-start-column="40" selection-end-line="298" selection-end-column="40" />
+        <state relative-caret-position="14">
+          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/BackEnd/Publisher/newPubCampaign.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="277" column="72" selection-start-line="277" selection-start-column="63" selection-end-line="277" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://fb2b5495-6a14-407a-a5ba-39652aa20e01/schema/mediaff_mysql/table/02_subscriberaddress">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://fb2b5495-6a14-407a-a5ba-39652aa20e01/schema/mediaff_mysql/table/03_subscriberoptindetails">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/schema/mediaff_mysql/table/campaigns">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/schema/mediaff_mysql/table/emailcheckrequests">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/schema/mediaff_mysql/table/links">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://fb2b5495-6a14-407a-a5ba-39652aa20e01/schema/mediaff_mysql/table/template">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://fb2b5495-6a14-407a-a5ba-39652aa20e01/schema/mediaff_mysql/table/apps">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/schema/mediaff_mysql/table/apps">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/campaigns_2018_05_08_15_02_24.txt" />
+    <entry file="das://2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/schema/mediaff_mysql/table/REF.GENDER.DETAILS">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://fb2b5495-6a14-407a-a5ba-39652aa20e01/schema/mediaff_mysql/table/ref.education.level.details" />
+    <entry file="das://fb2b5495-6a14-407a-a5ba-39652aa20e01/schema/mediaff_mysql/table/links">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://fb2b5495-6a14-407a-a5ba-39652aa20e01/schema/mediaff_mysql/table/login">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/lists_2018_05_13_11_07_47.txt" />
+    <entry file="das://2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/schema/mediaff_mysql/table/login">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://fb2b5495-6a14-407a-a5ba-39652aa20e01/schema/mediaff_mysql/table/p_01_partner_details">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/schema/mediaff_mysql/table/queue">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/schema/mediaff_mysql/table/REF.EDUCATION.LEVEL.DETAILS">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/schema/mediaff_mysql/table/seg">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/schema/mediaff_mysql/table/seg_cons">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/schema/mediaff_mysql/table/subscribers_seg">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/schema/mediaff_mysql/table/zapier">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://fb2b5495-6a14-407a-a5ba-39652aa20e01/schema/mediaff_mysql/table/campaigns">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/campaigns_2018_05_13_11_23_53.txt" />
+    <entry file="das://fb2b5495-6a14-407a-a5ba-39652aa20e01/schema/mediaff_mysql/table/01_subscriberdetails">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/schema/mediaff_mysql/table/lists">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2f09ce7a-c4bb-45ea-b4c5-1dad5789de64/schema/mediaff_mysql/table/subscribers">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://fb2b5495-6a14-407a-a5ba-39652aa20e01/schema/mediaff_mysql/table/lists">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://fb2b5495-6a14-407a-a5ba-39652aa20e01/schema/mediaff_mysql/table/subscribers">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/c2f91b82/fb2b5495-6a14-407a-a5ba-39652aa20e01/mediaff_mysql.stats_daily">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fb2b5495-6a14-407a-a5ba-39652aa20e01/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>

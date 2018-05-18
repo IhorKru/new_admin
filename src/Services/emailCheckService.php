@@ -26,7 +26,7 @@ class emailCheckService extends PublisherController
         $key = Auth::setApiKey('secret_0073808a6d223620faf3860f368a2199');
         # 1. Creating sub batches
         $batcharray = array(); # master sub batch
-        $batchsize = 100;
+        $batchsize = 1000;
         if($numemails > $batchsize) {
             $cntbatch = round($numemails/$batchsize,0,PHP_ROUND_HALF_DOWN);
             $rmd = $numemails % $batchsize;
