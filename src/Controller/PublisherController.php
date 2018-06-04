@@ -298,23 +298,15 @@ class PublisherController extends Controller
      * @Method({"GET", "POST"})
      */
     public function emailStatsAction() {
-        //create process to update daily table stats
-        /*$rootDir = getcwd();
-        $adk_process = new Process(
-            'php ../bin/console app:updatestats d'
-        );
-        $adk_process->setWorkingDirectory($rootDir);
-        $adk_process->setTimeout(null);
-        $adk_process->start();
-        if($adk_process->isRunning()){
-            while($adk_process->isRunning()){
-            }
-        }*/
+        //set function to update tables
+
         $em = $this ->getDoctrine() ->getManager();
         $emailstatuses = $em->getRepository('App:StatsDaily')->emailCheck();
+        $monthlystats = $em->getRepository('App:StatsWeekly')->statusGraph();
         $response = new Response();
         $response->setContent($this->renderView('BackEnd/Publisher/newPubEmailStatusUpdate.twig',[
-            'emailstatuses' => $emailstatuses
+            'emailstatuses' => $emailstatuses,
+            'monthlystats' => $monthlystats
         ]));
         return $response;
     }
@@ -434,10 +426,11 @@ class PublisherController extends Controller
         //email statuses
         $em = $this ->getDoctrine() ->getManager();
         $emailstatuses = $em->getRepository('App:StatsDaily')->emailCheck();
-        //var_dump($emailstatuses);
+        $monthlystats = $em->getRepository('App:StatsWeekly')->statusGraph();
         return $this->render('BackEnd/Publisher/pubEmailCheck.html.twig', [
             'form'=>$form->createView(),
-            'emailstatuses' => $emailstatuses
+            'emailstatuses' => $emailstatuses,
+            'monthlystats' => $monthlystats
         ]);
     }
 

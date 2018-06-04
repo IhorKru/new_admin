@@ -26,7 +26,7 @@ class emailCheckService extends PublisherController
         $key = Auth::setApiKey('secret_0073808a6d223620faf3860f368a2199');
         # 1. Creating sub batches
         $batcharray = array(); # master sub batch
-        $batchsize = 1000;
+        $batchsize = 10;
         if($numemails > $batchsize) {
             $cntbatch = round($numemails/$batchsize,0,PHP_ROUND_HALF_DOWN);
             $rmd = $numemails % $batchsize;
@@ -47,32 +47,9 @@ class emailCheckService extends PublisherController
             $subscribers = $this->getDoctrine()->getRepository('App:SubscriberDetails')->emailClean($sizecnt);
             foreach ($subscribers as $subscriber) {
                 $email = $subscriber->getEmailaddress();
-                /*$vmail = new verifyEmail();
-                $vmail->setStreamTimeoutWait(20);
-                //$vmail->Debug = TRUE;
-                //$vmail->Debugoutput= 'html';
-                $vmail->setEmailFrom('viska@viska.is');
-                if ($vmail->check($email)) {
-                    $smtpstatus =  1;
-                } elseif (verifyEmail::validate($email)) {
-                    $smtpstatus = 2;
-                } else {
-                    $smtpstatus = 3;
-                }
-
-                //eguilar email check
-                /*$validator = new EmailValidator();
-                $multipleValidations = new MultipleValidationWithAnd([
-                    new RFCValidation(),
-                    new DNSCheckValidation(),
-                    new SpoofCheckValidation(),
-                ]);
-                $validator->isValid($email, $multipleValidations);*/
-
                 #NEVERBOUNCE EMAIL CHECKER
                 $verification = new Single();
                 $singlecheck = $verification->check($email, true, true);
-
                 $emailStatus = new EmailStatus();
                 $emailStatus ->setUserid($subscriber->getId());
                 $emailStatus ->setRfccheck(-1);

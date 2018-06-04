@@ -10,4 +10,21 @@ namespace App\Repository;
  */
 class StatsWeeklyRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function statusGraph() {
+        $qb = $this->getEntityManager()->createQueryBuilder();
+        $qb
+            ->select('DATE_FORMAT(em.date, \'%Y-%V\') AS weeknum,
+                      em.validemails as CountValid,
+                      em.invalidemails as Invalid,
+                      em.dispemails as Disposable,
+                      em.catchallemails as Catchall,
+                      em.unknownemails as Unknown')
+            -> from('App:StatsWeekly', 'em')
+            -> groupBy('weeknum')
+            -> orderBy('weeknum', 'DESC')
+            -> setMaxResults(7)
+        ;
+        $result = $qb ->getQuery() ->getArrayResult();
+        return $result;
+    }
 }
