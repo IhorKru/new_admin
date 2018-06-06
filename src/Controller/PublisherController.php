@@ -218,7 +218,6 @@ class PublisherController extends Controller
                 if($adk_process->isRunning()){
                     while($adk_process->isRunning()){
                     }
-                    //var_dump($command);
                 }
             } else {
                 $getcampaign = $this->get('gen.campaign');
@@ -298,8 +297,6 @@ class PublisherController extends Controller
      * @Method({"GET", "POST"})
      */
     public function emailStatsAction() {
-        //set function to update tables
-
         $em = $this ->getDoctrine() ->getManager();
         $emailstatuses = $em->getRepository('App:StatsDaily')->emailCheck();
         $monthlystats = $em->getRepository('App:StatsWeekly')->statusGraph();
