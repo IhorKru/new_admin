@@ -21,7 +21,7 @@ use App\Form\newPartnerType;
 use App\Form\EmailValidationType;
 use Symfony\Component\Process\Process;
 use App\Entity\SubscriberDetails;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\Routing\Annotation\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use DateTime;
 

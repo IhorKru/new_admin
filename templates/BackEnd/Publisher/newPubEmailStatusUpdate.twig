@@ -251,33 +251,33 @@
                 y: 'bottom',
                 data: [
                     {% for sts in emailstatuses %}
-                    {% for key in sts|keys %}
-                    {% if loop.last == false %}
-                    {% if key == 'validemails' %}
-                    'Valid Emails'
-                    {% elseif key == 'dispemails' %}
-                    'Disposable'
-                    {% elseif key == 'invalidemails' %}
-                    'Invalid'
-                    {% elseif key == 'catchallemails' %}
-                    'Catch All'
-                    {% elseif key == 'unknownemails' %}
-                    'Unknown'
-                    {% endif %},
-                    {% else %}
-                    {% if key == 'validemails' %}
-                    'Valid Emails'
-                    {% elseif key == 'dispemails' %}
-                    'Disposable'
-                    {% elseif key == 'invalidemails' %}
-                    'Invalid'
-                    {% elseif key == 'catchallemails' %}
-                    'Catch All'
-                    {% elseif key == 'unknownemails' %}
-                    'Unknown'
-                    {% endif %}
-                    {% endif %}
-                    {% endfor %}
+                        {% for key in sts|keys %}
+                            {% if loop.last == false %}
+                                {% if key == 'validemails' %}
+                                    'Valid Emails'
+                                {% elseif key == 'dispemails' %}
+                                    'Disposable'
+                                {% elseif key == 'invalidemails' %}
+                                    'Invalid'
+                                {% elseif key == 'catchallemails' %}
+                                    'Catch All'
+                                {% elseif key == 'unknownemails' %}
+                                    'Unknown'
+                                {% endif %},
+                            {% else %}
+                                {% if key == 'validemails' %}
+                                    'Valid Emails'
+                                {% elseif key == 'dispemails' %}
+                                    'Disposable'
+                                {% elseif key == 'invalidemails' %}
+                                    'Invalid'
+                                {% elseif key == 'catchallemails' %}
+                                    'Catch All'
+                                {% elseif key == 'unknownemails' %}
+                                    'Unknown'
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
                     {% endfor %}
                 ]
             },
