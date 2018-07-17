@@ -1,0 +1,8 @@
+SELECT 
+    su.emailaddress,
+    st.nbstatus
+FROM 
+    mediaff_mysql.01_subscriberdetails su JOIN mediaff_mysql.emailstatus st ON su.id = st.userID
+WHERE
+    st.nbstatus = '4'
+LIMIT 1000;
