@@ -5,7 +5,6 @@
  * Date: 22-Jan-18
  * Time: 01:45 PM
  */
-
 namespace App\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
