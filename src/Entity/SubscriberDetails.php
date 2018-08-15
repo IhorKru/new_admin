@@ -123,6 +123,13 @@ class SubscriberDetails
      * @ORM\Column(name="datecreated", type="datetime", nullable=false)
      */
     private $datecreated;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="dateadded", type="datetime", nullable=true)
+     */
+    private $dateadded;
     
     /**
      * Set id
@@ -456,6 +463,30 @@ class SubscriberDetails
     public function getDatecreated()
     {
         return $this->datecreated;
+    }
+
+        /**
+     * Set dateadded
+     *
+     * @param \datetime $dateadded
+     *
+     * @return SubscriberDetails
+     */
+    public function setDateadded(\datetime $dateadded)
+    {
+        $this->dateadded = $dateadded;
+
+        return $this;
+    }
+
+    /**
+     * Get dateadded
+     *
+     * @return \datetime
+     */
+    public function getDateadded()
+    {
+        return $this->dateadded;
     }
 
     /**

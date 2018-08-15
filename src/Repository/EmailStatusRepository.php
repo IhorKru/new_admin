@@ -24,8 +24,7 @@ class EmailStatusRepository extends EntityRepository
             -> from('App:EmailStatus', 'em')
             -> groupBy('weeknum')
             -> orderBy('weeknum', 'ASC')
-            -> setMaxResults(7)
-        ;
+            -> setMaxResults(7);
         $result = $qb ->getQuery() ->getArrayResult();
         return $result;
     }

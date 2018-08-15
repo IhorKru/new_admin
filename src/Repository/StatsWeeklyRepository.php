@@ -20,10 +20,8 @@ class StatsWeeklyRepository extends \Doctrine\ORM\EntityRepository
                       em.catchallemails as Catchall,
                       em.unknownemails as Unknown')
             -> from('App:StatsWeekly', 'em')
-            -> groupBy('weeknum')
             -> orderBy('weeknum', 'DESC')
-            -> setMaxResults(7)
-        ;
+            -> setMaxResults(7);
         $result = $qb ->getQuery() ->getArrayResult();
         return $result;
     }
