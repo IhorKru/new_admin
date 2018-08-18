@@ -22,7 +22,6 @@ use App\Form\EmailValidationType;
 use Symfony\Component\Process\Process;
 use App\Entity\SubscriberDetails;
 use Symfony\Component\Routing\Annotation\Route;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use DateTime;
 
 class PublisherController extends Controller

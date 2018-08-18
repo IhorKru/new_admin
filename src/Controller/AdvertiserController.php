@@ -15,8 +15,7 @@ use App\Entity\newAdOfferDetails;
 use App\Form\newAdOfferType;
 use App\Entity\PartnerDetails;
 use App\Form\newPartnerType;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
+use Symfony\Component\Routing\Annotation\Route;
 use DateTime;
 
 class AdvertiserController extends Controller

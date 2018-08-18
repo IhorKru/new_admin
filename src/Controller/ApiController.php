@@ -9,7 +9,7 @@
 namespace App\Controller;
 use React\Http\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\Routing\Annotation\Route;
 
 class ApiController extends Controller
 {
