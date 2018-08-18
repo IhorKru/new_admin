@@ -41,10 +41,9 @@ class emailCheckService extends PublisherController
                 array_push($batcharray, $batchsize);
             }
         }
-        //var_dump($batcharray);
         foreach ($batcharray as $sizecnt) {
             unset($subscribers);
-            $subscribers = $this->getDoctrine()->getRepository('App:SubscriberDetails')->emailClean($sizecnt);
+            $subscribers = $this->getDoctrine()->getRepository('App:SubscriberDetails')->emailCleanRand($sizecnt);
             foreach ($subscribers as $subscriber) {
                 $email = $subscriber->getEmailaddress();
                 #NEVERBOUNCE EMAIL CHECKER
@@ -56,6 +55,7 @@ class emailCheckService extends PublisherController
                 $emailStatus ->setDnscheck(-1);
                 $emailStatus ->setSpoofcheck(-1);
                 $emailStatus ->setSmtpcheck(-1);
+                //$emailStatus ->setNbstatus(0);
                 $emailStatus ->setNbstatus($singlecheck->result_integer);
                 $emailStatus ->setDateCreated(new DateTime());
                 //var_dump($emailStatus);

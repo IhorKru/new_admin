@@ -230,8 +230,7 @@ class PublisherController extends Controller
     }
 
     /**
-     * @Route("/bar", name="progbar")
-     * @Method({"GET", "POST"})
+     * @Route("/bar", name="progbar", methods={"GET", "POST"})
      */
     public function ajaxProcessAction()
     {
@@ -246,8 +245,7 @@ class PublisherController extends Controller
     }
 
     /**
-     * @Route("/ebar", name="emailcheckbar")
-     * @Method({"GET", "POST"})
+     * @Route("/ebar", name="emailcheckbar", methods={"GET", "POST"})
      */
     public function ajaxEmailCheckAction()
     {
@@ -261,8 +259,7 @@ class PublisherController extends Controller
     }
 
     /**
-     * @Route("/campstats", name="campstats")
-     * @Method({"GET", "POST"})
+     * @Route("/campstats", name="campstats", methods={"GET", "POST"})
      */
     public function campaignStatsAction() {
         $em = $this ->getDoctrine() ->getManager();
@@ -293,8 +290,7 @@ class PublisherController extends Controller
     }
 
     /**
-     * @Route("/emailstats", name="emailstats")
-     * @Method({"GET", "POST"})
+     * @Route("/emailstats", name="emailstats", methods={"GET", "POST"})
      */
     public function emailStatsAction() {
         $em = $this ->getDoctrine() ->getManager();
