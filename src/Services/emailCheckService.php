@@ -24,29 +24,32 @@ class emailCheckService extends PublisherController
         $em = $this ->getDoctrine() ->getManager();
         $subscriber = new SubscriberDetails();
         $key = Auth::setApiKey('secret_0073808a6d223620faf3860f368a2199');
-        # 1. Creating sub batches
-        $batcharray = array(); # master sub batch
-        $batchsize = 10;
-        if($numemails > $batchsize) {
-            $cntbatch = round($numemails/$batchsize,0,PHP_ROUND_HALF_DOWN);
+        /* 1. Creating sub batches */
+        $batcharray = array();
+        /* selecting batch size based on the overall count */
+        $batchsize = 50;
+        /* identifiing number of batches */
+        if ($numemails > $batchsize) {
+            $cntbatch = round($numemails/$batchsize, 0, PHP_ROUND_HALF_DOWN);
             $rmd = $numemails % $batchsize;
-            for($x = 0; $x < $cntbatch; $x++) {
+            for ($x = 0; $x < $cntbatch; $x++) {
                 array_push($batcharray, $batchsize);
             }
-            array_push($batcharray,$rmd);
+            array_push($batcharray, $rmd);
         } else {
             $cntbatch = 1;
             $batchsize = $numemails;
-            for($x = 0; $x < $cntbatch; $x++) {
+            for ($x = 0; $x < $cntbatch; $x++) {
                 array_push($batcharray, $batchsize);
             }
         }
+        /*processing each batch*/
         foreach ($batcharray as $sizecnt) {
             unset($subscribers);
             $subscribers = $this->getDoctrine()->getRepository('App:SubscriberDetails')->emailCleanRand($sizecnt);
             foreach ($subscribers as $subscriber) {
                 $email = $subscriber->getEmailaddress();
-                #NEVERBOUNCE EMAIL CHECKER
+                /*NEVERBOUNCE EMAIL CHECKER*/
                 $verification = new Single();
                 $singlecheck = $verification->check($email, true, true);
                 $emailStatus = new EmailStatus();
@@ -55,7 +58,6 @@ class emailCheckService extends PublisherController
                 $emailStatus ->setDnscheck(-1);
                 $emailStatus ->setSpoofcheck(-1);
                 $emailStatus ->setSmtpcheck(-1);
-                //$emailStatus ->setNbstatus(0);
                 $emailStatus ->setNbstatus($singlecheck->result_integer);
                 $emailStatus ->setDateCreated(new DateTime());
                 //var_dump($emailStatus);

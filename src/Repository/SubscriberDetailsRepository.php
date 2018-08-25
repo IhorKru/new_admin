@@ -45,8 +45,7 @@ class SubscriberDetailsRepository extends EntityRepository
             -> where($qb->expr()->not($qb->expr()->exists($qb1->getDQL())))
             //-> andWhere($qb->expr()->not($qb->expr()->exists($qb0->getDQL())))
             //-> andWhere($qb->expr()->not($qb->expr()->exists($qb2->getDQL())))
-            -> setMaxResults($numcampaigns)
-        ;
+            -> setMaxResults($numcampaigns);
         $query = $qb->getQuery();
         return $query ->getResult();
     }
@@ -70,36 +69,68 @@ class SubscriberDetailsRepository extends EntityRepository
             -> select('s')
             -> from('App\Entity\SubscriberDetails', 's')
             -> where($qb->expr()->not($qb->expr()->exists($qb0->getDQL())))
-            -> setMaxResults($numemails)
-        ;
+            -> setMaxResults($numemails);
         $query = $qb->getQuery();
         return $query ->getResult();
     }
 
-    /* select emails to run through cleaning procedures */
-    public function emailCleanRand($numemails) {
+    /* select emails to run through cleaning procedures. OLD randome script. slow and borring*/
+    public function emailCleanRand($sizecnt) {
         $conn = $this->getEntityManager()->getConnection();
         $conn->getConfiguration()->setSQLLogger(null);
-        //$em = $this ->getDoctrine() ->getManager();
         //selecting only emails that were not checked within last 24 hours
         $qb0 = $this->getEntityManager()->createQueryBuilder();
-        $qb0
-            -> select('check')
+        $qb0-> select('check')
             -> from('App\Entity\EmailStatus', 'check')
             -> where('s.id = check.userid')
-            -> andWhere('DATE_FORMAT(now(), \'%e-%b-%Y\') - DATE_FORMAT(check.datecreated, \'%e-%b-%Y\') <=360')
-        ;
-        ####primary query to select users for future campaigns
+            -> andWhere('DATE_FORMAT(now(), \'%e-%b-%Y\') - DATE_FORMAT(check.datecreated, \'%e-%b-%Y\') <=360');
+        /*primary query to select users for future campaigns*/
         $qb = $this->getEntityManager()->createQueryBuilder();
-        $qb
-            -> select('s')
+        $qb -> select('s')
             -> from('App\Entity\SubscriberDetails', 's')
             -> where($qb->expr()->not($qb->expr()->exists($qb0->getDQL())))
             -> orderBy('RAND()')
-            -> setMaxResults($numemails)
-        ;
-        $query = $qb->getQuery();
-        return $query ->getResult();
+            -> setMaxResults($sizecnt);
+        return $qb->getQuery() ->getResult();
+        //die('All good simple');
     }
 
+    /* select emails to run through cleaning procedures using randome email
+    public function emailCleanRand1($numemails) {
+        $conn = $this->getEntityManager()->getConnection();
+        $conn->getConfiguration()->setSQLLogger(null);
+        $expr = $this->_em->getExpressionBuilder();
+                    $qb3 = $this->getEntityManager()->createQueryBuilder();
+                    $qb3-> select('check.userid')
+                        -> from('App\Entity\EmailStatus', 'check')
+                        -> where('DATE_FORMAT(now(), \'%e-%b-%Y\') - DATE_FORMAT(check.datecreated, \'%e-%b-%Y\') <=360');
+                        $checkeusers = $qb3->getQuery()->getResult();
+
+                $qb2 = $this->getEntityManager()->createQueryBuilder();
+                $qb2-> select('((:numemails1 / COUNT(subs.id)) * 10)')
+                    -> from('App\Entity\SubscriberDetails', 'subs')
+                    -> where($qb2->expr()->notIn('subs.id', $qb3->getDQL()))
+                    -> setParameter('numemails1', $numemails);
+                    $rand_num = $qb2->getQuery()->getResult();
+
+            $qb1 = $this->getEntityManager()->createQueryBuilder();
+            $qb1-> select('subss.id')
+                -> from('App\Entity\SubscriberDetails', 'subss')
+                -> where('RAND() < :sqbresult')
+                -> orderBy('RAND()')
+                -> setMaxResults($numemails)
+                -> setParameter('sqbresult', $rand_num);
+                $rand_unchked = $qb1->getQuery()->getResult();
+
+        /*primary query to select users for future campaigns*
+        $qb = $this->getEntityManager()->createQueryBuilder();
+        $qb -> select('s')
+            -> from('App\Entity\SubscriberDetails', 's')
+            -> where('s.id IN (' . substr(json_encode(array_column($rand_unchked, 'id')), 1, -1) . ')');
+            //unset($rand_unchked);
+        //return $qb ->getQuery() ->getResult();
+        //var_dump(substr(json_encode(array_column($rand_unchked, 'id')), 1, -1));
+        //var_dump($numemails);
+        die('All good andanced');
+    }*/
 }
