@@ -92,11 +92,10 @@ class SubscriberDetailsRepository extends EntityRepository
             -> orderBy('RAND()')
             -> setMaxResults($sizecnt);
         return $qb->getQuery() ->getResult();
-        //die('All good simple');
     }
 
-    /* select emails to run through cleaning procedures using randome email
-    public function emailCleanRand1($numemails) {
+    /* select emails to run through cleaning procedures using randome email */
+    /*public function emailCleanRand($numemails) {
         $conn = $this->getEntityManager()->getConnection();
         $conn->getConfiguration()->setSQLLogger(null);
         $expr = $this->_em->getExpressionBuilder();
@@ -105,14 +104,12 @@ class SubscriberDetailsRepository extends EntityRepository
                         -> from('App\Entity\EmailStatus', 'check')
                         -> where('DATE_FORMAT(now(), \'%e-%b-%Y\') - DATE_FORMAT(check.datecreated, \'%e-%b-%Y\') <=360');
                         $checkeusers = $qb3->getQuery()->getResult();
-
                 $qb2 = $this->getEntityManager()->createQueryBuilder();
                 $qb2-> select('((:numemails1 / COUNT(subs.id)) * 10)')
                     -> from('App\Entity\SubscriberDetails', 'subs')
                     -> where($qb2->expr()->notIn('subs.id', $qb3->getDQL()))
                     -> setParameter('numemails1', $numemails);
                     $rand_num = $qb2->getQuery()->getResult();
-
             $qb1 = $this->getEntityManager()->createQueryBuilder();
             $qb1-> select('subss.id')
                 -> from('App\Entity\SubscriberDetails', 'subss')
@@ -121,16 +118,12 @@ class SubscriberDetailsRepository extends EntityRepository
                 -> setMaxResults($numemails)
                 -> setParameter('sqbresult', $rand_num);
                 $rand_unchked = $qb1->getQuery()->getResult();
-
-        /*primary query to select users for future campaigns*
+        /*primary query to select users for future campaigns
         $qb = $this->getEntityManager()->createQueryBuilder();
         $qb -> select('s')
             -> from('App\Entity\SubscriberDetails', 's')
-            -> where('s.id IN (' . substr(json_encode(array_column($rand_unchked, 'id')), 1, -1) . ')');
-            //unset($rand_unchked);
-        //return $qb ->getQuery() ->getResult();
-        //var_dump(substr(json_encode(array_column($rand_unchked, 'id')), 1, -1));
-        //var_dump($numemails);
-        die('All good andanced');
+            -> where($qb->expr()->In('s.id', $qb1->getDQL()))
+            -> setParameter('sqbresult', $rand_num);
+        return $qb ->getQuery() ->getResult();
     }*/
 }
