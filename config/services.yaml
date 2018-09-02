@@ -42,3 +42,7 @@ services:
             class: App\Services\emailCheckService
             calls:
                 - [setContainer, ['@service_container']]
+    gender.check:
+            class: App\Services\genderApiService
+            calls:
+                - [setContainer, ['@service_container']]

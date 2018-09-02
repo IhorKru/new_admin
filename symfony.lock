@@ -74,6 +74,9 @@
     "evenement/evenement": {
         "version": "v3.0.1"
     },
+    "gender-api/client": {
+        "version": "v1.0.2"
+    },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
