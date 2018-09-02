@@ -30,9 +30,9 @@ class gcheckCommand  extends ContainerAwareCommand
     }
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $emailcheck = $this->getContainer()->get('email.check');
-        $numemails = $input->getArgument('numchecks');
-        $emailcheck-> emailCheckServiceAction($numchecks);
+        $gendercheck = $this->getContainer()->get('gender.check');
+        $numchecks = $input->getArgument('numchecks');
+        $gendercheck-> genderApiServiceAction($numchecks);
         $output->writeln('Check completed!');
     }
 }

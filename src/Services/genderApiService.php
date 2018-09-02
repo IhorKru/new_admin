@@ -9,12 +9,11 @@ use App\Controller\verifyEmail;
 use DateTime;
 use GenderApi\Client as GenderApiClient;
 
-
 class genderApiService extends PublisherController
 {
     private $numchecks;
 
-    public function nameCheckServiceAction($numemails) 
+    public function genderApiServiceAction($numchecks) 
     {
             //select distinct first names from the table according to the count selected
             $em = $this ->getDoctrine() ->getManager();
