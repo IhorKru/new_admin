@@ -10,4 +10,5 @@ namespace App\Repository;
  */
 class SubscriberAddressRepository extends \Doctrine\ORM\EntityRepository
 {
+    
 }

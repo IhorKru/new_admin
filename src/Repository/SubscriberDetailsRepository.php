@@ -126,8 +126,4 @@ class SubscriberDetailsRepository extends EntityRepository
             -> setParameter('sqbresult', $rand_num);
         return $qb ->getQuery() ->getResult();
     }*/
-
-    public function genderCheck($sizecnt) {
-
-    }
 }
