@@ -13,6 +13,7 @@ use GenderApi\Client as GenderApiClient;
 class genderApiService extends PublisherController
 {
     private $numchecks;
+    public $gender_id;
 
     public function genderApiServiceAction($numchecks) 
     {
@@ -48,47 +49,34 @@ class genderApiService extends PublisherController
                 //$firstname = 'Tomas';
                 $lastname = $subscriber->getLastname();
                 try {
-                    // Query a single name
-                    $lookup = $apiClient->getByFirstName($firstname);
-                    if ($lookup->genderFound()) {
-                        echo $lookup->getGender();
-                    }
-                    // Query a full name and improve the result by providing a country code
-                    $firstandlast = $firstname . ' ' . $lastname;
-                    $lookup = $apiClient->getByFirstNameAndLastNameAndCountry($firstandlast, 'US');
-                    if ($lookup->genderFound()) {
-                        echo $lookup->getGender();      // male
-                        echo $lookup->getFirstName();   // Thomas
-                        echo $lookup->getLastName();    // Johnson
-                    } 
+                    $lookup = $apiClient->getByFirstNameAndLastNameAndCountry($firstname . ' ' . $lastname, 'US');
                 } catch (GenderApi\Exception $e) {
-                    // Name lookup failed due to a network error or insufficient requests
-                    // left. See https://gender-api.com/en/api-docs/error-codes
                     echo 'Exception: ' . $e->getMessage();
                 }
+
+                $namegender = new GenderName();
                 $returnedgender = $lookup->getGender();
-                if ($returnedgender === 'male') {
+                if ($returnedgender == 'male') {
                     $gender_id = 1;
-                } elseif ($returnedgender === 'female') {
+                } elseif ($returnedgender == 'female') {
                     $gender_id = 0;
-                } elseif ($returnedgender === 'unknown') {
+                } elseif ($returnedgender == 'unknown') {
                     $gender_id = 2;
                 } else {
                     $gender_id = 3;
                 }
 
-                /* var_dump($subscriber->getFirstname());
+                var_dump($subscriber->getFirstname());
                 var_dump($lookup->getFirstName());
-                var_dump($gender_id);
+                var_dump((string)$gender_id);
                 var_dump($lookup->getSamples());
                 var_dump($lookup->getAccuracy());
                 var_dump($lookup->genderFound());
-                var_dump($returnedgender); */
-
-                $namegender = new GenderName();
+                var_dump($returnedgender);
+                
                 $namegender ->setFirstname($subscriber->getFirstname());
                 $namegender ->setFirstnameSanitized($lookup->getFirstName());
-                $namegender ->setGenderid($gender_id);
+                $namegender ->setGenderid((string)$gender_id);
                 $namegender ->setSamples($lookup->getSamples());
                 $namegender ->setAccuracy($lookup->getAccuracy());
                 $namegender ->setDateCreated(new DateTime());

@@ -167,7 +167,7 @@ class adkService extends PublisherController
                     $errordesc = $simpleXmlNode->str;
                     $requestid = $simpleXmlNode->requestid;
                     $errorrecipient = $email_hashes[(string)$simpleXmlNode->recipient];
-                    #pusshing errors to db
+                    #pushing errors to db
                     $errordetails = new SubscriberADKCampErrors();
                     $errordetails->setErrornum($errornum);
                     $errordetails->setErrordesc($errordesc);

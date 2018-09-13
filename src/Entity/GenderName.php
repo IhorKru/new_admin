@@ -66,7 +66,7 @@ class GenderName
     {
         return $this->id;
     }
-
+    
     public function getFirstname()
     {
         return $this->firstname;
@@ -91,12 +91,12 @@ class GenderName
         return $this;
     }
 
-    public function getGenderid()
+    public function getGenderId()
     {
         return $this->genderid;
     }
 
-    public function setGenderid($genderid)
+    public function setGenderId($genderid)
     {
         $this->genderid = $genderid;
 

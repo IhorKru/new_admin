@@ -25,7 +25,7 @@ class GenderNameRepository extends \Doctrine\ORM\EntityRepository
         $qb -> select('s')
             -> from('App\Entity\SubscriberDetails', 's')
             -> where($qb->expr()->not($qb->expr()->exists($qb0->getDQL())))
-            -> orderBy('s.firstname', 'DESC')
+            /*-> orderBy('s.firstname', 'DESC')*/
             -> setMaxResults($sizecnt);
         return $qb->getQuery() ->getResult();
     }
