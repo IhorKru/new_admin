@@ -33,6 +33,6 @@ class gcheckCommand  extends ContainerAwareCommand
         $gendercheck = $this->getContainer()->get('gender.check');
         $numchecks = $input->getArgument('numchecks');
         $gendercheck-> genderApiServiceAction($numchecks);
-        $output->writeln('Check completed!');
+        $output->writeln('Check completed with '. $numchecks .' names checked');
     }
 }

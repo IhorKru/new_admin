@@ -93,12 +93,12 @@ class GenderName
 
     public function getGenderId()
     {
-        return $this->genderid;
+        return $this->gender_id;
     }
 
-    public function setGenderId($genderid)
+    public function setGenderId($gender_id)
     {
-        $this->genderid = $genderid;
+        $this->gender_id = $gender_id;
 
         return $this;
     }

@@ -9,6 +9,7 @@ use App\Entity\EmailStatus;
 use App\Controller\verifyEmail;
 use DateTime;
 use GenderApi\Client as GenderApiClient;
+use GenderApi\GenderApi;
 
 class genderApiService extends PublisherController
 {
@@ -20,7 +21,10 @@ class genderApiService extends PublisherController
         //select distinct first names from the table according to the count selected
         $em = $this ->getDoctrine() ->getManager();
         $subscriber = new SubscriberDetails();
-        $apiClient = new GenderApiClient('enRaeoVEKdoyDFBCkr');
+            //https://gender-api.com/en/
+            $apiClient = new GenderApiClient('enRaeoVEKdoyDFBCkr');
+            //https://genderapi.io/
+            $apiClient2 = new GenderApi('5bb09bbaff8c27498f6c2601');
         /* 1. Creating sub batches */
         $batcharray = array();
         /* selecting batch size based on the overall count */
@@ -46,16 +50,24 @@ class genderApiService extends PublisherController
             $subscribers = $this->getDoctrine()->getRepository('App:GenderName')->genderCheck($sizecnt);
             foreach ($subscribers as $subscriber) {
                 $firstname = $subscriber->getFirstname();
-                //$firstname = 'Tomas';
                 $lastname = $subscriber->getLastname();
-                try {
+                //https://gender-api.com/en/
+                /*try {
                     $lookup = $apiClient->getByFirstNameAndLastNameAndCountry($firstname . ' ' . $lastname, 'US');
+                    $returnedgender = $lookup->getGender();
                 } catch (GenderApi\Exception $e) {
                     echo 'Exception: ' . $e->getMessage();
-                }
+                }*/
 
-                $namegender = new GenderName();
-                $returnedgender = $lookup->getGender();
+                try {
+                    $getGender = $genderApi->findGender('britney');
+                    var_dump($getGender);
+                } catch (GenderApi2\Exception $e) {
+                    echo 'Exception: ' . $e->getMessage();
+                }
+                die;
+                /*$namegender = new GenderName();
+
                 if ($returnedgender == 'male') {
                     $gender_id = 1;
                 } elseif ($returnedgender == 'female') {
@@ -65,28 +77,31 @@ class genderApiService extends PublisherController
                 } else {
                     $gender_id = 3;
                 }
-
-                var_dump($subscriber->getFirstname());
+                
+                /*var_dump($subscriber->getFirstname());
                 var_dump($lookup->getFirstName());
                 var_dump((string)$gender_id);
                 var_dump($lookup->getSamples());
                 var_dump($lookup->getAccuracy());
                 var_dump($lookup->genderFound());
-                var_dump($returnedgender);
+                var_dump($returnedgender);*/
                 
-                $namegender ->setFirstname($subscriber->getFirstname());
+                //$queryli = $em ->createQuery('SELECT MAX(li.id) FROM App:GenderName li');
+                //$gender_id = $queryli->getSingleScalarResult();
+
+                /*$namegender ->setFirstname($subscriber->getFirstname());
                 $namegender ->setFirstnameSanitized($lookup->getFirstName());
-                $namegender ->setGenderid((string)$gender_id);
+                $namegender ->setGenderId((string)$gender_id);
                 $namegender ->setSamples($lookup->getSamples());
                 $namegender ->setAccuracy($lookup->getAccuracy());
                 $namegender ->setDateCreated(new DateTime());
                 $namegender ->setDateModified(new DateTime());
                 $em->persist($namegender);
-                unset($namegender);
+                unset($namegender);*/
             }
-            $em->flush();
+            /*$em->flush();
             $em->clear();
-            $em->getConnection()->close();
+            $em->getConnection()->close();*/
         }
     }
 }
