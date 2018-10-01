@@ -62,7 +62,7 @@ class genderApiService extends PublisherController
                 try {
                     $getGender = $genderApi->findGender('britney');
                     var_dump($getGender);
-                } catch (GenderApi2\Exception $e) {
+                } catch (GenderApi\Exception $e) {
                     echo 'Exception: ' . $e->getMessage();
                 }
                 die;
