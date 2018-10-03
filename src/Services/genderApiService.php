@@ -50,13 +50,14 @@ class genderApiService extends PublisherController {
                 $lastname = $subscriber->getLastname();
                 //https://gender-api.com/en/
                 try {
-                    //check if we still have limit with vendor
+                    //check if within the limits
                     $stats = $apiClient->getStats();
-                    // Check your query limit
+                    // if we are, use current vendor
                     if (!$stats->isLimitReached()) {
                         $lookup = $apiClient->getByFirstNameAndLastNameAndCountry($firstname . ' ' . $lastname, 'US');
                         $returnedgender = $lookup->getGender();
                         $vendor = 'gender-api.com';
+                        //if we are not, go to different vendor
                     } else {
                         //https://genderapi.io/
                         //check if the limit is there for vendor
