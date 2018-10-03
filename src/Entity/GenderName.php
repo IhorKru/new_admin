@@ -62,6 +62,12 @@ class GenderName
      */
     private $datemodified;
 
+    /**
+     * @var string
+     * @ORM\Column(name="vendor", type="string", length=100)
+     */
+    private $vendor;
+
     public function getId()
     {
         return $this->id;
@@ -147,6 +153,18 @@ class GenderName
     public function setDatemodified(\DateTimeInterface $datemodified)
     {
         $this->datemodified = $datemodified;
+
+        return $this;
+    }
+
+    public function getVendor()
+    {
+        return $this->vendor;
+    }
+
+    public function setVendor(string $vendor)
+    {
+        $this->vendor = $vendor;
 
         return $this;
     }
