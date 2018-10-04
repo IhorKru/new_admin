@@ -64,7 +64,7 @@ class genderApiService extends PublisherController {
                         try {
                             $getResult = $genderApi->result($firstname);
                             $errnum = $getResult->{'errno'};
-                            if(!$errnum) {
+                            if (!$errnum) {
                                 $returnedgender = $getResult->{'gender'};
                                 $vendor = 'genderapi.io';
                             } elseif ($errnum == '93') {
