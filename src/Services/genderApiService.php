@@ -48,8 +48,48 @@ class genderApiService extends PublisherController {
             foreach ($subscribers as $subscriber) {
                 $firstname = $subscriber->getFirstname();
                 $lastname = $subscriber->getLastname();
-                //https://gender-api.com/en/
                 try {
+                    //genderapi.io
+                    $getResult = $genderApi->result($firstname);
+                    if (property_exists($getResult, 'name')) {
+                        $returnedgender = $getResult->{'gender'};
+                        $vendor = 'genderapi.io';
+                        //if genderapi.io was not able to identify this gender then
+                        if ($returnedgender == 'null') {
+                            //call gender-api.com to try to identify gender there
+                            //check if has limit
+                            $stats = $apiClient->getStats();
+                            //if limit is present
+                            if (!$stats->isLimitReached()) {
+                                $lookup = $apiClient->getByFirstNameAndLastNameAndCountry($firstname . ' ' . $lastname, 'US');
+                                $returnedgender = $lookup->getGender();
+                                $vendor = 'gender-api.com';
+                            } else {
+                                $returnedgender == 'null';
+                            }
+                        }
+                    //if error or limit reached with genderapi.io
+                    } else {
+                        //if error or limit reached with genderapi.io
+                        $errornum = $getResult->{'errmsg'};
+                        //check gender with gender-api.com
+                        //check if has limit
+                        $stats = $apiClient->getStats();
+                        //if limit is present
+                        if (!$stats->isLimitReached()) {
+                            $lookup = $apiClient->getByFirstNameAndLastNameAndCountry($firstname . ' ' . $lastname, 'US');
+                            $returnedgender = $lookup->getGender();
+                            $vendor = 'gender-api.com';
+                        } else {
+                            print_r('Both services unavailable');
+                            die;
+                        }
+                    }
+                } catch (GenderApi\Exception $e) {
+                    echo 'Exception: ' . $e->getMessage();
+                }
+
+                /*try {
                     //check if within the limits
                     $stats = $apiClient->getStats();
                     // if we are, use current vendor
@@ -63,11 +103,12 @@ class genderApiService extends PublisherController {
                         //check if the limit is there for vendor
                         try {
                             $getResult = $genderApi->result($firstname);
-                            $errnum = $getResult->{'errno'};
-                            if (!$errnum) {
+                            if (property_exists($getResult, 'name')) {
                                 $returnedgender = $getResult->{'gender'};
                                 $vendor = 'genderapi.io';
-                            } elseif ($errnum == '93') {
+                            } else {
+                                $errornum = $getResult->{'errmsg'};
+                                print_r($errornum);
                                 die;
                             }
                         } catch (GenderApi\Exception $e2) {
@@ -77,7 +118,7 @@ class genderApiService extends PublisherController {
                     }
                 } catch (GenderApi\Exception $e) {
                     echo 'Exception: ' . $e->getMessage();
-                }
+                }*/
                 $namegender = new GenderName();
                 if ($returnedgender == 'male') {
                     $gender_id = 1;
