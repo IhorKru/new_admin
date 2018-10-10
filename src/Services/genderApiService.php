@@ -91,37 +91,38 @@ class genderApiService extends PublisherController {
                     } catch (GenderApi\Exception $e) {
                         echo 'Exception: ' . $e->getMessage();
                     }
-                    $namegender = new GenderName();
-                    if ($returnedgender == 'male') {
-                        $gender_id = 1;
-                    } elseif ($returnedgender == 'female') {
-                        $gender_id = 2;
-                    } elseif ($returnedgender == 'unknown' OR $returnedgender == 'null') {
-                        $gender_id = -1;
-                    } else {
-                        $gender_id = 3;
-                    }
-                    if ($vendor == 'gender-api.com') {
-                        $namegender ->setFirstname($subscriber->getFirstname());
-                        $namegender ->setFirstnameSanitized($lookup->getFirstName());
-                        $namegender ->setGenderId((string)$gender_id);
-                        $namegender ->setSamples($lookup->getSamples());
-                        $namegender ->setAccuracy($lookup->getAccuracy());
-                        $namegender ->setDateCreated(new DateTime());
-                        $namegender ->setDateModified(new DateTime());
-                        $namegender ->setVendor($vendor);
-                    } elseif ($vendor == 'genderapi.io') {
-                        $namegender ->setFirstname($subscriber->getFirstname());
-                        $namegender ->setFirstnameSanitized($getResult->{'q'});
-                        $namegender ->setGenderId((string)$gender_id);
-                        $namegender ->setSamples($getResult->{'total_names'});
-                        $namegender ->setAccuracy($getResult->{'probability'});
-                        $namegender ->setDateCreated(new DateTime());
-                        $namegender ->setDateModified(new DateTime());
-                        $namegender ->setVendor($getResult->{'server'});
-                    }
-                    $em->persist($namegender);
-                    unset($namegender);
+                } catch (GenderApi\Exception $e) {
+                    echo 'Exception: ' . $e->getMessage();
+                }
+                
+                $namegender = new GenderName();
+                if ($returnedgender == 'male') {
+                    $gender_id = 1;
+                } elseif ($returnedgender == 'female') {
+                    $gender_id = 0;
+                } elseif ($returnedgender == 'unknown' OR $returnedgender == 'null') {
+                    $gender_id = 2;
+                } else {
+                    $gender_id = 3;
+                }
+                if ($vendor == 'gender-api.com') {
+                    $namegender ->setFirstname($subscriber->getFirstname());
+                    $namegender ->setFirstnameSanitized($lookup->getFirstName());
+                    $namegender ->setGenderId((string)$gender_id);
+                    $namegender ->setSamples($lookup->getSamples());
+                    $namegender ->setAccuracy($lookup->getAccuracy());
+                    $namegender ->setDateCreated(new DateTime());
+                    $namegender ->setDateModified(new DateTime());
+                    $namegender ->setVendor($vendor);
+                } elseif ($vendor == 'genderapi.io') {
+                    $namegender ->setFirstname($subscriber->getFirstname());
+                    $namegender ->setFirstnameSanitized($getResult->{'q'});
+                    $namegender ->setGenderId((string)$gender_id);
+                    $namegender ->setSamples($getResult->{'total_names'});
+                    $namegender ->setAccuracy($getResult->{'probability'});
+                    $namegender ->setDateCreated(new DateTime());
+                    $namegender ->setDateModified(new DateTime());
+                    $namegender ->setVendor($getResult->{'server'});
                 }
                 $em->flush();
                 $em->clear();
