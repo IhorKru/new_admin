@@ -20,7 +20,6 @@ class GenderNameRepository extends \Doctrine\ORM\EntityRepository
             -> from('App\Entity\GenderName', 'check')
             -> where('s.firstname = check.firstname');
         /*primary query to select users for future campaigns*/
-
         $qb = $this->getEntityManager()->createQueryBuilder();
         $qb -> select('s')
             -> from('App\Entity\SubscriberDetails', 's')
