@@ -42,7 +42,6 @@ class genderApiService extends PublisherController {
                 array_push($batcharray, $batchsize);
             }
         }
-        
         //selecting all subscribers
         $subscribers = $this->getDoctrine()->getRepository('App:GenderName')->genderCheck($numchecks);
         //chunking hude array of subscribers onto smaller arrays
@@ -77,9 +76,9 @@ class genderApiService extends PublisherController {
                             //if error or limit reached with genderapi.io
                             $errornum = $getResult->{'errmsg'};
                             //check gender with gender-api.com
-                            //check if has limit
+                                //check if has limit
                             $stats = $apiClient->getStats();
-                            //if limit is present
+                                //if limit is present
                             if (!$stats->isLimitReached()) {
                                 $lookup = $apiClient->getByFirstNameAndLastNameAndCountry($firstname . ' ' . $lastname, 'US');
                                 $returnedgender = $lookup->getGender();
