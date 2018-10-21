@@ -52,7 +52,7 @@ class genderApiService extends PublisherController {
                 $lastname = $subscriber->getLastname();
                 try {
                     //genderapi.io
-                    $getResult = $genderApiPaid->result($firstname);
+                    $getResult = $genderApiFree->result($firstname);
                     //balance on genderapi.io free is available and service is working
                     if (property_exists($getResult, 'name')) {
                         $returnedgender = $getResult->{'gender'};
@@ -95,9 +95,9 @@ class genderApiService extends PublisherController {
                     if ($returnedgender == 'male') {
                         $gender_id = 1;
                     } elseif ($returnedgender == 'female') {
-                        $gender_id = 0;
-                    } elseif ($returnedgender == 'unknown' OR $returnedgender == 'null') {
                         $gender_id = 2;
+                    } elseif ($returnedgender == 'unknown' OR $returnedgender == 'null') {
+                        $gender_id = -1;
                     } else {
                         $gender_id = 3;
                     }

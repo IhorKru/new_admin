@@ -25,7 +25,6 @@ class statsCommand extends ContainerAwareCommand
             ->addArgument('period', InputArgument::REQUIRED, 'Input update period')
         ;
     }
-
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $request = Request::createFromGlobals();
@@ -47,5 +46,4 @@ class statsCommand extends ContainerAwareCommand
         }
         $output->writeln('Whoa!' & $period);
     }
-
 }
