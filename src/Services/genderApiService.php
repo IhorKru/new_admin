@@ -45,7 +45,7 @@ class genderApiService extends PublisherController {
         //selecting all subscribers
         $subscribers = $this->getDoctrine()->getRepository('App:GenderName')->genderCheck($numchecks);
         //chunking hude array of subscribers onto smaller arrays
-        $subscribersbc = array_chunk($subscribers,50,true);
+        $subscribersbc = array_chunk($subscribers, 50, true);
         foreach ($subscribersbc as $users) {
             foreach ($users as $subscriber) {
                 $firstname = $subscriber->getFirstname();
@@ -91,6 +91,7 @@ class genderApiService extends PublisherController {
                     } catch (GenderApi\Exception $e) {
                         echo 'Exception: ' . $e->getMessage();
                     }
+<<<<<<< HEAD
                 } catch (GenderApi\Exception $e) {
                     echo 'Exception: ' . $e->getMessage();
                 }
@@ -123,11 +124,47 @@ class genderApiService extends PublisherController {
                     $namegender ->setDateCreated(new DateTime());
                     $namegender ->setDateModified(new DateTime());
                     $namegender ->setVendor($getResult->{'server'});
+=======
+                    $namegender = new GenderName();
+                    if ($returnedgender == 'male') {
+                        $gender_id = 1;
+                    } elseif ($returnedgender == 'female') {
+                        $gender_id = 2;
+                    } elseif ($returnedgender == 'unknown' OR $returnedgender == 'null') {
+                        $gender_id = -1;
+                    } else {
+                        $gender_id = 3;
+                    }
+                    if ($vendor == 'gender-api.com') {
+                        $namegender ->setFirstname($subscriber->getFirstname());
+                        $namegender ->setFirstnameSanitized($lookup->getFirstName());
+                        $namegender ->setGenderId((string)$gender_id);
+                        $namegender ->setSamples($lookup->getSamples());
+                        $namegender ->setAccuracy($lookup->getAccuracy());
+                        $namegender ->setDateCreated(new DateTime());
+                        $namegender ->setDateModified(new DateTime());
+                        $namegender ->setVendor($vendor);
+                    } elseif ($vendor == 'genderapi.io') {
+                        $namegender ->setFirstname($subscriber->getFirstname());
+                        $namegender ->setFirstnameSanitized($getResult->{'q'});
+                        $namegender ->setGenderId((string)$gender_id);
+                        $namegender ->setSamples($getResult->{'total_names'});
+                        $namegender ->setAccuracy($getResult->{'probability'});
+                        $namegender ->setDateCreated(new DateTime());
+                        $namegender ->setDateModified(new DateTime());
+                        $namegender ->setVendor($getResult->{'server'});
+                    }
+                    $em->persist($namegender);
+                    unset($namegender);
+>>>>>>> commint 2
                 }
                 $em->flush();
                 $em->clear();
             }
         $em->getConnection()->close();
+<<<<<<< HEAD
         //changed
+=======
+>>>>>>> commint 2
     }
 }
