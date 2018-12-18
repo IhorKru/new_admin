@@ -10,7 +10,7 @@ namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use App\Entity\newAdOfferDetails;
 use App\Form\newAdOfferType;
 use App\Entity\PartnerDetails;
@@ -18,7 +18,7 @@ use App\Form\newPartnerType;
 use Symfony\Component\Routing\Annotation\Route;
 use DateTime;
 
-class AdvertiserController extends Controller
+class AdvertiserController extends AbstractController
 {
     /**
      * @Route("/adsdashboard/{slug}", name="adsdashboard", defaults={"slug" = false}, requirements={"slug": "\d+"})

@@ -8,10 +8,10 @@
 
 namespace App\Controller;
 use React\Http\Request;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
-class ApiController extends Controller
+class ApiController extends AbstractController
 {
     //identify request (collect all requests comming into api
     //extract parameters from the request

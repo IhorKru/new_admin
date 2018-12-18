@@ -10,7 +10,7 @@ namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use App\Entity\CampaignInputDetails;
 use App\Entity\Template;
 use App\Entity\PartnerDetails;
@@ -24,7 +24,7 @@ use App\Entity\SubscriberDetails;
 use Symfony\Component\Routing\Annotation\Route;
 use DateTime;
 
-class PublisherController extends Controller
+class PublisherController extends AbstractController
 {
     /**
      * @Route("/pubmaster/{slug}", name="pubmaster", defaults={"slug" = 2}, requirements={"slug": "\d+"})

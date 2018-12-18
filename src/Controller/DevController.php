@@ -8,10 +8,10 @@
 
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
-class DevController Extends Controller
+class DevController Extends AbstractController
 {
     /**
      * @Route("/fbrawdata", name="fbrawdata")

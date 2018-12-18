@@ -6,7 +6,7 @@ use App\Entity\StatsYearly;
 use App\Entity\StatsMonthly;
 use App\Entity\StatsWeekly;
 use App\Entity\StatsDaily;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -15,7 +15,7 @@ use Symfony\Component\Validator\Constraints\Date;
 use Doctrine\ORM\EntityRepository;
 use Doctrine\DBAL\Connections;
 
-class statsService extends Controller
+class statsService extends AbstractController
 {
     //CUSTOM PHP FUNCTIONS USED IN THIS CLASS
     public function checkNull($value)
