@@ -163,8 +163,11 @@ class genderApiService extends PublisherController {
             }
         $em->getConnection()->close();
 <<<<<<< HEAD
+<<<<<<< HEAD
         //changed
 =======
 >>>>>>> commint 2
+=======
+>>>>>>> test
     }
 }
