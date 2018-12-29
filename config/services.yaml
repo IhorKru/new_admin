@@ -46,3 +46,7 @@ services:
             class: App\Services\genderApiService
             calls:
                 - [setContainer, ['@service_container']]
+    gbdfl.test:
+            class: App\Services\hckz\apiSCBGBDFLtestService
+            calls:
+                - [setContainer, ['@service_container']]
