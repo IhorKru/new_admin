@@ -31,10 +31,18 @@ class gbdflTest extends PublisherController {
                 )
         );
         $options = array(
-            'login' => $clientid,
-            'password' => $password
+            'username' => $clientid,
+            'password' => $password,
+            'encoding' => 'UTF-8',
+            'verifypeer' => false,
+            'verifyhost' => false,
+            'soap_version' => SOAP_1_2,
+            'trace' => 1,
+            'exceptions' => 1,
+            'connection_timeout' => 180,
+            'stream_context' => stream_context_create($opts)
         );
         $wsdlUrl = $url . '?wsdl';
-        $client = new \SoapClient($testurl);
+        $client = new \SoapClient($wsdlUrl, $options);
     }
 }
