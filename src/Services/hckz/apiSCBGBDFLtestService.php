@@ -17,15 +17,29 @@ class apiSCBGBDFLtestService extends PublisherController {
         $clientid = 'e4be6659-29d9-4ee5-ae40-5d4a7e01bafb';
         $password = 'Homecredit_123';
         $url = 'https://testscbws.mkb.kz/gbdServices/PersonDetailsImplService';
-        $url2 = 'https://testscbws.mkb.kz/gbdServices/PersonDetailsImplService?wsdl';
 
         //variable defenition
         $iin = '700521700054';
-        $options = array(
-            'login' => $userid,
-            'password' => $password,
+        $opts = array(
+            'ssl' => array(
+                'ciphers' => 'RC4-SHA',
+                'verify_peer' => false,
+                'verify_peer_name' => false
+                )
         );
-        $client = new \SoapClient($url2, $options);
-        
+        $options = array(
+            'login' => $clientid,
+            'password' => $password,
+            'encoding' => 'UTF-8',
+            'verifypeer' => false,
+            'verifyhost' => false,
+            'soap_version' => SOAP_1_2,
+            'trace' => 1,
+            'exceptions' => 1,
+            'connection_timeout' => 180,
+            'stream_context' => stream_context_create($opts)
+        );
+        $wsdlUrl = $url . '?WSDL';
+        $client = new \SoapClient($wsdlUrl, $options);
     }
 }
