@@ -10,10 +10,11 @@ namespace App\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Command\Command;
+use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Console\Input\InputArgument;
 
-class echeckCommand  extends Command
+class echeckCommand  extends ContainerAwareCommand
 {
     protected function configure()
     {
@@ -34,5 +35,6 @@ class echeckCommand  extends Command
         $numemails = $input->getArgument('numemails');
         $emailcheck-> emailCheckServiceAction($numemails);
         $output->writeln('Check completed!');
+        return $output;
     }
 }

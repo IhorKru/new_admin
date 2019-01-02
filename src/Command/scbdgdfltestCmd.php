@@ -28,6 +28,7 @@ class scbdgdfltestCmd extends ContainerAwareCommand
         $gbdflchecks = $this->getContainer()->get('gbdfl.test');
         $cntiin = $input->getArgument('cntiin');
         $gbdflchecks-> apiSCBGBDFLtestServiceAction($cntiin);
-        $output->writeln('Whoa!' & $cntiin & 'checked');
+        $output->writeln('Checked ' . $cntiin . ' IINs');
+        return $output;
     }
 }

@@ -45,6 +45,7 @@ class statsCommand extends ContainerAwareCommand
             $allstats ->statsServiceAction($request, 'monthly');
             $allstats ->statsServiceAction($request, 'yearly');
         }
-        $output->writeln('Whoa!' & $period);
+        $output->writeln('Whoa, stats for ' . $period . ' were updated');
+        return $output;
     }
 }

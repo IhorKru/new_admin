@@ -10,10 +10,11 @@ namespace App\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Command\Command;
+use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Console\Input\InputArgument;
 
-class gcheckCommand  extends Command
+class gcheckCommand  extends ContainerAwareCommand
 {
     protected function configure()
     {
@@ -34,5 +35,6 @@ class gcheckCommand  extends Command
         $numchecks = $input->getArgument('numchecks');
         $gendercheck-> genderApiServiceAction($numchecks);
         $output->writeln('Check completed with '. $numchecks .' names checked');
+        return $output;
     }
 }

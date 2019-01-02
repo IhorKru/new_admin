@@ -17,9 +17,12 @@ class apiSCBGBDFLtestService extends PublisherController {
         $clientid = 'e4be6659-29d9-4ee5-ae40-5d4a7e01bafb';
         $password = 'Homecredit_123';
         $url = 'https://testscbws.mkb.kz/gbdServices/PersonDetailsImplService';
+        $urlprod = 'https://scbws.mkb.kz/gbdServices/PersonDetailsImplService';
+        $testurl = 'https://svn.apache.org/repos/asf/airavata/sandbox/xbaya-web/test/Calculator.wsdl';
 
         //variable defenition
         $iin = '700521700054';
+        //login details
         $opts = array(
             'ssl' => array(
                 'ciphers' => 'RC4-SHA',
@@ -29,17 +32,9 @@ class apiSCBGBDFLtestService extends PublisherController {
         );
         $options = array(
             'login' => $clientid,
-            'password' => $password,
-            'encoding' => 'UTF-8',
-            'verifypeer' => false,
-            'verifyhost' => false,
-            'soap_version' => SOAP_1_2,
-            'trace' => 1,
-            'exceptions' => 1,
-            'connection_timeout' => 180,
-            'stream_context' => stream_context_create($opts)
+            'password' => $password
         );
-        $wsdlUrl = $url . '?WSDL';
-        $client = new \SoapClient($wsdlUrl, $options);
+        $wsdlUrl = $url . '?wsdl';
+        $client = new \SoapClient($testurl);
     }
 }
