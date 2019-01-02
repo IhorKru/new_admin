@@ -9,6 +9,7 @@ use Symfony\Component\Console\Input\InputArgument;
 
 class adkCommand extends Command
 {
+    
     protected function configure()
     {
         $this

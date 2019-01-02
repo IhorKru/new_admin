@@ -9,7 +9,7 @@ use Prewk\XmlStringStreamer\Parser;
 use DateTime;
 use Symfony\Component\DomCrawler\Crawler;
 
-class apiSCBGBDFLtestService extends PublisherController {
+class gbdflTest extends PublisherController {
 
     public function apiSCBGBDFLtestServiceAction ($cntiin) {
         //constants identification

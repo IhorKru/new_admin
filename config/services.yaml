@@ -47,6 +47,6 @@ services:
             calls:
                 - [setContainer, ['@service_container']]
     gbdfl.test:
-            class: App\Services\hckz\apiSCBGBDFLtestService
+            class: App\Services\hckz\gbdflTest
             calls:
                 - [setContainer, ['@service_container']]

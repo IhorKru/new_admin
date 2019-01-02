@@ -9,7 +9,7 @@ use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Console\Input\InputArgument;
 
-class statsCommand extends ContainerAwareCommand
+class statsCmd extends ContainerAwareCommand
 {
 
     protected function configure()
