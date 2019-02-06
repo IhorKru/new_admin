@@ -15573,7 +15573,7 @@ class gbdflTest extends PublisherController {
             'http://cosmomer.biz',
             'http://finnews.pp.ua',
             'http://karaganda.boplus.kz',
-            'http://m.aktobe.list-ob.kz',*/
+            'http://m.aktobe.list-ob.kz',
             'http://mixto.ru',
             'http://norvelloteyhouse.com',
             'http://showbiz.mirtesen.ru',
