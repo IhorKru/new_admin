@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="f8a28a0b-58b4-456e-9c3f-6153f96042bc" activeEnvironment="Default" name="Сервис ГБД ФЛ_ТЕСТ" resourceRoot="${projectDir}" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="b42423d1-e39a-44d5-868e-d80b22f0fc2b" wsaVersion="NONE" name="PersonDetailsImplServiceSoapBinding" type="wsdl" bindingName="{http://data.gbd.chdb.scb.kz/}PersonDetailsImplServiceSoapBinding" soapVersion="1_1" anonymous="optional" definition="https://testgbd.mkb.kz/gbdServices/PersonDetailsImplService?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://testgbd.mkb.kz/gbdServices/PersonDetailsImplService?wsdl"><con:part><con:url>https://testgbd.mkb.kz/gbdServices/PersonDetailsImplService?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="PersonDetailsImplService" targetNamespace="http://data.gbd.chdb.scb.kz/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://data.gbd.chdb.scb.kz/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:ns1="http://data.gbd.chdb.scb.kz">
+  <wsdl:import location="http://10.10.106.201:8580/gbdServices/PersonDetailsImplService?wsdl=PersonDetails.wsdl" namespace="http://data.gbd.chdb.scb.kz"></wsdl:import>
+  <wsdl:binding name="PersonDetailsImplServiceSoapBinding" type="ns1:PersonDetails">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getPerson">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getPerson">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getPersonResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="JAXBException">
+        <soap:fault name="JAXBException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="IOException">
+        <soap:fault name="IOException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="SOAPException">
+        <soap:fault name="SOAPException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="ScbException">
+        <soap:fault name="ScbException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PersonDetailsImplService">
+    <wsdl:port binding="tns:PersonDetailsImplServiceSoapBinding" name="PersonDetailsImplPort">
+      <soap:address location="https://testgbd.mkb.kz/gbdServices/PersonDetailsImplService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://10.10.106.201:8580/gbdServices/PersonDetailsImplService?wsdl=PersonDetails.wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="PersonDetails" targetNamespace="http://data.gbd.chdb.scb.kz" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns1="http://data.gbd.chdb.scb.kz">
+  <wsdl:types>
+    <xs:schema targetNamespace="http://person.persistence.interactive.nat" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://person.persistence.interactive.nat" xmlns:ns2="http://document.persistence.interactive.nat">
+      <xs:import namespace="http://data.gbd.chdb.scb.kz"/>
+      <xs:import namespace="http://data.gbd.chdb.scb.kz"/>
+      <xs:import namespace="http://document.persistence.interactive.nat"/>
+      <xs:complexType name="BirthPlace">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="country" type="ns1:Country"/>
+          <xs:element minOccurs="0" name="district" type="ns1:District"/>
+          <xs:element minOccurs="0" name="region" type="ns1:Region"/>
+          <xs:element minOccurs="0" name="foreignData" type="tns:ForeignData"/>
+          <xs:element minOccurs="0" name="city" type="xs:string"/>
+          <xs:element minOccurs="0" name="birthTeCodeAR" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="RegAddress">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="country" type="ns1:Country"/>
+          <xs:element minOccurs="0" name="district" type="ns1:District"/>
+          <xs:element minOccurs="0" name="region" type="ns1:Region"/>
+          <xs:element minOccurs="0" name="foreignData" type="tns:ForeignData"/>
+          <xs:element minOccurs="0" name="city" type="xs:string"/>
+          <xs:element minOccurs="0" name="street" type="xs:string"/>
+          <xs:element minOccurs="0" name="building" type="xs:string"/>
+          <xs:element minOccurs="0" name="corpus" type="xs:string"/>
+          <xs:element minOccurs="0" name="flat" type="xs:string"/>
+          <xs:element minOccurs="0" name="beginDate" type="xs:anySimpleType"/>
+          <xs:element minOccurs="0" name="endDate" type="xs:anySimpleType"/>
+          <xs:element minOccurs="0" name="status" type="ns1:AddressStatus"/>
+          <xs:element minOccurs="0" name="invalidity" type="ns1:AddressInvalidity"/>
+          <xs:element minOccurs="0" name="arCode" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="MissingStatus">
+        <xs:sequence>
+          <xs:element name="missing" type="xs:boolean"/>
+          <xs:element name="missingDate" type="xs:date"/>
+          <xs:element minOccurs="0" name="missingEndDate" type="xs:date"/>
+          <xs:element name="missingNumber" type="xs:string"/>
+          <xs:element name="gpTerritorial" type="ns1:GpTerritorial"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Person">
+        <xs:sequence>
+          <xs:element name="iin" type="xs:string"/>
+          <xs:element minOccurs="0" name="surname" type="xs:string"/>
+          <xs:element minOccurs="0" name="name" type="xs:string"/>
+          <xs:element minOccurs="0" name="patronymic" type="xs:string"/>
+          <xs:element name="birthDate" type="xs:date"/>
+          <xs:element minOccurs="0" name="deathDate" type="xs:anySimpleType"/>
+          <xs:element name="gender" type="ns1:Gender"/>
+          <xs:element name="nationality" type="ns1:Nationality"/>
+          <xs:element name="citizenship" type="ns1:Country"/>
+          <xs:element name="lifeStatus" type="ns1:PersonStatus"/>
+          <xs:element minOccurs="0" name="birthCertificate" type="tns:Certificate"/>
+          <xs:element minOccurs="0" name="deathCertificate" type="tns:Certificate"/>
+          <xs:element name="birthPlace" type="tns:BirthPlace"/>
+          <xs:element minOccurs="0" name="regAddress" type="tns:RegAddress"/>
+          <xs:element minOccurs="0" name="personCapableStatus" type="tns:PersonCapableStatus"/>
+          <xs:element minOccurs="0" name="missingStatus" type="tns:MissingStatus"/>
+          <xs:element minOccurs="0" name="disappearStatus" type="tns:DisappearStatus"/>
+          <xs:element minOccurs="0" name="excludeStatus" type="tns:PersonExcludeStatus"/>
+          <xs:element minOccurs="0" name="repatriationStatus" type="tns:RepatriationStatus"/>
+          <xs:element minOccurs="0" name="documents">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="document" nillable="true" type="ns2:Document"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element minOccurs="0" name="addresses">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="address" nillable="true" type="tns:Address"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="removed" type="xs:boolean"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Address">
+        <xs:sequence>
+          <xs:element name="type" type="ns1:AddressType"/>
+          <xs:element minOccurs="0" name="country" type="ns1:Country"/>
+          <xs:element minOccurs="0" name="district" type="ns1:District"/>
+          <xs:element minOccurs="0" name="region" type="ns1:Region"/>
+          <xs:element minOccurs="0" name="foreignData" type="tns:ForeignData"/>
+          <xs:element minOccurs="0" name="city" type="xs:string"/>
+          <xs:element minOccurs="0" name="street" type="xs:string"/>
+          <xs:element minOccurs="0" name="building" type="xs:string"/>
+          <xs:element minOccurs="0" name="corpus" type="xs:string"/>
+          <xs:element minOccurs="0" name="flat" type="xs:string"/>
+          <xs:element minOccurs="0" name="beginDate" type="xs:anySimpleType"/>
+          <xs:element minOccurs="0" name="endDate" type="xs:anySimpleType"/>
+          <xs:element minOccurs="0" name="arCode" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DisappearStatus">
+        <xs:sequence>
+          <xs:element name="disappear" type="xs:boolean"/>
+          <xs:element name="disappearDate" type="xs:date"/>
+          <xs:element minOccurs="0" name="disappearEndDate" type="xs:date"/>
+          <xs:element name="disappearNumber" type="xs:string"/>
+          <xs:element name="gpTerritorial" type="ns1:GpTerritorial"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="RepatriationStatus">
+        <xs:sequence>
+          <xs:element name="repatriate" type="xs:boolean"/>
+          <xs:element name="beginDate" type="xs:date"/>
+          <xs:element minOccurs="0" name="endDate" type="xs:anySimpleType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ForeignData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="districtName" type="xs:string"/>
+          <xs:element minOccurs="0" name="regionName" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="PersonCapableStatus">
+        <xs:sequence>
+          <xs:element name="capableStatus" type="ns1:CapableStatus"/>
+          <xs:element name="capableDate" type="xs:date"/>
+          <xs:element minOccurs="0" name="capableEndDate" type="xs:date"/>
+          <xs:element name="capableNumber" type="xs:string"/>
+          <xs:element name="court" type="ns1:Court"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="PersonExcludeStatus">
+        <xs:sequence>
+          <xs:element name="excludeReason" type="ns1:ExcludeReason"/>
+          <xs:element minOccurs="0" name="excludeReasonDate" type="xs:anySimpleType"/>
+          <xs:element minOccurs="0" name="excludeDate" type="xs:anySimpleType"/>
+          <xs:element minOccurs="0" name="excludeParticipant" type="ns1:Participant"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Certificate">
+        <xs:sequence>
+          <xs:element name="number" type="xs:string"/>
+          <xs:element minOccurs="0" name="beginDate" type="xs:anySimpleType"/>
+          <xs:element minOccurs="0" name="issueOrganisation" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema targetNamespace="http://message.persistence.interactive.nat" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://data.gbd.chdb.scb.kz"/>
+      <xs:import namespace="http://data.gbd.chdb.scb.kz"/>
+      <xs:complexType name="Response">
+        <xs:sequence>
+          <xs:element name="messageId" type="xs:string"/>
+          <xs:element name="messageDate" type="xs:dateTime"/>
+          <xs:element name="requestId" type="xs:string"/>
+          <xs:element name="sender" type="ns1:Participant"/>
+          <xs:element name="receiver" type="ns1:Participant"/>
+          <xs:element name="messageResult" type="ns1:MessageResult"/>
+          <xs:element minOccurs="0" name="persons">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="person" type="ns2:Person" xmlns:ns2="http://person.persistence.interactive.nat"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Request">
+        <xs:sequence>
+          <xs:element name="messageId" type="xs:string"/>
+          <xs:element name="messageDate" type="xs:dateTime"/>
+          <xs:element name="senderCode" type="xs:string"/>
+          <xs:element minOccurs="0" name="iin" type="xs:string"/>
+          <xs:element minOccurs="0" name="surname" type="xs:string"/>
+          <xs:element minOccurs="0" name="name" type="xs:string"/>
+          <xs:element minOccurs="0" name="patronymic" type="xs:string"/>
+          <xs:element minOccurs="0" name="birthDate" type="xs:anySimpleType"/>
+          <xs:element minOccurs="0" name="documentNumber" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://gbd.chdb.scb.kz/xml/person" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns3="http://bip.bee.kz/SyncChannel/v10/types/Response" xmlns:ns2="http://bip.bee.kz/SyncChannel/v10/Types/Response" xmlns:ns1="http://bip.bee.kz/SyncChannel/v10/Types">
+      <xs:import namespace="http://bip.bee.kz/SyncChannel/v10/Types"/>
+      <xs:import namespace="http://bip.bee.kz/SyncChannel/v10/Types/Response"/>
+      <xs:import namespace="http://bip.bee.kz/SyncChannel/v10/types/Response"/>
+      <xs:element name="PersonDetailsRequest">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="iin" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PersonDetailsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Person" type="ns3:SyncSendMessageResponse"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="Person">
+        <xs:sequence>
+          <xs:element name="name" type="xs:string"/>
+          <xs:element name="standard" type="xs:int"/>
+          <xs:element name="address" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema targetNamespace="http://document.persistence.interactive.nat" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://data.gbd.chdb.scb.kz"/>
+      <xs:import namespace="http://data.gbd.chdb.scb.kz"/>
+      <xs:complexType name="Document">
+        <xs:sequence>
+          <xs:element name="type" type="ns1:DocumentType"/>
+          <xs:element name="number" type="xs:string"/>
+          <xs:element minOccurs="0" name="series" type="xs:string"/>
+          <xs:element name="beginDate" type="xs:date"/>
+          <xs:element minOccurs="0" name="endDate" type="xs:anySimpleType"/>
+          <xs:element name="issueOrganization" type="ns1:DocumentOrganization"/>
+          <xs:element name="status" type="ns1:DocumentInvalidity"/>
+          <xs:element minOccurs="0" name="invalidityDate" type="xs:anySimpleType"/>
+          <xs:element minOccurs="0" name="surname" type="xs:string"/>
+          <xs:element minOccurs="0" name="name" type="xs:string"/>
+          <xs:element minOccurs="0" name="patronymic" type="xs:string"/>
+          <xs:element name="birthDate" type="xs:date"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://data.gbd.chdb.scb.kz" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://data.gbd.chdb.scb.kz" xmlns:ns2="http://gbd.chdb.scb.kz/xml/person" xmlns:ns1="http://bip.bee.kz/SyncChannel/v10/types/Response">
+      <xs:import namespace="http://bip.bee.kz/SyncChannel/v10/types/Response"/>
+      <xs:import namespace="http://gbd.chdb.scb.kz/xml/person"/>
+      <xs:import namespace="http://data.gbd.chdb.scb.kz"/>
+      <xs:import namespace="http://bip.bee.kz/SyncChannel/v10/Types"/>
+      <xs:import namespace="http://bip.bee.kz/common/v10/Types"/>
+      <xs:import namespace="http://bip.bee.kz/SyncChannel/v10/Types/Response"/>
+      <xs:import namespace="http://message.persistence.interactive.nat"/>
+      <xs:import namespace="http://person.persistence.interactive.nat"/>
+      <xs:import namespace="http://document.persistence.interactive.nat"/>
+      <xs:element name="getPerson" type="tns:getPerson"/>
+      <xs:element name="getPersonResponse" type="tns:getPersonResponse"/>
+      <xs:complexType name="getPerson">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="iin" type="xs:string"/>
+          <xs:element minOccurs="0" name="consentConfirmed" type="xs:boolean"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="getPersonResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element form="qualified" name="Person" type="ns1:SyncSendMessageResponse"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Participant">
+        <xs:sequence>
+          <xs:element name="code" type="xs:string"/>
+          <xs:element name="nameRu" type="xs:string"/>
+          <xs:element name="nameKz" type="xs:string"/>
+          <xs:element minOccurs="0" name="changeDate" type="xs:anySimpleType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DocumentType">
+        <xs:sequence>
+          <xs:element name="code" type="xs:string"/>
+          <xs:element name="nameRu" type="xs:string"/>
+          <xs:element name="nameKz" type="xs:string"/>
+          <xs:element minOccurs="0" name="changeDate" type="xs:anySimpleType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Country">
+        <xs:sequence>
+          <xs:element name="code" type="xs:string"/>
+          <xs:element name="nameRu" type="xs:string"/>
+          <xs:element name="nameKz" type="xs:string"/>
+          <xs:element minOccurs="0" name="changeDate" type="xs:anySimpleType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="District">
+        <xs:sequence>
+          <xs:element name="code" type="xs:string"/>
+          <xs:element name="nameRu" type="xs:string"/>
+          <xs:element name="nameKz" type="xs:string"/>
+          <xs:element minOccurs="0" name="changeDate" type="xs:anySimpleType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="MessageResult">
+        <xs:sequence>
+          <xs:element name="code" type="xs:string"/>
+          <xs:element name="nameRu" type="xs:string"/>
+          <xs:element name="nameKz" type="xs:string"/>
+          <xs:element minOccurs="0" name="changeDate" type="xs:anySimpleType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Region">
+        <xs:sequence>
+          <xs:element name="code" type="xs:string"/>
+          <xs:element name="nameRu" type="xs:string"/>
+          <xs:element name="nameKz" type="xs:string"/>
+          <xs:element minOccurs="0" name="changeDate" type="xs:anySimpleType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GpTerritorial">
+        <xs:sequence>
+          <xs:element name="code" type="xs:string"/>
+          <xs:element name="nameRu" type="xs:string"/>
+          <xs:element name="nameKz" type="xs:string"/>
+          <xs:element minOccurs="0" name="changeDate" type="xs:anySimpleType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Gender">
+        <xs:sequence>
+          <xs:element name="code" type="xs:string"/>
+          <xs:element name="nameRu" type="xs:string"/>
+          <xs:element name="nameKz" type="xs:string"/>
+          <xs:element minOccurs="0" name="changeDate" type="xs:anySimpleType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Nationality">
+        <xs:sequence>
+          <xs:element name="code" type="xs:string"/>
+          <xs:element name="nameRu" type="xs:string"/>
+          <xs:element name="nameKz" type="xs:string"/>
+          <xs:element minOccurs="0" name="changeDate" type="xs:anySimpleType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="PersonStatus">
+        <xs:sequence>
+          <xs:element name="code" type="xs:string"/>
+          <xs:element name="nameRu" type="xs:string"/>
+          <xs:element name="nameKz" type="xs:string"/>
+          <xs:element minOccurs="0" name="changeDate" type="xs:anySimpleType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DocumentOrganization">
+        <xs:sequence>
+          <xs:element name="code" type="xs:string"/>
+          <xs:element name="nameRu" type="xs:string"/>
+          <xs:element name="nameKz" type="xs:string"/>
+          <xs:element minOccurs="0" name="changeDate" type="xs:anySimpleType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="DocumentInvalidity">
+        <xs:sequence>
+          <xs:element name="code" type="xs:string"/>
+          <xs:element name="nameRu" type="xs:string"/>
+          <xs:element name="nameKz" type="xs:string"/>
+          <xs:element minOccurs="0" name="changeDate" type="xs:anySimpleType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="AddressType">
+        <xs:sequence>
+          <xs:element name="code" type="xs:string"/>
+          <xs:element name="nameRu" type="xs:string"/>
+          <xs:element name="nameKz" type="xs:string"/>
+          <xs:element minOccurs="0" name="changeDate" type="xs:anySimpleType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="AddressInvalidity">
+        <xs:sequence>
+          <xs:element name="code" type="xs:string"/>
+          <xs:element name="nameRu" type="xs:string"/>
+          <xs:element name="nameKz" type="xs:string"/>
+          <xs:element minOccurs="0" name="changeDate" type="xs:anySimpleType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="CapableStatus">
+        <xs:sequence>
+          <xs:element name="code" type="xs:string"/>
+          <xs:element name="nameRu" type="xs:string"/>
+          <xs:element name="nameKz" type="xs:string"/>
+          <xs:element minOccurs="0" name="changeDate" type="xs:anySimpleType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ExcludeReason">
+        <xs:sequence>
+          <xs:element name="code" type="xs:string"/>
+          <xs:element name="nameRu" type="xs:string"/>
+          <xs:element name="nameKz" type="xs:string"/>
+          <xs:element minOccurs="0" name="changeDate" type="xs:anySimpleType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="AddressStatus">
+        <xs:sequence>
+          <xs:element name="code" type="xs:string"/>
+          <xs:element name="nameRu" type="xs:string"/>
+          <xs:element name="nameKz" type="xs:string"/>
+          <xs:element minOccurs="0" name="changeDate" type="xs:anySimpleType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Court">
+        <xs:sequence>
+          <xs:element name="code" type="xs:string"/>
+          <xs:element name="nameRu" type="xs:string"/>
+          <xs:element name="nameKz" type="xs:string"/>
+          <xs:element minOccurs="0" name="changeDate" type="xs:anySimpleType"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="scbServiceFault">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="faultCode" type="xs:string"/>
+          <xs:element minOccurs="0" name="faultString" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="SOAPException" type="tns:SOAPException"/>
+      <xs:complexType name="SOAPException">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="IOException" type="tns:IOException"/>
+      <xs:complexType name="IOException">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="message" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ScbException" nillable="true" type="tns:scbServiceFault"/>
+      <xs:element name="JAXBException" type="tns:JAXBException"/>
+      <xs:complexType name="JAXBException">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="errorCode" type="xs:string"/>
+          <xs:element minOccurs="0" name="message" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema targetNamespace="http://bip.bee.kz/common/v10/Types" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://bip.bee.kz/common/v10/Types">
+      <xs:complexType name="StatusInfo">
+        <xs:sequence>
+          <xs:element name="code" type="xs:string"/>
+          <xs:element name="message" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="SenderInfo">
+        <xs:sequence>
+          <xs:element name="senderId" type="xs:string"/>
+          <xs:element minOccurs="0" name="password" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Property">
+        <xs:sequence>
+          <xs:element name="key" type="xs:string"/>
+          <xs:element name="value" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ErrorInfo">
+        <xs:sequence>
+          <xs:element name="errorCode" type="xs:string"/>
+          <xs:element name="errorMessage" type="xs:string"/>
+          <xs:element minOccurs="0" name="errorData" type="xs:string"/>
+          <xs:element name="errorDate" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="subError" type="tns:ErrorInfo"/>
+          <xs:element minOccurs="0" name="sessionId" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema targetNamespace="http://bip.bee.kz/SyncChannel/v10/types/Response" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns4="http://bip.bee.kz/SyncChannel/v10/Types/Response" xmlns:ns3="http://message.persistence.interactive.nat" xmlns:ns2="http://bip.bee.kz/SyncChannel/v10/Types" xmlns:ns1="http://bip.bee.kz/common/v10/Types">
+      <xs:import namespace="http://bip.bee.kz/common/v10/Types"/>
+      <xs:import namespace="http://bip.bee.kz/SyncChannel/v10/Types"/>
+      <xs:import namespace="http://message.persistence.interactive.nat"/>
+      <xs:import namespace="http://bip.bee.kz/SyncChannel/v10/Types/Response"/>
+      <xs:complexType name="SyncSendMessageResponse">
+        <xs:sequence>
+          <xs:element name="responseInfo" type="ns2:SyncMessageInfoResponse"/>
+          <xs:element name="responseData" type="ns4:ResponseData"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema targetNamespace="http://bip.bee.kz/SyncChannel/v10/types/Request" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns4="http://bip.bee.kz/SyncChannel/v10/Types/Request" xmlns:ns3="http://message.persistence.interactive.nat" xmlns:ns2="http://bip.bee.kz/SyncChannel/v10/Types" xmlns:ns1="http://bip.bee.kz/common/v10/Types">
+      <xs:import namespace="http://bip.bee.kz/common/v10/Types"/>
+      <xs:import namespace="http://bip.bee.kz/SyncChannel/v10/Types"/>
+      <xs:import namespace="http://message.persistence.interactive.nat"/>
+      <xs:import namespace="http://bip.bee.kz/SyncChannel/v10/Types/Request"/>
+      <xs:complexType name="SyncSendMessageRequest">
+        <xs:sequence>
+          <xs:element name="requestInfo" type="ns2:SyncMessageInfo"/>
+          <xs:element name="requestData" type="ns4:RequestData"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema targetNamespace="http://bip.bee.kz/SyncChannel/v10/Types/Response" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://message.persistence.interactive.nat">
+      <xs:import namespace="http://data.gbd.chdb.scb.kz"/>
+      <xs:import namespace="http://data.gbd.chdb.scb.kz"/>
+      <xs:import namespace="http://message.persistence.interactive.nat"/>
+      <xs:complexType name="ResponseData">
+        <xs:sequence>
+          <xs:element name="data" type="ns2:Response"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema targetNamespace="http://bip.bee.kz/SyncChannel/v10/Types/Request" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://message.persistence.interactive.nat">
+      <xs:import namespace="http://data.gbd.chdb.scb.kz"/>
+      <xs:import namespace="http://message.persistence.interactive.nat"/>
+      <xs:complexType name="RequestData">
+        <xs:sequence>
+          <xs:element name="data" type="ns1:Request"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema targetNamespace="http://bip.bee.kz/SyncChannel/v10/Types" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://bip.bee.kz/SyncChannel/v10/Types" xmlns:ns5="http://bip.bee.kz/SyncChannel/v10/types/Response" xmlns:ns4="http://bip.bee.kz/SyncChannel/v10/Types/Response" xmlns:ns3="http://bip.bee.kz/SyncChannel/v10/types/Request" xmlns:ns2="http://bip.bee.kz/SyncChannel/v10/Types/Request" xmlns:ns1="http://bip.bee.kz/common/v10/Types">
+      <xs:import namespace="http://bip.bee.kz/common/v10/Types"/>
+      <xs:import namespace="http://bip.bee.kz/SyncChannel/v10/Types/Request"/>
+      <xs:import namespace="http://bip.bee.kz/SyncChannel/v10/types/Request"/>
+      <xs:import namespace="http://bip.bee.kz/SyncChannel/v10/Types/Response"/>
+      <xs:import namespace="http://bip.bee.kz/SyncChannel/v10/types/Response"/>
+      <xs:element name="SendMessage" type="tns:SendMessage"/>
+      <xs:element name="SendMessageFault1_SendMessageFault" type="ns1:ErrorInfo"/>
+      <xs:element name="SendMessageResponse" type="tns:SendMessageResponse"/>
+      <xs:complexType name="SyncMessageInfoResponse">
+        <xs:sequence>
+          <xs:element name="messageId" type="xs:string"/>
+          <xs:element minOccurs="0" name="correlationId" type="xs:string"/>
+          <xs:element name="responseDate" type="xs:dateTime"/>
+          <xs:element name="status" type="ns1:StatusInfo"/>
+          <xs:element minOccurs="0" name="sessionId" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="SendMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="request" type="ns3:SyncSendMessageRequest"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="SyncMessageInfo">
+        <xs:sequence>
+          <xs:element name="messageId" type="xs:string"/>
+          <xs:element minOccurs="0" name="correlationId" type="xs:string"/>
+          <xs:element name="serviceId" type="xs:string"/>
+          <xs:element name="messageDate" type="xs:dateTime"/>
+          <xs:element minOccurs="0" name="routeId" type="xs:string"/>
+          <xs:element name="sender" type="ns1:SenderInfo"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="properties" nillable="true" type="ns1:Property"/>
+          <xs:element minOccurs="0" name="sessionId" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="SendMessageResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="response" type="ns5:SyncSendMessageResponse"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getPersonResponse">
+    <wsdl:part element="ns1:getPersonResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPerson">
+    <wsdl:part element="ns1:getPerson" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ScbException">
+    <wsdl:part element="ns1:ScbException" name="ScbException"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SOAPException">
+    <wsdl:part element="ns1:SOAPException" name="SOAPException"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="IOException">
+    <wsdl:part element="ns1:IOException" name="IOException"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="JAXBException">
+    <wsdl:part element="ns1:JAXBException" name="JAXBException"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="PersonDetails">
+    <wsdl:operation name="getPerson">
+      <wsdl:input message="ns1:getPerson" name="getPerson"></wsdl:input>
+      <wsdl:output message="ns1:getPersonResponse" name="getPersonResponse"></wsdl:output>
+      <wsdl:fault message="ns1:JAXBException" name="JAXBException"></wsdl:fault>
+      <wsdl:fault message="ns1:IOException" name="IOException"></wsdl:fault>
+      <wsdl:fault message="ns1:SOAPException" name="SOAPException"></wsdl:fault>
+      <wsdl:fault message="ns1:ScbException" name="ScbException"></wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://testgbd.mkb.kz/gbdServices/PersonDetailsImplService</con:endpoint></con:endpoints><con:operation id="896ad61c-8ebf-4894-be70-c985bdd681db" isOneWay="false" action="" name="getPerson" bindingOperationName="getPerson" type="Request-Response" outputName="getPersonResponse" inputName="getPerson" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="35d25923-3511-4fae-85ec-446166e2b0fa" name="Request для БХК" timeout="9999"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://testscbws.mkb.kz/gbdServices/PersonDetailsImplService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:data="http://data.gbd.chdb.scb.kz">
+   <soapenv:Header>
+                               <userId>3d4f80d7-b7d7-4a45-9570-e43d4660f6fa</userId>
+                </soapenv:Header>
+   <soapenv:Body>
+      <data:getPerson>
+         <!--Optional:-->
+         <iin>700521700054</iin>
+         <!--Optional:-->
+         <consentConfirmed>true</consentConfirmed>
+      </data:getPerson>
+   </soapenv:Body>
+</soapenv:Envelope>
+]]></con:request><con:credentials><con:username>e4be6659-29d9-4ee5-ae40-5d4a7e01bafb</con:username><con:password>Homecredit_123</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://data.gbd.chdb.scb.kz/PersonDetails/getPerson"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
