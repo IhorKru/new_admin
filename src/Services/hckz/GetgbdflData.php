@@ -104,7 +104,7 @@ class GetgbdflData extends PublisherController {
             echo $response->return->Person->responseData->data->persons->person->birthPlace->region->changeDate;
 
             echo $response->return->Person->responseData->data->persons->person->birthPlace->city;
-
+            
             echo $response->return->Person->responseData->data->persons->person->regAddress->country->code;
             echo $response->return->Person->responseData->data->persons->person->regAddress->country->nameRu;
             echo $response->return->Person->responseData->data->persons->person->regAddress->country->nameKz;
@@ -122,6 +122,21 @@ class GetgbdflData extends PublisherController {
                 echo $document->type->nameRu;
                 echo $document->type->nameKz;
                 echo $document->type->changeDate;
+                echo $document->number;
+                echo $document->beginDate;
+                echo $document->endDate;
+                echo $document->issueOrganization->code;
+                echo $document->issueOrganization->nameRu;
+                echo $document->issueOrganization->nameKz;
+                echo $document->issueOrganization->changeDate;
+                echo $document->status->code;
+                echo $document->status->nameRu;
+                echo $document->status->nameKz;
+                echo $document->status->changeDate;
+                echo $document->surname;
+                echo $document->name;
+                echo $document->patronymic;
+                echo $document->birthDate;
             }
     }
 }

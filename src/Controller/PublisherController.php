@@ -443,7 +443,7 @@ class PublisherController extends AbstractController
             $table = "App\Entity\StatsWeekly";
             $where0 = "s.week = week(now(),1)";
             if ($currweek == 1) {
-                $where1 = "s.week = 52";
+                $where1 = "s.week = 53";
                 $where2 = "s.year = year(now())-1";
                 $where3 = "s.year = year(now())";
             } else {
